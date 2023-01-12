@@ -1,0 +1,128 @@
+/*Default rules*/
+/*rules for body of page*/
+body { 
+    font-size: 100%;
+    line-height: 1.5;
+}
+/*rules starting at the header and working down the page*/
+header,
+nav,
+main,
+footer {
+    margin: 0 auto;
+    max-width: 750px;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-family: 'Encode Sans', 'Open Serif', sans-serif;
+}
+
+header h2 {
+    font-size: 1rem;
+    font-family: 'Encode Sans', 'Open Serif', sans-serif;
+    color: #ccc;
+}
+
+header,
+footer {
+    text-align: center;
+    background-color: #161A25;
+    color: #ccc;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: solid thin black;
+}
+
+.flex-container {
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+p {
+    text-align: left;
+}
+
+#p1,
+#p2,
+#p3 {
+    text-align: center;
+}
+
+#walmart,
+#squarespace,
+#unitedHealthcare {
+    color: rgb(147, 147, 205);
+}
+
+button {
+    background-color: rgb(161, 181, 238);
+    color: black;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+main {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+h3 {
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-family: 'Encode Sans', 'Open Serif', sans-serif;
+}
+
+main picture {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 1rem;
+}
+
+main section {
+    margin: 0.5rem;
+    border: 1px solid black;
+    padding: 0 1rem;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+
+footer {
+    margin-bottom: 10px;
+}
+
+.BYUIlink {
+    color: rgb(147, 147, 205);
+}
+
+#copyright {
+    text-align: center;
+}
+
+#info {
+    margin-top: 10px;
+}
+
+h2 {
+    color: black;
+}
+
+p {
+    text-align: left;
+}
+
