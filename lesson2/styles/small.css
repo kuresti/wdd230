@@ -58,8 +58,8 @@ p {
 button {
     background-color: rgb(161, 181, 238);
     color: black;
-    width: 100px;
-    height: 40px;
+    width: 75px;
+    height: 30px;
     border-radius: 10px;
     margin-bottom: 50px;
     font-size: 1.25rem;
@@ -83,6 +83,7 @@ main picture {
 }
 
 img {
+    display: block;
     max-width: 100%;
     height: auto;
     margin-left: auto;
