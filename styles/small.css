@@ -64,9 +64,9 @@ header {
 footer {
     height: 90px;
 }
-.BYUIlink {
+.byui-link {
     color: rgb(147, 147, 205)
 }
-#lastmodified {
+#last-modified {
     font-size: .75rem;
 }
