@@ -1,3 +1,3 @@
 document.getElementById(
     "last-modified"
-).textContent = new Date(document.lastModified);
+).textContent = new Date(document.last-modified);
