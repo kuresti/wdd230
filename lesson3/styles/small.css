@@ -1,0 +1,115 @@
+/*Default rules*/
+/*Rules for body of pg*/
+:root {
+    --cardw: 15em;
+    --cardm: 1em;
+}
+body{
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 2.5rem;
+}
+.wrapper {
+    max-width: 730px;
+    padding-right: 10px;
+    padding-left: 10px;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+header, footer {
+    text-align: center;
+    background-color: rgb(1, 10, 35);
+    color: #ccc;
+    margin: 0 auto;
+    /*border-radius: 10px;*/
+    border: solid thin black;
+}
+
+nav {
+    margin-top: 10px;
+    font-size: 1rem;
+    background-color: #2E688A;
+}
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+}
+nav li {
+    flex: 1 1 100%;
+}
+nav li a:hover {
+    background-color: #FCD577;
+    color:#161A25;
+}
+nav li a {
+    display: block;
+    color: #d8e0de;
+    font-weight: 900;
+    text-align: center;
+    margin: 10px;
+   /* box-shadow: 2px 5px;*/
+}
+nav li a:link {
+    text-decoration: none;
+}
+/*color scheme*/
+.card {
+    width: 90%;
+    padding-left: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    margin: var(--carm);
+    border: 2px solid #fff;
+    flex-basis: var(--cardw);
+    padding: calc(var(--cardm) + 8em) var(--cardm)
+    var(--cardm) var(cardm);
+    border-radius: calc(var(--cardm) * 0.5);
+}
+#primary {
+    background-color: #2E688A;
+    font-weight: 500;
+    color: #d8e0de;
+    padding: 5px;
+}
+#accent1 {
+    background-color: #4AC7AB;
+    color: #161A25;
+}
+#accent2 {
+    background-color: #FCD577;
+    color: #161A25;
+}
+/* typography */
+.h1-font {
+    font-family: 'Encode sans';
+    line-height: 1.25;
+}
+.navigation-font {
+    font-family: Lora;
+    line-height: 1;
+}
+#h2-font {
+    font-family: 'Encode sans';
+    line-height: 1;
+}
+#h3-font {
+    font-family: 'Encode sans';
+    line-height: 1;
+}
+#p-font {
+    font-family: Lora;
+    line-height: 1;
+}
+footer {
+    padding: 15px;
+    margin-top: 10px;
+}
+.byui-link {
+    color: rgb(147, 147, 205);
+}
