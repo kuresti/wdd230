@@ -78,13 +78,19 @@ nav li a:link {
     color: #161A25;
 }
 /* typography */
-.h1-font {
+#h1-font {
     font-family: 'Encode sans';
     line-height: 1.25;
+    font-size: 2.5rem;
 }
 .navigation-font {
-    font-family: Lora;
-    line-height: 1;
+    font-family: 'Lora', serif;
+    line-height: 1rem;
+}
+#heading {
+    font-family: 'Encode sans';
+    line-height: 1.25rem;
+    font-size: 2.5rem;
 }
 #h2-font {
     font-family: 'Encode sans';
