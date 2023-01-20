@@ -1,9 +1,5 @@
 /*Default rules*/
 /*Rules for body of pg*/
-:root {
-    --cardw: 15em;
-    --cardm: 1em;
-}
 body{
     font-size: 100%;
     font-family: 'Open Sans', sans-serif;
@@ -62,20 +58,16 @@ nav li a:link {
 /*color scheme*/
 .card {
     width: 90%;
-    padding-left: 10px;
+    padding-left: 20px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-    margin: var(--carm);
-    border: 2px solid #fff;
-    flex-basis: var(--cardw);
-    padding: calc(var(--cardm) + 8em) var(--cardm)
-    var(--cardm) var(cardm);
-    border-radius: calc(var(--cardm) * 0.5);
+    margin: 0 auto;
+    border: 2px solid #fff;    
+    border-radius: 5px;
 }
 #primary {
     background-color: #2E688A;
     font-weight: 500;
-    color: #d8e0de;
-    padding: 5px;
+    color: #d8e0de;    
 }
 #accent1 {
     background-color: #4AC7AB;
