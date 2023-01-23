@@ -43,9 +43,7 @@ p {
     text-align: left;
 }
 
-#p1,
-#p2,
-#p3 {
+.example {
     text-align: center;
 }
 
@@ -113,11 +111,11 @@ footer {
     color: rgb(147, 147, 205);
 }
 
-#copyright {
+.copyright {
     text-align: center;
 }
 
-#info {
+.info {
     margin-top: 10px;
 }
 
