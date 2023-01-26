@@ -1,0 +1,44 @@
+:root{
+    --heading-font: 'Encode Sans', sans-serif;
+    --paragraph-font: 'Lora', serif;
+    --primary-color: #2E688A;
+    --accent-1: #4AC7AB;
+    --accent-2: #FCD577;
+    --main-font-color: rgb(19, 18, 18);
+    --font-color-on-color: whitesmoke;
+}
+body {
+    max-width: 100%;
+    margin: 0 auto;
+}
+nav button {
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: var(--font-color-on-color);
+}
+nav {
+    background-color: var(--primary-color);
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a {
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: var(--font-color-on-color);
+    border-top: 1px solid rgba(0,0,0,0.5);
+}
+
+nav ul li.active a {
+    background-color: var(--accent-2);
+    color: var(--main-font-color)
+} 
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.3);
+}  
+
