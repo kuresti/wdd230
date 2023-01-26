@@ -5,7 +5,7 @@ try {
         month: "long",
         year: "numeric"
     };
-    document.getElementById(
+    document.querySelector(
         "current-date"
     ).textContent = new Date().toLocaleDateString("en-US", options);
 } catch (e){
