@@ -1,3 +1,3 @@
 document.querySelector(
-    "last-modified"
+    ".last-modified"
 ).textContent = new Date(document.lastModified);

@@ -1,3 +1,3 @@
 document.querySelector(
-    "copyright-year"
+    ".copyright-year"
 ).textContent = new Date().getFullYear();

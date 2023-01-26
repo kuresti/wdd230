@@ -6,7 +6,7 @@ try {
         year: "numeric"
     };
     document.querySelector(
-        "current-date"
+        ".current-date"
     ).textContent = new Date().toLocaleDateString("en-US", options);
 } catch (e){
     alert("Error with code or your browser does not support Locale");
