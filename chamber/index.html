@@ -2,62 +2,61 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!--viewport for responsive design-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--Description-->
-        <meta name="description" content="Desert Mountain Chamber of Commerce wdd230 project">
+        <meta name="author" content="Kimberly Uresti">
+        <!--description of page-->
+        <meta name="description" content="Desert Mountain Chamber of
+        Commerce Home page">
         <title>Desert Mountain Chamber of Commerce</title>
-        <!--Link to google font pg-->
+        <!--link to google font pg-->
         <link href="https://fonts.googleapis.com/css2?family=Encode+Sans&family=Lora&display=swap" rel="stylesheet">
+        <!--link to font awesom social media icons-->
+        <!--<link rel="stylesheet" href="
+        https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
         <!--CSS stylesheet links-->
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/small.css">
         <link rel="stylesheet" href="styles/medium.css">
         <link rel="stylesheet" href="styles/large.css">
-
     </head>
     <body>
+        <!--Header with logo, motto, and responsive navigation.-->
+
         <header>
-            <div class="logo">
-            <picture>
-                <img src="images/dm-logo.png" alt="Desert Mountain Chamber Logo">
+            <picture class="logo">
+                <img src="images/dm-logo.png" alt="Desert Mountain Chamber of Commerce Logo">
             </picture>
-            <section class="headings">
-                <h1>Desert Mountain</h1>
-                <h3>Chamber of Commerce</h2>
-            </section>
-            <div class="social">
-                <a href="https://facebook.com" target="_blank"></a>
-            
-            
-                <a href="https://instagram.com" target="_blank"></a>
-            
-            
-                <a href="https://twitter.com" target="_blank"></a>
+            <div class="headings">
+                <h1>Desert Mountain Chamber of Commerce</h1>
+                <q class="m">Where your business is our business!</q>
             </div>
-            <nav>
-                <button>&#9776</button>
-                <ul class="navigation responsive">
-                    <li class="active">
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Discover</a>
-                    </li>
-                    <li>
-                        <a href="#">Directory</a>
-                    </li>
-                    <li>
-                        <a href="#">Join</a>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                 </ul>
-            </nav>
-            <div class="date"></div>
+        <!--Nav bar with responsive hamburger menu-->
+        <nav>
+           <button class="hambtn"><span>&#9776;</span><span>X</span></button> 
+        <ul class="primarynav">
+           <li class="active"><a href="#">Home</a></li>
+           <li><a href="#">Discover</a></li>
+           <li><a href="#">Directory</a></li>
+           <li><a href="#">Join</a></li>
+           <li><a href="#">Contact</a></li>
+        </ul>
+        </nav>
+        <div class="social">
+            <div class="social-buttons">
+            <a href="https://facebook.com" class="fb" title="Join us on 
+            Facebook" target="blank"><span class="fa fa-facebook "></span></a>
+          
+            <a href="https://linkedin.com" class="in" title="Join us on 
+        Linked In" target="blank"><span class="fa fa-linkedin" aria- 
+        hidden="true"></span></a>
+            </div>
+        </div>
+        <div class="date">
+
+        </div>
+
         </header>
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/date.js"></script>
+        <script src="https://kit.fontawesome.com/799ae40fc1.js" crossorigin="anonymous"></script>
     </body>
-    <script src="chamber/menu.js"></script>
-</html>

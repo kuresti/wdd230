@@ -1,6 +1,8 @@
-const mainnav =
-document.querySelector('.navigation')
-const hambutton = document.querySelector('menu');
+function toggleMenu(){
+    document.querySelector(".primarynav").classList.toggle("open");
+    document.querySelector(".hambtn").classList.toggle("open");
+}
 
-hambutton.addEventListener('click', () =>
-{mainnav.classList.toggle('responsive')}, false);
+
+const x = document.querySelector(".hambtn")
+x.onclick = toggleMenu;

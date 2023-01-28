@@ -1,0 +1,9 @@
+/*64em is also 1028px when basefont is 16px */
+@media only screen and (min-width:64rem) {
+   nav ul li a {
+    padding: .5 1rem;
+   } 
+   .logo {
+      margin-left: 50px;
+   }
+}
