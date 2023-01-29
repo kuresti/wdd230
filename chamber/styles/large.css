@@ -1,7 +1,7 @@
 /*64em is also 1028px when basefont is 16px */
 @media only screen and (min-width:64rem) {
    nav ul li a {
-    padding: .5 1rem;
+    padding: 0.5rem 1rem;
    } 
    .headerlogo {
       margin-left: 50px;
