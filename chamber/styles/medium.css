@@ -1,5 +1,5 @@
 /*35rem is also 560px when basefont is 16px */
-@media only screen and (min-width: 40rem) {
+@media only screen and (min-width: 35rem) {
     nav {
         grid-row: 3;
     }
@@ -16,13 +16,8 @@
         border-right: 1px solid rgba(0,0,0,0.3);
         border-left: 1px solid rgba(0,0,0,0.3);
     }
+    
     .headerlogo {
-        grid-column: 1;
-        grid-row: 2;
-        margin-top: 5px;
-        margin-left: 5px;
-    }
-    .logo {
         grid-column: 1;
         grid-row: 2;
         margin-top: 10px;
@@ -31,12 +26,45 @@
     }
     .headings {
         grid-column: 2 / 5;
-        grid-row: 2;
-        
+        grid-row: 2;        
     }
     .m {
         margin-left: 75px;
     }
+    /*main*/
+    main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    div.hero {
+        grid-column: 1 / 5;
+    }
+    div.news {
+        grid-column: 1 / 5;
+        grid-row: 2 / 3;
+    }
+    div.box2 {
+        grid-column: 1 / 5;
+        grid-row: 3 / 4;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    div.join {
+        display: block;
+        grid-column: 1 / 5;
+        grid-row: 4 / 5;
+    }
+    div.event {
+        grid-column: 1 / 4 ;
+        grid-row: 5 / 6;
+    }
+    div.weather {
+        grid-column: 4 / 5;
+        grid-row: 5 /6;
+    }
+
+ 
     footer {
         text-align: center;
     width: 100%;

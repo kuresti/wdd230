@@ -160,51 +160,43 @@ nav ul.open {
     background-color: rgba(0, 0, 0, 0.1);
     justify-items: center;
 }
-.wrapper {
-    display: grid;
-    grid-gap: 5px;
-    justify-items: center;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: auto;
-}
-.card {
-    width: 90%;
-    height: 200px;
+/*main*/
+main div {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    margin: 15px;
     background-color: rgba(0, 0, 0, 0.2);
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 }
-.card h3 {
+div.spotlight3 {
+    display: none
+}
+div h3 {
     text-align: center;
 }
-#hero {
+div.hero {
     border: 1px solid rgba(0, 0, 0, 0.2);
     grid-column: 1 / 6;
     grid-row: 1;
 }
-#event {
+div.event {
     border: 1px solid rgba(0, 0, 0, 0.2);
     grid-column: 1 /6;
     grid-row: 2;
 }
-#weather {
+div.weather {
     border: 1px solid rgba(0, 0, 0, 0.2);
     grid-column: 1 / 6;
     grid-row: 3;
 }
-#box2 {
+div.news {
     grid-column: 1 / 6;
-    grid-row: 4 /6;
+    grid-row: 4;
 }
-.spotlight1 {
-    margin: 5px 5px 5px 5px;
-    height: 100px;
-    border: 1px solid rgba(0, 0, 0, 0.2); 
+div.join {
+    display: none;
 }
-.spolight2 {
-    margin: 5px 5px 5px 5px;
-    height: 100px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-}
+
 footer {
     text-align: center;
     width: 100%;
@@ -229,6 +221,7 @@ footer {
 .footinfo #footbox2 {
     grid-column: 1;
     grid-row: 3;
+    color: var(--main-font-color);
 }
 .footinfo #footbox3 {
     grid-column: 1;
