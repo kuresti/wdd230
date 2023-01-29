@@ -92,11 +92,11 @@ span {
     z-index: 3;
 }
 .social a {
-    transition: transform 0.4s linear 0s, border- 
-    top-left-radius 0.1s linear 0s, border-top-right- 
-    radius 0.01s linear 0.1s, border-bottom-right- 
-    radius 0.1s linear 0.2s, border-bottom-left- 
-    radius 01.s linear 0.3s;
+    transition: transform 0.4s linear 0s;
+    border-top-left-radius: 0.1s linear 0s;
+    border-top-right-radius: 0.01s linear 0.1s; 
+    border-bottom-right-radius: 0.1s linear 0.2s; 
+    border-bottom-left-radius: 01.s linear 0.3s;
 }
 .social span {
     transition: transform 0.4s linear 0s;
@@ -156,7 +156,6 @@ nav ul.open {
     max-width: 100%;
     margin: 0;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 0;
     background-color: rgba(0, 0, 0, 0.1);
     justify-items: center;
 }
