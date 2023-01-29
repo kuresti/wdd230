@@ -91,13 +91,13 @@ span {
     position: relative;
     z-index: 3;
 }
-.social a {
+/*.social a {
     transition: transform 0.4s linear 0s;
     border-top-left-radius: 0.1s linear 0s;
     border-top-right-radius: 0.01s linear 0.1s; 
     border-bottom-right-radius: 0.1s linear 0.2s; 
-    border-bottom-left-radius: 01.s linear 0.3s;
-}
+    border-bottom-left-radius: .01s linear 0.3s;
+}*/
 .social span {
     transition: transform 0.4s linear 0s;
 }
