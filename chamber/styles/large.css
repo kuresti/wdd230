@@ -3,7 +3,10 @@
    nav ul li a {
     padding: .5 1rem;
    } 
-   .logo {
+   .headerlogo {
       margin-left: 50px;
    }
+   .m {
+      margin-left: 300px;
+  }
 }

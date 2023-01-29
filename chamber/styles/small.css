@@ -13,6 +13,12 @@
     --font-size: 25px;
 
 }
+body {
+    font-family: var(--paragraph-font);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+}
 header {
     padding: 5px 0;
     display: grid;
@@ -26,16 +32,15 @@ header {
     padding: 10px 2px 5px 10px;
     background-color: var(--primary-color);
 }
-.logo {
+.headerlogo {
     grid-column: 3;
     grid-row: 2;
     margin-top: 5px;
     margin-left: 5px;
 }
-.headings {
+.headings {   
     grid-column: 2 / 5;
-    grid-row: 3;
-    
+    grid-row: 3;    
 }
 .headings h1 {
     font-size: 2rem;
@@ -100,8 +105,7 @@ span {
     transform: rotate(360deg);
     border-radius: 50%;
 }
-.fb {
-    
+.fb {    
     background-color: var(--fb-color);
     border: 1px solid var(--font-color-on-color);
 }
@@ -155,6 +159,81 @@ nav ul.open {
     padding: 0;
     background-color: rgba(0, 0, 0, 0.1);
     justify-items: center;
+}
+.wrapper {
+    display: grid;
+    grid-gap: 5px;
+    justify-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+}
+.card {
+    width: 90%;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+.card h3 {
+    text-align: center;
+}
+#hero {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    grid-column: 1 / 6;
+    grid-row: 1;
+}
+#event {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    grid-column: 1 /6;
+    grid-row: 2;
+}
+#weather {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    grid-column: 1 / 6;
+    grid-row: 3;
+}
+#box2 {
+    grid-column: 1 / 6;
+    grid-row: 4 /6;
+}
+.spotlight1 {
+    margin: 5px 5px 5px 5px;
+    height: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.2); 
+}
+.spolight2 {
+    margin: 5px 5px 5px 5px;
+    height: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+footer {
+    text-align: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(3,1fr);
+    background-color: var(--accent-2);
+    margin-top: 10px;
+}
+.footlogo {
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}
+.footinfo #footbox1 h4 p{
+    text-align: center;
+    grid-column: 1 ;
+    grid-row: 2;
+}
+.footinfo #footbox2 {
+    grid-column: 1;
+    grid-row: 3;
+}
+.footinfo #footbox3 {
+    grid-column: 1;
+    grid-row: 4;
+    margin: 0px;
 }
 
 
