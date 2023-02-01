@@ -25,7 +25,7 @@ main {
 	flex-direction: column;
 }
 .chapter {
-	border-style: 2px solid #333;
+	border-style: solid #333;
 }
 input,
 button {
