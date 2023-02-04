@@ -44,6 +44,10 @@
         top: 45rem;
         right: 5rem;
     }
+    .join {
+        background-color: var(--primary-color);
+        color: var(--font-color-on-color);
+    }
     .joinbtn a{
         font-size: 1.3rem;
         padding: 1.3rem 1.7rem;

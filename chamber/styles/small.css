@@ -253,6 +253,12 @@ div.news h2 {
 div.join {
     display: none;
 }
+div.join ul{
+    list-style-type: none;
+}
+div.join p {
+    padding: 50px;
+}
 
 footer {
     text-align: center;
