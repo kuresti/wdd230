@@ -52,7 +52,7 @@
         grid-column: 1 / 5;
         grid-row: 2 / 3;
     }
-    div.box2 {
+    div.spotlight {
         grid-column: 1 / 5;
         grid-row: 3 / 4;
         display: grid;
