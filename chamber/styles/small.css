@@ -1,9 +1,10 @@
 :root{
     --heading-font: 'Encode Sans', sans-serif;
     --paragraph-font: 'Lora', serif;
-    --primary-color: #2E688A;
+    --primary-color: #316380;
     --accent-1: #4AC7AD;
     --dark-accent-1: #1a4239;
+    --light-accent-1: #6cc3f5;
     --accent-2: #FCD577;
     --main-font-color: rgb(19, 18, 18);
     --font-color-on-color: whitesmoke;
@@ -24,6 +25,18 @@ header {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
+}
+.announcement {
+    background-color: var(--light-accent-1);
+    color: var(--main-font-color);
+    font-size: 1.5rem;
+    text-align: center;
+}
+div.showme {
+    display: block;
+}
+div.hideme {
+    display: none;
 }
 .social {
     grid-column: 1 / 6;
