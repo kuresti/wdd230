@@ -264,6 +264,17 @@ div.spotlight {
     background-color: var(--accent-1);
     text-align: center;
 } 
+div.spotlight1 img {
+    width: 100%;
+    margin: 2px;
+}
+div.spotlight2 img {
+    width: 100%;
+    margin: 2px;
+}
+div.spotlight3 img {
+    width: 100%;
+}
 
 
 footer {
