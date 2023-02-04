@@ -243,6 +243,7 @@ div.weather {
     grid-row: 2;
 }
 div.news {
+    background-color: var(--accent-2);
     grid-column: 1 / 6;
     grid-row: 3;
 }
