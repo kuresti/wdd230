@@ -31,6 +31,10 @@
    grid-column: 2 / 4;
    grid-row: 1 / 3;
   }
+  .calltoaction {
+   top: 42rem;
+   right: 27rem;
+}
   div.news {
    grid-column: 2 / 4;
    grid-row: 3 / 4;

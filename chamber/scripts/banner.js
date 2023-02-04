@@ -7,4 +7,6 @@ if (dayNumber == 1) {
     element.classList.add("showme");
 } else if (dayNumber == 2) {
     element.classList.add("showme");
-} else 
+} else {
+    element.classList.add("hideme");
+}

@@ -31,6 +31,7 @@ header {
     color: var(--main-font-color);
     font-size: 1.5rem;
     text-align: center;
+    grid-column: 1/6;
 }
 div.showme {
     display: block;
@@ -132,7 +133,7 @@ nav button {
     background-color: transparent;
     border: none;
     font-size: 2rem;
-    color: var(--main-font-color);
+    color: var(--font-color-on-color);
 }
 nav ul {
     list-style-type: none;
@@ -190,9 +191,46 @@ div.hero {
     border: 1px solid rgba(0, 0, 0, 0.2);
     grid-column: 1 / 6;
     grid-row: 1;
+    padding: 0;
+}
+div.hero img {
+    position: relative;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+.calltoaction {
+    display: flex;
+    position: absolute;
+    top: 36rem;
+    right: 2rem;
+}
+.calltoaction ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.joinbtn a{
+    text-decoration: none;
+    color: var(--main-font-color);
+    background-color: var(--accent-2);
+    border: 1px solid #333;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+}
+.joinbtn a:hover {
+    color: var(--font-color-on-color);
+    text-decoration: none;
+    background-color: var(--dark-accent-1);
 }
 div.event {
     border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: var(--accent-1);
+    text-align: center;
     grid-column: 1 /6;
     grid-row: 2;
 }
