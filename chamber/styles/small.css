@@ -259,6 +259,12 @@ div.join ul{
 div.join p {
     padding: 50px;
 }
+div.spotlight {
+    padding: 0;
+    background-color: var(--accent-1);
+    text-align: center;
+} 
+
 
 footer {
     text-align: center;
