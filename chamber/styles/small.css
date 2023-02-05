@@ -1,8 +1,8 @@
 :root{
     --heading-font: 'Encode Sans', sans-serif;
     --paragraph-font: 'Lora', serif;
-    --primary-color: #316380;
-    --accent-1: #4AC7AD;
+    --primary-color: #254d63;
+    --accent-1: #4B8D97;
     --dark-accent-1: #1a4239;
     --light-accent-1: #6cc3f5;
     --accent-2: #FCD577;
@@ -24,9 +24,6 @@ header {
     background-color: var(--primary-color);
     color: var(--font-color-on-color);
     padding: 5px 0;
-    display: ;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
 }
 .announcement {
     background-color: var(--light-accent-1);
@@ -283,15 +280,13 @@ div.spotlight2 img {
 div.spotlight3 img {
     width: 100%;
 }
-
-
 footer {
     text-align: center;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3,1fr);
-    background-color: var(--accent-2);
+    background-color: var(--primary-color);
     margin-top: 10px;
 }
 .footlogo {
@@ -309,7 +304,7 @@ footer {
 .footinfo #footbox2 {
     grid-column: 1;
     grid-row: 3;
-    color: var(--main-font-color);
+    color: var(--font-color-on-color);
 }
 .footinfo #footbox3 {
     grid-column: 1;
