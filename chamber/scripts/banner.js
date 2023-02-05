@@ -3,10 +3,8 @@ const today = new Date();
 const dayNumber = today.getDay();
 
 const element = document.querySelector(".announcement");
-if (dayNumber == 1) {
+if (dayNumber == 5) {
     element.classList.add("showme");
-} else if (dayNumber == 2) {
+} else if (dayNumber == 6) {
     element.classList.add("showme");
-} else {
-    element.classList.add("hideme");
-}
+} else ("hideme";)

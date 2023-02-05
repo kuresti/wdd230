@@ -51,10 +51,24 @@
         background-color: var(--accent-1);
         color: var(--font-color-on-color);
     }
-    .joinbtn a{
-        max-width: 100%;
-        font-size: 1.3rem;
+    .joinbtn2 {
+        text-decoration: none;
+        color: var(--main-font-color);
+        background-color: var(--accent-2);
+        border: 1px solid #333;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        border-radius: 5px;
+        text-align: center;
+        font-size: 1rem;
+        padding: 1rem 1rem;
+        
+    }
+    .joinbtn2 a:hover{
+        font-size: 2rem;
         padding: 1.3rem 1.7rem;
+        color: var(--font-color-on-color);
+        text-decoration: none;
+        background-color: var(--dark-accent-1);        
     }
     div.news {
         grid-column: 1 / 5;
@@ -87,7 +101,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    background-color: var(--accent-2);
+    background-color: var(--primary-color);
     margin-top: 10px;
     }
 }
