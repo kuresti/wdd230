@@ -51,7 +51,7 @@
         background-color: var(--accent-1);
         color: var(--font-color-on-color);
     }
-    .joinbtn2 {
+    .joinbtn2 a{
         text-decoration: none;
         color: var(--main-font-color);
         background-color: var(--accent-2);
@@ -65,7 +65,6 @@
     }
     .joinbtn2 a:hover{
         font-size: 2rem;
-        padding: 1.3rem 1.7rem;
         color: var(--font-color-on-color);
         text-decoration: none;
         background-color: var(--dark-accent-1);        
@@ -102,6 +101,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     background-color: var(--primary-color);
+    color: var(--font-color-on-color);
     margin-top: 10px;
     }
 }
