@@ -39,13 +39,11 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(5, 1fr);
-    }
-    div.hero {
-        grid-column: 1 / 5;
-    }
-    .calltoaction {
-        top: 45rem;
-        right: 5rem;
+    }    
+    .jointbtn1 {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
     }
     .join {
         background-color: var(--accent-1);
@@ -55,8 +53,6 @@
         text-decoration: none;
         color: var(--main-font-color);
         background-color: var(--accent-2);
-        border: 1px solid #333;
-        box-shadow: 0 3px 10px rgba(0,0,0,0.2);
         border-radius: 5px;
         text-align: center;
         font-size: 1rem;
@@ -68,6 +64,10 @@
         color: var(--font-color-on-color);
         text-decoration: none;
         background-color: var(--dark-accent-1);        
+    }
+    div.hero {
+        grid-column: 1 / 5;
+        grid-row: 1/2;
     }
     div.news {
         grid-column: 1 / 5;

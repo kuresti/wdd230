@@ -54,9 +54,9 @@
    grid-column: 2 / 4;
    grid-row: 1 / 3;
   }
-  .calltoaction {
-   top: 72rem;
-   right: 27rem;
+  .jointbtn1 {
+   top: 75px;
+   right: 100px;
 }
 div.event {
    grid-column: 1/2;
