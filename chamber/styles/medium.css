@@ -47,7 +47,7 @@
     }
     .join {
         background-color: var(--accent-1);
-        color: var(--font-color-on-color);
+        color: var(--main-font-color);
     }
     .joinbtn2 a{
         text-decoration: none;
