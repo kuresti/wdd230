@@ -6,23 +6,26 @@ const button = document.querySelector('button');
 
 button.addEventListener('click',() => {
     const myItem = input.value;
-    input.value = '';
+        if (myItem === '') {
+        return
+        } else {
 
-    const listItem = document.createElement('li');
-    const listText = document.createElement('span');
-    const listBtn = document.createElement('button');
+         const listItem = document.createElement('li');
+         const listText = document.createElement('span');
+         const listBtn = document.createElement('button');
 
-    listText.textContent = myItem;
-    listItem.appendChild(listText);
-    
-    listItem.appendChild(listBtn);
-    listBtn.textContent = '❌';
-    list.appendChild(listItem);
+        listText.textContent = myItem;
+        listItem.appendChild(listText);
+        
 
-    listBtn.addEventListener('click', () =>{
-        list.removeChild(listItem);
-    });
-
+         listItem.appendChild(listBtn);
+         listBtn.textContent = '❌';
+         list.appendChild(listItem);
+       
+         listBtn.addEventListener('click', () =>{
+         list.removeChild(listItem);
+         });
+    };      
     input.focus();
 });
 
