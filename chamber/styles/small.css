@@ -20,6 +20,12 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
 }
+h2 {
+   margin: .25em;
+}
+h3 {
+    font-weight: 200;
+}
 header {
     background-color: var(--primary-color);
     color: var(--font-color-on-color);
@@ -193,6 +199,7 @@ div h3 {
     text-align: center;
 }
 div.hero {
+    display: flex;
     position: relative;
     padding: 0;
 }
@@ -219,12 +226,25 @@ div.hero img {
     text-decoration: none;
     background-color: var(--dark-accent-1);
 }
+hr {
+    height: 2px;
+    margin: 10px 0;
+    background-color: var(--accent-2);
+}
+.emojis {
+    font-size: 4em;
+    margin: .5em;
+}
 div.event {
+    display: flex;
+    flex-direction: column;
     border: 1px solid rgba(0, 0, 0, 0.2);
     background-color: var(--accent-1);
     text-align: center;
     grid-column: 1 /6;
     grid-row: 1;
+    margin: 1em;
+    padding: 1em;
 }
 div.weather {
     background-color: var(--light-accent-1);
@@ -232,12 +252,18 @@ div.weather {
     border: 1px solid rgba(0, 0, 0, 0.2);
     grid-column: 1 / 6;
     grid-row: 2;
+    margin: 1em;
+    padding: 1em;
 }
 div.news {
     background-color: var(--accent-2);
     grid-column: 1 / 6;
     grid-row: 3;
+    text-align: center;
+    margin: 1em;
+    padding: 1em;
 }
+
 div.news h2 {
     text-align: center;
 }
