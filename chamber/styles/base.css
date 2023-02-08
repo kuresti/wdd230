@@ -57,7 +57,7 @@ img.logo1 {
   margin-bottom: 0;
 }
 .headings {
-  margin-left: 15px;
+    text-align: center;
 }
 .headings h1 {
   font-size: 2rem;
