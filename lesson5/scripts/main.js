@@ -27,5 +27,6 @@ button.addEventListener('click',() => {
          });
     };      
     input.onfocus();
+    input.focus();
 });
 
