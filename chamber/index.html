@@ -28,15 +28,34 @@
     <!--Header with logo, motto, and responsive navigation.-->
 
     <header>
-      <div class="headerlogo">
-        <img class="logo1"
-          src="images/desertmountainlogo1.webp"
-          alt="Desert Mountain Chamber of Commerce Logo"
-        />
-      </div>
+      <picture class="headerlogo">
+        <source srcset="images/desertmountainlogomobile.webp" media="(Min-width:
+                    300px) and (max-width: 499px)">
+        <img src="images/desertmountainlogo1.webp"
+          alt="Desert Mountain Chamber of Commerce Logo">
+      </picture>
       <div class="headings">
         <h1>Desert Mountain Chamber of Commerce</h1>
         <p>"Where your business is our business!"</p>
+      </div>
+      <!--Social Media links-->
+      <div class="social">
+        <a
+              href="https://facebook.com"
+              class="fb"
+              title="Join us on 
+                       Facebook"
+              target="blank"
+              ><span class="fa fa-facebook"></span
+            ></a>
+            <a
+              href="https://linkedin.com"
+              class="in"
+              title="Join us on 
+                      Linked In"
+              target="blank"
+              ><span class="fa fa-linkedin"></span
+            ></a>
       </div>
       <!--Nav bar with responsive hamburger menu-->
       <nav>
@@ -50,7 +69,7 @@
           <li><a href="#">Join</a></li>
           <li><a href="#">Contact</a></li>
           <!--Social media buttons-->
-          <li class="social">
+          <li>
             <a
               href="https://facebook.com"
               class="fb"
