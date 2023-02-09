@@ -28,65 +28,54 @@
     <!--Header with logo, motto, and responsive navigation.-->
 
     <header>
-      <picture class="headerlogo">
-        <source srcset="images/desertmountainlogomobile.webp" media="(Min-width:
-                    300px) and (max-width: 499px)">
-        <img src="images/desertmountainlogo1.webp"
-          alt="Desert Mountain Chamber of Commerce Logo">
+      <div class="headerlogo">
+      <picture>
+        <source
+          srcset="images/desertmountainlogomobile.webp"
+          media="(Min-width:
+                    300px) and (max-width: 499px)"
+        />
+        <img
+          src="images/desertmountainlogo1.webp"
+          alt="Desert Mountain Chamber of Commerce Logo"
+        />
       </picture>
+    </div>
       <div class="headings">
         <h1>Desert Mountain Chamber of Commerce</h1>
         <p>"Where your business is our business!"</p>
       </div>
-      <!--Social Media links-->
-      <div class="social">
-        <a
-              href="https://facebook.com"
-              class="fb"
-              title="Join us on 
-                       Facebook"
-              target="blank"
-              ><span class="fa fa-facebook"></span
-            ></a>
-            <a
-              href="https://linkedin.com"
-              class="in"
-              title="Join us on 
-                      Linked In"
-              target="blank"
-              ><span class="fa fa-linkedin"></span
-            ></a>
-      </div>
+
       <!--Nav bar with responsive hamburger menu-->
       <nav>
-        <button class="hambtn"><span>&#9776;</span><span>X</span></button>
+        <div class="hambtn">
+          <button><span>&#9776;</span><span>🗙</span></button>
+        </div>
         <ul class="primarynav">
-          <li class="active">
+          <li class="active hover-color">
             <a href="https://kuresti.github.io/wdd230/">Home</a>
           </li>
-          <li><a href="#">Discover</a></li>
-          <li><a href="#">Directory</a></li>
-          <li><a href="#">Join</a></li>
-          <li><a href="#">Contact</a></li>
+          <li class="hover-color"><a href="#">Discover</a></li>
+          <li class="hover-color"><a href="#">Directory</a></li>
+          <li class="hover-color"><a href="#">Join</a></li>
+          <li class="hover-color"><a href="#">Contact</a></li>
           <!--Social media buttons-->
-          <li>
+          <li  class="fb">
             <a
               href="https://facebook.com"
-              class="fb"
               title="Join us on 
                        Facebook"
               target="blank"
-              ><span class="fa fa-facebook"></span
+              ><i class="fa fa-facebook fa-sm"></i
             ></a>
           </li>
-          <li class="social">
+          <li class="in">
             <a
-              href="https://linkedin.com"
-              class="in"
+              href="https://linkedin.com"              
               title="Join us on 
                       Linked In"
               target="blank"
-              ><span class="fa fa-linkedin"></span
+              ><i class="fa fa-linkedin fa-sm"></i
             ></a>
           </li>
         </ul>
