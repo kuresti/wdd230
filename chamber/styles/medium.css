@@ -7,6 +7,14 @@
   .headings p {
     font-size: 1rem;
   }
+  /*Banner styles at medium view*/
+  .announcement {
+    font-size: 1rem;
+  }
+  /*Date styles at medium view*/
+  .date {
+    font-size: 1rem;
+  }
   /*Hamburger Button styles at medium view*/
   nav button {
     width: 3.5rem;

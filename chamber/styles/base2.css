@@ -115,6 +115,7 @@
     overflow: hidden;
     position: relative;
   }
+  /*what was this for?*/`
   span {
     position: relative;
     z-index: 3;

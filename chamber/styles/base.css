@@ -30,10 +30,11 @@ h6 {
 .announcement {
   background-color: var(--light-accent-1);
   color: var(--main-font-color);
-  font-size: 1.5rem;
+  font-size: .6rem;
   text-align: center;
-  grid-column: 1/8;
-  grid-row: 3;
+  padding-right: 15%;
+  grid-column: 1/6;
+  grid-row: 1;
 }
 div.showme {
   display: block;
@@ -74,12 +75,13 @@ header {
 .date {
   max-width: 100%;
   margin: 0;
+  font-size: .5rem;
   border: 1px solid rgba(0, 0, 0, 0.2);
   background-color: rgba(0, 0, 0, 0.1);
-  justify-items: center;
+  padding-right: 15%;
   text-align: center;
-  grid-column: 1/5;
-  grid-row: 1;
+  grid-column: 1/6;
+  grid-row: 2;
 }
 /*Navigation style*/
 nav ul {
@@ -159,6 +161,18 @@ nav ul li.active a:hover {
 .hambtn.open span:nth-child(1) {
   display: none;
 }
+/*Main styles at the base view*/
+main div {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  margin: 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+/*Spotlight 3 styles at base view*/
+div.spotlight3 {
+  display: none;
+}
 /*Hero Image*/
 div.hero {
   display: flex;
@@ -170,4 +184,25 @@ div.hero img {
   width: 100%;
   height: auto;
   z-index: -1;
+}
+/*Join chamber button on hero img style at base view*/
+.joinbtn1 {
+  position: absolute;
+  background-color: var(--accent-2);
+  width: 50%;
+  padding: 1rem 1rem;
+  text-align: center;
+  bottom: 5%; 
+  right: 15%;
+  text-decoration: none;
+}
+.joinbtn1 a {
+  text-decoration: none;
+  color: var(--main-font-color);
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1rem;
+}
+.joinbtn1 a:hover {
+  background-color: var(--dark-accent-1);
 }
