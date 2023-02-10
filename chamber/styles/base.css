@@ -46,7 +46,6 @@ div.hideme {
 header {
   background-color: var(--primary-color);
   color: var(--font-color-on-color);
-  position: fixed;
   display: grid;
   grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
   width: 100%;
@@ -137,8 +136,6 @@ nav ul li.active a {
 nav ul li.active a:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
-
-
 /*Hamburger button*/
 .hambtn {
   justify-content: right;
@@ -178,7 +175,6 @@ div.hero {
   display: flex;
   position: relative;
   padding: 0;
-  z-index: -1;
 }
 div.hero img {
   width: 100%;
@@ -186,23 +182,107 @@ div.hero img {
   z-index: -1;
 }
 /*Join chamber button on hero img style at base view*/
-.joinbtn1 {
+.joinbtn1  {
   position: absolute;
   background-color: var(--accent-2);
-  width: 50%;
+  width: 37%;
+  height: 5%;
   padding: 1rem 1rem;
-  text-align: center;
   bottom: 5%; 
   right: 15%;
-  text-decoration: none;
-}
-.joinbtn1 a {
   text-decoration: none;
   color: var(--main-font-color);
   border-radius: 5px;
   text-align: center;
-  font-size: 1rem;
+  font-size: .75rem;
 }
-.joinbtn1 a:hover {
+.joinbtn1:hover {
   background-color: var(--dark-accent-1);
+  color: var(--font-color-on-color);
 }
+/*Event style at small view*/
+.emojis {
+  font-size: 4em;
+  margin: 0.5em;
+}
+div.event {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: var(--accent-1);
+    text-align: center;
+    grid-column: 1 /6;
+    grid-row: 1;
+    margin: 1em;
+    padding: 1em;
+  }
+    hr {
+    height: 2px;
+    margin: 10px 0;
+    background-color: var(--accent-2);
+  }
+  /*Weather style small view*/
+  div.weather {
+    background-color: var(--light-accent-1);
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    grid-column: 1 / 6;
+    grid-row: 2;
+    margin: 1em;
+    padding: 1em;
+  }
+  /*News style small view*/
+  div.news {
+    background-color: var(--accent-2);
+    grid-column: 1 / 6;
+    grid-row: 3;
+    text-align: center;
+    margin: 1em;
+    padding: 1em;
+  }
+  /*Join style small view*/
+  div.join {
+    display: none;
+  }
+  /*Spotlight style small view */
+  div.spotlight {
+    padding: 0;
+    background-color: var(--accent-1);
+    text-align: center;
+  }
+  /*Footer style small view*/
+  footer {
+    text-align: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    background-color: var(--primary-color);
+    color: var(--font-color-on-color);
+    margin-top: 10px;
+  }
+  .footlogo {
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .footinfo #footbox1 h4 p {
+    text-align: center;
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .footinfo #footbox2 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .map-link {
+    text-decoration: none;
+    color: var(--font-color-on-color);
+  }
+  .footinfo #footbox3 {
+    grid-column: 1;
+    grid-row: 4;
+    margin: 0px;
+  }
+  

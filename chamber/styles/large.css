@@ -20,4 +20,8 @@
   nav ul li a {
    border: none;
   }
+  /*Call to Action style at large view*/
+  .joinbtn1 {
+   font-size: 3rem;
+  }
 }
