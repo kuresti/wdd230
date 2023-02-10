@@ -175,11 +175,12 @@ div.hero {
   display: flex;
   position: relative;
   padding: 0;
+  grid-column: 1/2;
+  grid-row: 1;
 }
 div.hero img {
   width: 100%;
   height: auto;
-  z-index: -1;
 }
 /*Join chamber button on hero img style at base view*/
 .joinbtn1  {
@@ -211,8 +212,8 @@ div.event {
     border: 1px solid rgba(0, 0, 0, 0.2);
     background-color: var(--accent-1);
     text-align: center;
-    grid-column: 1 /6;
-    grid-row: 1;
+    grid-column: 1/2 ;
+    grid-row: 2;
     margin: 1em;
     padding: 1em;
   }
