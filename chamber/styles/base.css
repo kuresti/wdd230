@@ -17,6 +17,7 @@
 /* Overall body fonts*/
 body {
   font-family: var(--paragraph-font);
+  max-width: 100%;
 }
 h1,
 h2,
@@ -30,7 +31,7 @@ h6 {
 .announcement {
   background-color: var(--light-accent-1);
   color: var(--main-font-color);
-  font-size: .6rem;
+  font-size: 0.6rem;
   text-align: center;
   padding-right: 15%;
   grid-column: 1/6;
@@ -47,7 +48,7 @@ header {
   background-color: var(--primary-color);
   color: var(--font-color-on-color);
   display: grid;
-  grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   width: 100%;
   max-height: 150px;
 }
@@ -60,7 +61,8 @@ header {
 .headings {
   text-align: left;
   margin-top: 5%;
-  grid-column: 2/3;
+  grid-column: 2/4;
+  grid-row: 1;
 }
 .headings h1 {
   font-size: 0.75rem;
@@ -74,13 +76,13 @@ header {
 .date {
   max-width: 100%;
   margin: 0;
-  font-size: .5rem;
+  font-size: 0.5rem;
   border: 1px solid rgba(0, 0, 0, 0.2);
   background-color: rgba(0, 0, 0, 0.1);
   padding-right: 15%;
   text-align: center;
   grid-column: 1/6;
-  grid-row: 2;
+  grid-row: 4/5;
 }
 /*Navigation style*/
 nav ul {
@@ -89,36 +91,30 @@ nav ul {
 nav ul.open {
   display: block;
 }
-nav.primarynav {
+nav {
   background-color: var(--primary-color);
-  justify-content: space-between;
-  grid-column: 4 / 6;
-  grid-row: 3/6;
-}
-nav li {
-  margin: 0;
-  background-color: transparent;
-  border: none;
-  font-size: 0.75rem;
-  color: var(--font-color-on-color);
-  width: 100px;
+  grid-column: 1 / 6;
+  grid-row: 3/4;
+  display: flex;
+  flex-direction: column;
 }
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
   display: none;
-  z-index: 3;
   background-color: var(--primary-color);
 }
 nav ul li a {
   display: block;
+  overflow: hidden;
+  text-align: center;
   padding: 0.8rem 2vw;
   text-decoration: none;
   color: var(--font-color-on-color);
   border-top: 1px solid rgba(0, 0, 0, 0.5);
 }
-.fb a:hover{
+.fb a:hover {
   background-color: var(--fb-color);
 }
 .in a:hover {
@@ -138,33 +134,38 @@ nav ul li.active a:hover {
 }
 /*Hamburger button*/
 .hambtn {
-  justify-content: right;
-  margin-left: 10px;
-  margin-top: 50px;
-  grid-column: 3/4;
-  grid-row: 1;
+  font-size: 1.5em;
+  grid-column: 1/2;
+  grid-row: 2;
 }
 .hambtn span:nth-child(1) {
-  display: block;
+  display: flex;
+  justify-content: flex-start;
 }
 .hambtn span:nth-child(2) {
   display: none;
 }
-.hambtn.open span:nth-child(2) {
-  display: flex;
-  grid-column: 4;
-  grid-row: 2/3;
-}
+
 .hambtn.open span:nth-child(1) {
   display: none;
 }
+.hambtn.open span:nth-child(2) {
+  display: flex;
+  justify-content: flex-start;
+}
 /*Main styles at the base view*/
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
 main div {
   border: 1px solid rgba(0, 0, 0, 0.5);
   padding: 50px;
   margin: 15px;
   background-color: rgba(0, 0, 0, 0.2);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  display: grid;
 }
 /*Spotlight 3 styles at base view*/
 div.spotlight3 {
@@ -176,26 +177,25 @@ div.hero {
   position: relative;
   padding: 0;
   grid-column: 1/2;
-  grid-row: 1;
 }
-div.hero img {
+.hero img {
   width: 100%;
   height: auto;
 }
 /*Join chamber button on hero img style at base view*/
-.joinbtn1  {
+.joinbtn1 {
   position: absolute;
   background-color: var(--accent-2);
-  width: 37%;
-  height: 5%;
-  padding: 1rem 1rem;
-  bottom: 5%; 
+  width: 35%;
+  height: 3%;
+  padding: 1rem;
+  bottom: 5%;
   right: 15%;
   text-decoration: none;
   color: var(--main-font-color);
   border-radius: 5px;
   text-align: center;
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 .joinbtn1:hover {
   background-color: var(--dark-accent-1);
@@ -207,83 +207,89 @@ div.hero img {
   margin: 0.5em;
 }
 div.event {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    background-color: var(--accent-1);
-    text-align: center;
-    grid-column: 1/2 ;
-    grid-row: 2;
-    margin: 1em;
-    padding: 1em;
-  }
-    hr {
-    height: 2px;
-    margin: 10px 0;
-    background-color: var(--accent-2);
-  }
-  /*Weather style small view*/
-  div.weather {
-    background-color: var(--light-accent-1);
-    text-align: center;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    grid-column: 1 / 6;
-    grid-row: 2;
-    margin: 1em;
-    padding: 1em;
-  }
-  /*News style small view*/
-  div.news {
-    background-color: var(--accent-2);
-    grid-column: 1 / 6;
-    grid-row: 3;
-    text-align: center;
-    margin: 1em;
-    padding: 1em;
-  }
-  /*Join style small view*/
-  div.join {
-    display: none;
-  }
-  /*Spotlight style small view */
-  div.spotlight {
-    padding: 0;
-    background-color: var(--accent-1);
-    text-align: center;
-  }
-  /*Footer style small view*/
-  footer {
-    text-align: center;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    background-color: var(--primary-color);
-    color: var(--font-color-on-color);
-    margin-top: 10px;
-  }
-  .footlogo {
-    grid-column: 1;
-    grid-row: 1;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-  .footinfo #footbox1 h4 p {
-    text-align: center;
-    grid-column: 1;
-    grid-row: 2;
-  }
-  .footinfo #footbox2 {
-    grid-column: 1;
-    grid-row: 3;
-  }
-  .map-link {
-    text-decoration: none;
-    color: var(--font-color-on-color);
-  }
-  .footinfo #footbox3 {
-    grid-column: 1;
-    grid-row: 4;
-    margin: 0px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: var(--accent-1);
+  color: var(--font-color-on-color);
+  text-align: center;
+  grid-column: 1/2;
+  grid-row: 4/5;
+  margin: 1em;
+  padding: 1em;
+}
+hr {
+  height: 2px;
+  margin: 10px 0;
+  background-color: var(--accent-2);
+}
+/*Weather style small view*/
+div.weather {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-accent-1);
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  grid-column: 1;
+  grid-row: 4/5;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+/*News style small view*/
+div.news {
+  background-color: var(--accent-2);
+  grid-column: 1;
+  grid-row: 5/6;
+  text-align: center;
+  margin: 1em;
+  padding: 1em;
+}
+/*Join style small view*/
+div.join {
+  display: none;
+}
+/*Spotlight style small view */
+div.spotlight {
+  grid-column: 1;
+  grid-row: 6/8;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--accent-1);
+  text-align: center;
+}
+/*Footer style small view*/
+footer {
+  text-align: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  background-color: var(--primary-color);
+  color: var(--font-color-on-color);
+  margin-top: 10px;
+}
+.footlogo {
+  grid-column: 1;
+  grid-row: 1;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.footinfo #footbox1 h4 p {
+  text-align: center;
+  grid-column: 1;
+  grid-row: 2;
+}
+.footinfo #footbox2 {
+  grid-column: 1;
+  grid-row: 3;
+}
+.map-link {
+  text-decoration: none;
+  color: var(--font-color-on-color);
+}
+.footinfo #footbox3 {
+  grid-column: 1;
+  grid-row: 4;
+  margin: 0px;
+}

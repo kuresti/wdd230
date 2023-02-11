@@ -31,14 +31,110 @@
     font-size: 1.5rem;
     width: 150px;
   }
+  /*Main style at medium view */
   /*Call to action style at medium view */
   .joinbtn1 {
     font-size: 2.1rem;
   }
+  main {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}    
+/*Hero dive style at medium view*/
+div.hero {
+  grid-column: 1 / 5;
+  grid-row: 1/3;
+}
+.joinbtn1 {
+  height: 6%;
+  bottom: 1%;
+  right: 2%;
+}
+
+
  /*News Release style at medium view*/
  div.news {
   grid-column: 1 / 5;
-  grid-row: 2 / 3;
+  grid-row: 3/ 4;
+  font-size: 2rem;
+}
+/*Spotlight style at medium view */
+div.spotlight {
+  grid-column: 1 / 5;
+  grid-row: 4/5;
+  /*display: grid;
+  grid-template-columns: repeat(2, 1fr);*/
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+}
+/*Join style at medium view */
+div.join {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--accent-1);
+  color: var(--font-color-on-color);
+  font-size: 1.5rem;
+  height: 20%;
+  grid-column: 1/5 ;
+  grid-row: 5 /6;
+}
+.join ul {
+  list-style-type: none;
+}
+.joinbtn2 a {
+  text-decoration: none;
+  color: var(--main-font-color);
+  background-color: var(--accent-2);
+  border-radius: 5px;
+  margin-left: 12%;
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 1rem 10rem;
+}
+.joinbtn2 a:hover {
+  font-size: 2rem;
+  color: var(--font-color-on-color);
+  text-decoration: none;
+  background-color: var(--dark-accent-1);
+}
+/*Event style at medium view */
+div.event {
+  grid-column: 1/3;
+  grid-row: 5/6;
+  z-index: 4;
+  height: 56%;
+  margin-top: 70%;
+  font-size: 1rem;
+}
+/*Weather style at medium view */
+div.weather {
+  grid-column: 3/5;
+  grid-row: 5/6;
+  z-index: 4;  
+  height: 58%;
+  margin-top: 70%;
+  font-size: 1rem;
+}
+/*Footer style at medium view */
+footer {
+  text-align: center;
+width: 100%;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: auto;
+background-color: var(--primary-color);
+color: var(--font-color-on-color);
+margin-top: 10px;
+}
+.footinfo hr{
+  display: none;
+}
+#footbox3 {
+  grid-column: 1/4;
+  grid-row: 2;
+  text-align: center;
+  margin: 0px;
 }
 
 }
