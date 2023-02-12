@@ -50,7 +50,6 @@ header {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
-  max-height: 150px;
 }
 /*style logo*/
 .headerlogo {
@@ -76,7 +75,7 @@ header {
 .date {
   max-width: 100%;
   margin: 0;
-  font-size: 0.5rem;
+  font-size: 0.6rem;
   border: 1px solid rgba(0, 0, 0, 0.2);
   background-color: rgba(0, 0, 0, 0.1);
   padding-right: 15%;
@@ -145,7 +144,6 @@ nav ul li.active a:hover {
 .hambtn span:nth-child(2) {
   display: none;
 }
-
 .hambtn.open span:nth-child(1) {
   display: none;
 }
@@ -155,9 +153,10 @@ nav ul li.active a:hover {
 }
 /*Main styles at the base view*/
 main {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
 }
 main div {
   border: 1px solid rgba(0, 0, 0, 0.5);
@@ -165,22 +164,24 @@ main div {
   margin: 15px;
   background-color: rgba(0, 0, 0, 0.2);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-  display: grid;
 }
 /*Spotlight 3 styles at base view*/
-div.spotlight3 {
+.spotlight {
+  background-color: var(--font-color-on-color);
+}
+.spotlight3 {
   display: none;
 }
 /*Hero Image*/
 div.hero {
   display: flex;
-  position: relative;
   padding: 0;
-  grid-column: 1/2;
+  position: relative;
 }
 .hero img {
+  object-fit: cover;
   width: 100%;
-  height: auto;
+  max-height: 100%;
 }
 /*Join chamber button on hero img style at base view*/
 .joinbtn1 {
@@ -189,8 +190,8 @@ div.hero {
   width: 35%;
   height: 3%;
   padding: 1rem;
-  bottom: 5%;
-  right: 15%;
+  bottom: 25px;
+  right: 25px;
   text-decoration: none;
   color: var(--main-font-color);
   border-radius: 5px;
@@ -201,22 +202,36 @@ div.hero {
   background-color: var(--dark-accent-1);
   color: var(--font-color-on-color);
 }
+/*Card Holder at small view*/
+.card {
+  margin: 15px 15px 15px 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.card-container {
+  position: relative;
+  background-color: var(--font-color-on-color);
+  border: none;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
 /*Event style at small view*/
 .emojis {
   font-size: 4em;
   margin: 0.5em;
 }
-div.event {
+#event {
   display: flex;
   flex-direction: column;
-  border: 1px solid rgba(0, 0, 0, 0.2);
   background-color: var(--accent-1);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   color: var(--font-color-on-color);
   text-align: center;
-  grid-column: 1/2;
-  grid-row: 4/5;
-  margin: 1em;
-  padding: 1em;
+  margin: 10px;
+  width: 200px;
+  height: 350px;
 }
 hr {
   height: 2px;
@@ -224,19 +239,17 @@ hr {
   background-color: var(--accent-2);
 }
 /*Weather style small view*/
-div.weather {
-  display: flex;
-  flex-direction: column;
+#weather {
   background-color: var(--light-accent-1);
   text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  grid-column: 1;
-  grid-row: 4/5;
-  margin: 0.5em;
-  padding: 0.5em;
+  margin: 10px;
+  padding: 10px 50px 10px 50px;
+  width: 200px;
+  height: 350px;
 }
 /*News style small view*/
-div.news {
+.news{
   background-color: var(--accent-2);
   grid-column: 1;
   grid-row: 5/6;
@@ -245,7 +258,7 @@ div.news {
   padding: 1em;
 }
 /*Join style small view*/
-div.join {
+#join {
   display: none;
 }
 /*Spotlight style small view */
