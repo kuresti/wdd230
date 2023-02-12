@@ -258,7 +258,7 @@ hr {
   padding: 1em;
 }
 /*Join style small view*/
-#join {
+.join {
   display: none;
 }
 /*Spotlight style small view */
