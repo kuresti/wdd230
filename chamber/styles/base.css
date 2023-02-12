@@ -181,7 +181,7 @@ div.hero {
 .hero img {
   object-fit: cover;
   width: 100%;
-  max-height: 100%;
+  max-height: auto;
 }
 /*Join chamber button on hero img style at base view*/
 .joinbtn1 {

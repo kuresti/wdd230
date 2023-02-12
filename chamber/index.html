@@ -33,7 +33,7 @@
           <source
             srcset="images/desertmountainlogomobile.webp"
             media="(Min-width:
-                    300px) and (max-width: 499px)"
+                    300px)"
           />
           <img
             src="images/desertmountainlogo1.webp"
@@ -92,13 +92,15 @@
       <div class="date"></div>
     </header>
     <main>
-      <div class="hero">
-        <picture>
-          
-          
+      
+        <picture class="hero">
+          <source media="(min-width: 1100px)" srcset="images/large-wdd230.webp">
+          <source media="(min-width: 800px)" srcset="images/medium-wdd230.webp">
+          <source media="(min-width: 375px)" srcset="images/small-wdd230.webp">
+          <img class="heroimg" src="images/wdd230-original.webp" alt="Business meeting" loading="lazy">
         </picture>
         <a class="joinbtn1" href="#">Join The Chamber</a>
-      </div>
+      
       <div class="card-container">
         <div class="card" id="event">
           <h1>Grand Opening!</h1>
@@ -119,7 +121,7 @@
           <p>
             Temperature: <span class="temp">45</span><br />
             Wind Speed: <span class="wind">10</span><br />
-            Wind Chill: N/A
+            Wind Chill: <span class="wind-chill">N/A</span>
           </p>
         </div>
       </div>
@@ -221,5 +223,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="scripts/banner.js"></script>
+    <script src="scripts/windchill.js"></script>
   </body>
 </html>
