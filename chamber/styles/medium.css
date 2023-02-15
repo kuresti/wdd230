@@ -1,27 +1,24 @@
 /*35rem is also 560px when basefont is 16px */
 @media only screen and (min-width: 35rem) {
   /*header styles at medium view*/
-  .headings h1 {
-    font-size: 1.5rem;
-  }
-  .headings p {
-    font-size: 1rem;
-  }
+  
   /*Banner styles at medium view*/
   .announcement {
-    font-size: 1.5rem;
+    font-size: 1em;
   }
   /*Date styles at medium view*/
   .date {
     font-size: 1rem;
   }
   /*Hamburger Button styles at medium view*/
-  nav button {
-    width: 3.5rem;
-    height: 3.5rem;
+  nav {
+    grid-column: 1/5;
+    grid-row: 2;
   }
+  
   button span {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    text-align: end;
   }
   /*Navigation sytle at medium view*/
   nav li {
@@ -36,60 +33,66 @@
   }
   main {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
   }
-  /*Hero dive style at medium view*/
-  div.hero {
-    grid-column: 1 / 5;
-    grid-row: 1/3;
+  /*Hero div style at medium view*/
+  #hero {
+    grid-column: 1 / 6;
+    grid-row: 1/2;
+    
   }
+  .hero-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .hero-img {
+    width: 100%;
+  }
+
   .joinbtn1 {
-    height: 6%;
-    bottom: 1%;
-    right: 2%;
+    bottom: 75px;
+    left: 480px;
   }
 
   /*News Release style at medium view*/
-  div.news {
-    grid-column: 1 / 5;
-    grid-row: 3/ 4;
-    font-size: 2rem;
-    height: 300px;
+  #news {
+    grid-column: 1 / 6;
+    grid-row: 2/ 3;
+    margin-top: .5em;
   }
   /*Spotlight style at medium view */
-  .spotlight {
-    grid-column: 1 / 5;
-    grid-row: 4/5;
-    display: flex;
-    
-    font-size: 1.5rem;
-  }
+  
   /*Join style at medium view */
   .join {
     display: flex;
     flex-direction: column;
     background-color: var(--accent-1);
     color: var(--font-color-on-color);
-    font-size: 1.5rem; 
-    height: 250px;   
-    grid-column: 1/5;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-top: .5em;
+    padding: 1em;
+    grid-column: 1/6;
     grid-row: 5 /6;
-    height: 300px;
   }
   .join ul {
     list-style-type: none;
+    width: 100%;
+    padding-left: 0;
   }
-  .joinbtn2 a {
+  .join ul li a {
     text-decoration: none;
     color: var(--main-font-color);
     background-color: var(--accent-2);
     border-radius: 5px;
-    text-align: center;
     justify-content: center;
     display: flex;
-    font-size: 2rem;
     padding: 1rem;
+  }
+  .join p {
+    padding: 7px;
   }
   .joinbtn2 a:hover {
     font-size: 2rem;
@@ -97,31 +100,31 @@
     text-decoration: none;
     background-color: var(--dark-accent-1);
   }
-  /*card-container style at medium view*/
-  .card-container {
-    display: flex;
-    flex-wrap: nowrap;
-    grid-column: 1/5;
-    grid-row: 6/7;
-    padding: 10px;
+  /*News style at medium view */
+  .news {
+    grid-column: 1/6;
+    grid-row: 3;
   }
+  /*Spotlight at medium view */
+  div.spotlight { 
+     grid-column: 1/6;
+     grid-row: 4;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr); 
+     margin-top: .5em;
+   }
+
   /*Event style at medium view */
-  #event {
-    grid-column: 1/3;
-    grid-row: 5/6;
-    font-size: .75rem;
-    margin: 10px;
-    width: 400px;
-    padding: 10px 10px 10px 10px;
+  .event {
+    grid-column: 1/4;
+    grid-row: 6/7;
+    margin-top: .5em;
   }
   /*Weather style at medium view */
-  #weather {
-    grid-column: 3/5;
-    grid-row: 5/6;
-    font-size: 1rem;
-    margin: 10px;
-    width: 300px;
-    padding: 10px 10px 10px 10px;
+  .weather {
+    grid-column: 4/6;
+    grid-row: 6/7;
+    margin-top: .5em;
   }
   /*Footer style at medium view */
   footer {

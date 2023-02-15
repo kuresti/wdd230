@@ -12,7 +12,6 @@
   --fb-color: #3b5998;
   --in-color: #007bb5;
   --border-radius: 10px;
-  --font-size: 25px;
 }
 /* Overall body fonts*/
 body {
@@ -33,9 +32,9 @@ h6 {
   color: var(--main-font-color);
   font-size: 0.6rem;
   text-align: center;
-  padding-right: 15%;
+  padding: 10px 10px 10px 10px;
   grid-column: 1/6;
-  grid-row: 1;
+  grid-row: 5;
 }
 div.showme {
   display: block;
@@ -45,31 +44,21 @@ div.hideme {
 }
 /*Styling of the Header*/
 header {
-  background-color: var(--primary-color);
-  color: var(--font-color-on-color);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--font-color-on-color);
 }
-/*style logo*/
+/*style log at the base view*/
 .headerlogo {
-  grid-column: 1/2;
-  justify-tracks: center;
+  display: flex;
+  width: 100%;
+  grid-column: 1/5;
 }
 /*Chamber Title and slogan*/
-.headings {
-  text-align: left;
-  margin-top: 5%;
-  grid-column: 2/4;
-  grid-row: 1;
-}
-.headings h1 {
-  font-size: 0.75rem;
-}
-.headings p {
+.headerlogo p {
   letter-spacing: 1pt;
   font-weight: 500;
-  font-size: 0.5rem;
 }
 /*Date Banner*/
 .date {
@@ -155,83 +144,52 @@ nav ul li.active a:hover {
 main {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: auto;
-}
-main div {
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  padding: 50px;
-  margin: 15px;
-  background-color: rgba(0, 0, 0, 0.2);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-}
-/*Spotlight 3 styles at base view*/
-.spotlight {
-  background-color: var(--font-color-on-color);
-}
-.spotlight3 {
-  display: none;
 }
 /*Hero Image*/
-div.hero {
-  display: flex;
-  padding: 0;
+#hero {
   position: relative;
 }
-.hero img {
-  object-fit: cover;
+.hero-img img {
+  display: block;
   width: 100%;
-  max-height: auto;
+  height: 100%;
+}
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 /*Join chamber button on hero img style at base view*/
 .joinbtn1 {
-  position: absolute;
+  position: relative;
+  bottom: 45px;
+  left: 175px;
   background-color: var(--accent-2);
-  width: 35%;
+  width: 30%;
   height: 3%;
   padding: 1rem;
-  bottom: 25px;
-  right: 25px;
   text-decoration: none;
   color: var(--main-font-color);
   border-radius: 5px;
   text-align: center;
-  font-size: 0.75rem;
 }
 .joinbtn1:hover {
   background-color: var(--dark-accent-1);
   color: var(--font-color-on-color);
-}
-/*Card Holder at small view*/
-.card {
-  margin: 15px 15px 15px 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.card-container {
-  position: relative;
-  background-color: var(--font-color-on-color);
-  border: none;
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10px;
 }
 /*Event style at small view*/
 .emojis {
   font-size: 4em;
   margin: 0.5em;
 }
-#event {
-  display: flex;
-  flex-direction: column;
+.event {
   background-color: var(--accent-1);
   border: 1px solid rgba(0, 0, 0, 0.2);
   color: var(--font-color-on-color);
   text-align: center;
-  margin: 10px;
-  width: 200px;
-  height: 350px;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
 }
 hr {
   height: 2px;
@@ -239,23 +197,20 @@ hr {
   background-color: var(--accent-2);
 }
 /*Weather style small view*/
-#weather {
+.weather {
   background-color: var(--light-accent-1);
   text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  margin: 10px;
-  padding: 10px 50px 10px 50px;
-  width: 200px;
-  height: 350px;
+  margin-top: 1em;
 }
 /*News style small view*/
-.news{
+#news {
   background-color: var(--accent-2);
   grid-column: 1;
   grid-row: 5/6;
   text-align: center;
-  margin: 1em;
-  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 /*Join style small view*/
 .join {
@@ -270,6 +225,25 @@ div.spotlight {
   flex-direction: column;
   background-color: var(--accent-1);
   text-align: center;
+}
+.spotlight3 {
+  display: none;
+}
+
+/*Spotlight 3 styles at base view*/
+div.spotlight {
+  color: var(--font-color-on-color);
+  margin: 2px;
+}
+.spotlight1 {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.spotlight2 {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 /*Footer style small view*/
 footer {
