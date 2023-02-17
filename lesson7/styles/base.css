@@ -17,7 +17,6 @@ div {
     border: solid thin black;
 }
 div img[data-src] {
-    filter: blur(0em);
+    filter: blur(1em);
     transition: filter 0.5s;
-}
 }
