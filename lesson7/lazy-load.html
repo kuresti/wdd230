@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lazy Loading</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+  </head>
+  <body>
+    <button onclick="window.href='https://kuresti.github.io/wdd230/';">
+      Home
+    </button>
+    <h1>Progressive Loading</h1>
+    <div class="wrapper">
+      <div id="airplanes">
+        <a href="https://placeholder.com">
+          <img
+            src="https://via.placeholder.com/300x400.webp/4b8d97/FFFFFF/?text=Place Holder"
+            data-src="images/airplanes.webp"
+            alt="Airplanes leaving colored smoke trails"
+          />
+        </a>
+      </div>
+      <div id="fireworks">
+        <a href="https://placeholder.com">
+          <img
+            src="https://via.placeholder.com/300x400.webp/4b8d97/FFFFFF/?text=Place Holder"
+            data-src="images/fireworks.webp"
+            alt="Fireworks in night sky"
+          />
+        </a>
+      </div>
+      <div id="hot-air-balloons">
+        <a href="https://placeholder.com">
+          <img
+            src="https://via.placeholder.com/300x400.webp/4b8d97/FFFFFF/?text=Place Holder"
+            data-src="images/hot-air-balloons.webp"
+            alt="Rainbow colored hot air balloons in sky"
+          />
+        </a>
+      </div>
+      <div id="parade">
+        <a href="https://placeholder.com">
+          <img
+            src="https://via.placeholder.com/300x400.webp/4b8d97/FFFFFF/?text=Place Holder"
+            data-src="images/parade.webp"
+            alt="Little girl standing on another girl's shoulders"
+          />
+        </a>
+      </div>
+      <div id="small-town-night">
+        <a href="https://placeholder.com">
+            <img src="https://via.placeholder.com/300x400.webp/4b8d97/FFFFFF/?text=Place Holder"
+            data-src="images/small-town-night.webp" alt="People enjoying a night on the town"> 
+        </a>
+      </div>
+    </div>
+    <script src="scripts/lazy-load.js"></script>
+  </body>
+</html>
