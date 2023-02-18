@@ -11,8 +11,7 @@ if (temp2 <= 50 && speed2 > 3){
     
     factor = Math.round(factor);
     let text = factor.toString();
-    let text2 = "°F";
-    let result = text.concat(text2);
+    let result = text;
 
     document.querySelector(".wind-chill").innerText = result;
 }

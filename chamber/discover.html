@@ -54,9 +54,11 @@
         </div>
         <ul class="primarynav">
           <li class="hover-color">
-            <a href="https://kuresti.github.io/wdd230/">Home</a>
+            <a href="index.html">Home</a>
           </li>
-          <li class="active hover-color"><a href="discover.html">Discover</a></li>
+          <li class="active hover-color">
+            <a href="discover.html">Discover</a>
+          </li>
           <li class="hover-color"><a href="#">Directory</a></li>
           <li class="hover-color"><a href="#">Join</a></li>
           <li class="hover-color"><a href="#">Contact</a></li>
@@ -81,16 +83,103 @@
           </li>
         </ul>
       </nav>
-
-      <!--Banner announcement-->
-      <div class="announcement">
-        🤝 Come join us for the chamber meet and greet Wednesday at 7:00p.m.
-      </div>
       <!--Date-->
       <div class="date"></div>
     </header>
     <main>
-
+      <div class="discover-columns">
+        <div id="mountain-town">
+          <img
+            src="images/mountaintown.webp"
+            alt="Small town in the mountains"
+          />
+        </div>
+        <div id="town-stats">
+          <h3>Desert Mountain</h3>
+          <p>
+            Desert Mountain, a small town with something for everyone. 
+            Established as a mining town in 1847 this town has kept its old
+            town charm while expanding its horizons to becoming a tourist 
+            destination year round. With a local population of 10,000 this town
+            is big enough to provide top of the line service, yet still keep its
+            small town charm and hospitality. Come discover this hidden gem 
+            nestled in a beautiful mountain valley.
+          </p>
+        </div>
+        <div id="pioneer-park">
+          <img
+            src="images/pioneerpark.webp"
+            alt="Pioneer park"
+          />
+        </div>
+        <div>
+          <h3>Pioneer Park</h3>
+          <p>
+            A town hertitage site created to honor the pioneer men and women
+            who first settled the area. This beautiful park includes peaceful
+            walking paths, playgrounds, picnic areas, and an ampitheatre to 
+            enjoy local outdoor concerts in the cool summer evenings.
+          </p>
+        </div>
+        <div id="shakespeare-garden">
+          <img
+            src="images/shakespearegarden.webp"
+            alt="Shakespeare Garden"
+          />
+        </div>
+        <div>
+          <h3>Shakespeare Garden</h3>
+          <p>
+            In honor of the great bard the local community college has 
+            cultivated a beautiful Shakespearean garden. This is a 
+            favorite location for weddings and romantic evening strolls.
+          </p>
+        </div>
+        <div id="balloon-festival">
+          <img
+            src="images/hotairballoons.webp"
+            alt="Balloon festival."
+          />
+        </div>
+        <div>
+          <h3>Mountain Heights Balloon Festival</h3>
+          <p>
+            Join us this year in celebrating the 75th year of hosting This
+            event. There will be great food, activities for all ages, and of 
+            course colorful balloons from around the country.            
+          </p>
+        </div>
+        <div id="skiing">
+          <img
+            src="images/skiing.webp"
+            alt="Skier jumping on a downhil run."
+          />
+        </div>
+        <div>
+          <h3>Winter Wonderland</h3>
+          <p>
+            Enjoy world class skiing on powder from which dreams are made.
+            Visitors and locals alike also enjoy other winter activities including,
+            snowmobiling, crosscountry skiing, snowboarding, and skijumping.
+          </p>
+        </div>
+        <div id="mountain-trail">
+          <img
+            src="images/hiking.webp"
+            alt="Tree lined mountain trail."
+          />
+        </div>
+        <div>
+          <h3>Monthly Lumberjack Celebration</h3>
+          <p>
+            Come be apart of our montly celebration where we celebrate all things
+            Lumberjack. Meet our mascot "Flap-Jack". Events include sunrise breakfast
+            with a flap-jack tossing contest, log rolling, best beaerd contest, 
+            log cutting, most creative maple syrup confection, and many more. Join 
+            in your best Lumberjack shirt for a full day of fun!
+          </p>
+        </div>
+      </div>
     </main>
     <footer>
       <picture class="footlogo">
@@ -139,5 +228,7 @@
       src="https://kit.fontawesome.com/799ae40fc1.js"
       crossorigin="anonymous"
     ></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/observer.js"></script>
   </body>
 </html>

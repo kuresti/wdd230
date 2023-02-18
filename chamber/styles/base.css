@@ -245,6 +245,12 @@ div.spotlight {
   background-color: rgba(0, 0, 0, 0.2);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
+/*Discover page style*/
+.discover-columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  
+}
 /*Footer style small view*/
 footer {
   text-align: center;
