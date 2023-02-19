@@ -246,11 +246,29 @@ div.spotlight {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 /*Discover page style*/
-.discover-columns {
+.discover-column {
   display: grid;
-  grid-template-columns: 1fr;
-  
+  grid-template-columns: 1fr; 
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+  grid-gap: .5em;
 }
+#desert-mountain-img {
+  margin-top: 1em;
+}
+img.discover {
+  width: 300px;
+  height: 400px;
+}
+article.town-info {
+  width: 300px;
+  height: 300px;
+  padding: .5em;
+  text-align: left;
+  justify-self: center;
+}
+
 /*Footer style small view*/
 footer {
   text-align: center;

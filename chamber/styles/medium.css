@@ -1,7 +1,7 @@
 /*35rem is also 560px when basefont is 16px */
 @media only screen and (min-width: 35rem) {
   /*header styles at medium view*/
-  
+
   /*Banner styles at medium view*/
   .announcement {
     font-size: 1em;
@@ -15,7 +15,7 @@
     grid-column: 1/5;
     grid-row: 2;
   }
-  
+
   button span {
     font-size: 2.5rem;
     text-align: end;
@@ -40,7 +40,6 @@
   #hero {
     grid-column: 1 / 6;
     grid-row: 1/2;
-    
   }
   .hero-img img {
     display: block;
@@ -60,10 +59,10 @@
   #news {
     grid-column: 1 / 6;
     grid-row: 2/ 3;
-    margin-top: .5em;
+    margin-top: 0.5em;
   }
   /*Spotlight style at medium view */
-  
+
   /*Join style at medium view */
   .join {
     display: flex;
@@ -72,7 +71,7 @@
     color: var(--font-color-on-color);
     font-size: 1.5rem;
     text-align: left;
-    margin-top: .5em;
+    margin-top: 0.5em;
     padding: 1em;
     grid-column: 1/6;
     grid-row: 5 /6;
@@ -106,25 +105,89 @@
     grid-row: 3;
   }
   /*Spotlight at medium view */
-  div.spotlight { 
-     grid-column: 1/6;
-     grid-row: 4;
-     display: grid;
-     grid-template-columns: repeat(2, 1fr); 
-     margin-top: .5em;
-   }
+  div.spotlight {
+    grid-column: 1/6;
+    grid-row: 4;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 0.5em;
+  }
 
   /*Event style at medium view */
   .event {
     grid-column: 1/4;
     grid-row: 6/7;
-    margin-top: .5em;
+    margin-top: 0.5em;
   }
   /*Weather style at medium view */
   .weather {
     grid-column: 4/6;
     grid-row: 6/7;
-    margin-top: .5em;
+    margin-top: 0.5em;
+  }
+  /*Discover page style at medium view */
+  .discover-pg {
+    display: block;
+  }
+  .discover-column {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  #desert-mountain-img {
+    grid-column: 2/3;
+    grid-row: 1;
+  }
+  #desert-mountain-article {
+    grid-column: 1/2;
+    grid-row: 1;
+  }
+  #pioneer-park-img {
+    grid-column: 2/3;
+    grid-row: 2;
+  }
+  #pioneer-park-article {
+    grid-column: 1/2;
+    grid-row: 2;
+  }
+  #shakespeare-garden-img {
+    grid-column: 2/3;
+    grid-row: 3;
+  }
+  #shakespeare-garden-article {
+    grid-column: 1/2;
+    grid-row: 3;
+  }
+  #balloon-festival-img {
+    grid-column: 2/3;
+    grid-row: 4;
+  }
+  #balloon-festival-article {
+    grid-column: 1/2;
+    grid-row: 4;
+  }
+  #skiing-img {
+    grid-column: 2/3;
+    grid-row: 5;
+  }
+  #skiing-article {
+    grid-column: 1/2;
+    grid-row: 5;
+  }
+  #mountain-trail-img {
+    grid-column: 2/3;
+    grid-row: 6;
+  }
+  #mountain-trail-article {
+    grid-column: 1/2;
+    grid-row: 6;
+  }
+
+  /*Discover image hover effects*/
+  .border img {
+    transition: 0.5s ease;
+  }
+  .border img:hover {
+    box-shadow: 0 0 0 5px var(--dark-accent-1);
+    transition: 0.5s ease;
   }
   /*Footer style at medium view */
   footer {
