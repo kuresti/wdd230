@@ -69,8 +69,7 @@
   /*Join style at large view */
   .join {
     grid-column: 1/2;
-    grid-row: 3/4;
-    width: 250px;   
+    grid-row: 3/4;   
   }
   
   /*News style at large view */
