@@ -30,6 +30,9 @@ if (lastVisit !== 0) {
     nowDisplay.textContent = 'Today is the first day you visited!'
 };
 
+//lastVisit is stored in localStorage
+localStorage.setItem("lastVisit-lv", lastVisit);
+
 
 
 
