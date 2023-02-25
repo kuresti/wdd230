@@ -53,12 +53,12 @@
           </button>
         </div>
         <ul class="primarynav">
-          <li class="active hover-color">
+          <li>
             <a href="https://kuresti.github.io/wdd230/">Home</a>
           </li>
           <li class="hover-color"><a href="discover.html">Discover</a></li>
           <li class="hover-color"><a href="#">Directory</a></li>
-          <li class="hover-color"><a href="join.html">Join</a></li>
+          <li class="active hover-color"><a href="join.html">Join</a></li>
           <li class="hover-color"><a href="#">Contact</a></li>
           <!--Social media buttons-->
           <li class="fb">
@@ -90,97 +90,75 @@
       <div class="date"></div>
     </header>
     <main>
-      <section id="hero">
-        <picture class="hero-img">
-          <source
-            media="(min-width: 1100px)"
-            srcset="images/large-fallpark.webp"
-          />
-          <source
-            media="(min-width: 800px)"
-            srcset="images/medium-fallpark.webp"
-          />
-          <img
-            src="images/small-fallparg.webp"
-            alt="Business meeting"
-            loading="lazy"
-          />
-        </picture>
-        <a class="joinbtn1" href="#">Join The Chamber</a>
-      </section>
+      <form method="get" action="thank.html">
+        <fieldset>
+            <legend>Company Information</legend>
+            <label>Business Name*<input type="text" name="bname" required></label>
+            <label>Business Phone Number*<input type="tel" name="bphone" required></label>
+            <label>Business Website<input type="url;" name="url" placeholder="https://" required></label>
+            <label>Position in Business<input type="text" name="position" pattern="^[Aa-Za-z -]+$"></label>
+            <label>Description of Business<textarea name="bdescription" rows="4" cols="50"></textarea></label>
+        </fieldset>
+        <fieldset>
+            <legend>Personal Contact Information</legend>
+            <label>First Name*<input type="text" name="fname" required></label>
+            <label>Last Name*<input type="text" name="lname" required></label>
+            <label>Mobile Phone Number<input type="tel" name="pphone"></label>
+            <label>Email Address*<input type="email" name="email" required></label>
+        </fieldset>
+        <fieldset>
+            <legend>Membership Levels</legend>
+            <label>Non-Profit Membership<input type="radio" name="membership" class="membership" id="nonProfit" onclick="membershipInfo()"></label>
+            <div class="nProfit">
+                <ul>
+                    <li>Yearly Fee: None</li>
+                    <li>Live social media interview with Chamber President annually.</li>
+                    <li>Member spotlight on website annually.</li>
+                    <li>Free attendance at Chamber-Sponsered events.</li>
+                    <li>Access to member discounts.</li>
+                    <li>Access to webinar library.</li>
+                </ul>
+            </div>
+            <label>Bronze Membership<input type="radio" name="membership" class="membership" id="bronze" onclick="membershipInfo()"></label>
+            <div class="nProfit">
+                <ul>
+                    <li>Yearly Fee: $360</li>
+                    <li>All the benefits of non-profit membership plus...</li>
+                    <li>Table sponser at networking event annually.</li>
+                    <li>Free professional seminars and educational presentations annually.</li>
+                    <li>Ribbon cutton or Open House annually.</li>
+                </ul>
+            </div>
+            <label>Silver Membership<input type="radio" name="membership" class="membership" id="silver" onclick="membershipInfo()"></label>
+            <div class="nProfit">
+                <ul>
+                    <li>Yearly Fee: $600</li>
+                    <li>All the benefits of bronze membership plus...</li>
+                    <li>Regular job postings on the Chamber website.</li>
+                    <li>Sponser of one major event annually.</li>
+                    <li>Logo on the Chamber newsletter quarterly.</li>
+                    <li>Host a Chamber after hours event bi-annually.</li>
+                </ul>
+            </div>
+            <label>Gold Membership<input type="radio" name="membership" class="membership" id="Gold" onclick="membershipInfo()"></label>
+            <div class="nProfit">
+                <ul>
+                    <li>Yearly Fee: $1000</li>
+                    <li>All the benefits of silver membership plus...</li>
+                    <li>Host/teach a seminar, webinar or event quarterly.</li>
+                    <li>Sponser of one major event annually.</li>
+                    <li>Contribute an article in the Chamber social media newsletter monthly.</li>
+                    <li>Sponsership of a Chamber Games team.</li>
+                    <li>A promotional benefits packages is also included.</li>
+                </ul>
+            </div>
+            <label><input type="hidden" name="timeNow" class="timeNow"></label>
+            <label><input type="submit" name="submit" value="Join Now">
 
-      <section class="event">
-        <h1>Grand Opening!</h1>
-        <hr />
-        <h2>Desert Mountain Air Park</h2>
-        <p class="emojis">🛩️</p>
-        <p>
-          Come out and join us for the grand opening of Desert Mountain Air
-          Park, Saturday at 10:00 a.m.
-        </p>
-      </section>
-      <section class="weather">
-        <h2>Weather</h2>
-        <hr />
-        <h3>Saturday</h3>
-        <p class="emojis">&#9925;</p>
-        <h3>Partly Cloudy</h3>
-        <p>
-          Temperature: <span class="temp">45</span>℉<br />
-          Wind Speed: <span class="wind">10</span><br />
-          Wind Chill: <span class="wind-chill">N/A</span>℉
-        </p>
-      </section>
+        </fieldset>
 
-      <section class="join">
-        <ul>
-          <li class="joinbtn2">
-            <a href="#">Join Us!</a>
-          </li>
-        </ul>
-        <p>
-          Discover how to join the chamber of commerce and how it will benefit
-          your organization!
-        </p>
-      </section>
-      <section id="news">
-        <h2>News Release</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste vitae
-          porro accusamus quia quasi amet recusandae. Neque eligendi rem
-          voluptate, nihil provident numquam. Sed quibusdam facilis quidem sequi
-          repellat ab.
-        </p>
-      </section>
-      <div class="spotlight">
-        <div class="spotlight1">
-          <h2>Happy Movers</h2>
-          <p class="emojis">🚚</p>
-          <hr />
-          <p>
-            7680 South Peach Tree, Desert Mountain <br />
-            (888)564-9009 | website
-          </p>
-        </div>
-        <div class="spotlight2">
-          <h2>Premier Online School</h2>
-          <p class="emojis">👩‍🏫</p>
-          <hr />
-          <p>
-            Open Enrollment Going on Now!<br />
-            Call (855)675-3456 today! website
-          </p>
-        </div>
-        <div class="spotlight3">
-          <h2>Cookies 'R' Us</h2>
-          <p class="emojis">🍪</p>
-          <hr />
-          <p>
-            4567 West Pitch Lane, Desert Mountain <br />
-            (870)419-5226 | website
-          </p>
-        </div>
-      </div>
+
+      </form>
     </main>
     <footer>
       <picture class="footlogo">
@@ -211,7 +189,7 @@
         >
         <hr />
       </div>
-     
+
       <div class="footinfo" id="footbox3">
         <p>
           &copy;<span class="copyright-year"></span>Mountain Desert Chamber
