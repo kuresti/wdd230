@@ -89,27 +89,28 @@
       <!--Date-->
       <div class="date"></div>
     </header>
-    <main>
-      <form method="get" action="thank.html">
+    <main class="joinPage">
+      <form method="get" action="thankyou.html">
         <fieldset>
             <legend>Company Information</legend>
-            <label>Business Name*<input type="text" name="bname" required></label>
-            <label>Business Phone Number*<input type="tel" name="bphone" required></label>
-            <label>Business Website<input type="url;" name="url" placeholder="https://" required></label>
-            <label>Position in Business<input type="text" name="position" pattern="^[Aa-Za-z -]+$"></label>
-            <label>Description of Business<textarea name="bdescription" rows="4" cols="50"></textarea></label>
+            <label class="above">Business Name*<input type="text" name="bname" title="Business Name" required></label>
+            <label class="above">Business Phone Number*<input type="tel" title="Business phone number" name="bphone" required></label>
+            <label class="above">Business Website<input type="url;" name="url" title="website URL" placeholder="https://" required></label>
+            <label class="above">Position in Business<input type="text" name="position" title="Accepted: Min 7characters, ie.(letters, spaces, and hyphens)" pattern="^[Aa-Za-z -]+$"></label>
+            <label class="above">Description of Business<textarea name="bdescription" rows="5" required></textarea></label>
         </fieldset>
         <fieldset>
             <legend>Personal Contact Information</legend>
-            <label>First Name*<input type="text" name="fname" required></label>
-            <label>Last Name*<input type="text" name="lname" required></label>
-            <label>Mobile Phone Number<input type="tel" name="pphone"></label>
-            <label>Email Address*<input type="email" name="email" required></label>
+            <label class="above">First Name*<input type="text" name="fname" required></label>
+            <label class="above">Last Name*<input type="text" name="lname" required></label>
+            <label class="above">Mobile Phone Number<input type="tel" name="pphone" required></label>
+            <label class="above">Email Address*<input type="email" name="email" placeholder="myemail@gmail.com" required></label>
         </fieldset>
-        <fieldset>
+        <fieldset class="memberInfo">
             <legend>Membership Levels</legend>
-            <label>Non-Profit Membership<input type="radio" name="membership" class="membership" id="nonProfit" onclick="membershipInfo()"></label>
+            <label class="radio"><input type="radio" name="membership" class="membership" id="nonProfit" value="Non-Profit Membership">Non-Profit Membership</label>
             <div class="nProfit">
+                <h4>Non-Profit Level</h4>
                 <ul>
                     <li>Yearly Fee: None</li>
                     <li>Live social media interview with Chamber President annually.</li>
@@ -119,8 +120,9 @@
                     <li>Access to webinar library.</li>
                 </ul>
             </div>
-            <label>Bronze Membership<input type="radio" name="membership" class="membership" id="bronze" onclick="membershipInfo()"></label>
-            <div class="nProfit">
+            <label class="radio"><input type="radio" name="membership" class="membership" id="bronze" value="Bronze Membership">Bronze Membership</label>
+            <div class="bronze">
+                <h4>Bronze Level</h4>
                 <ul>
                     <li>Yearly Fee: $360</li>
                     <li>All the benefits of non-profit membership plus...</li>
@@ -129,8 +131,9 @@
                     <li>Ribbon cutton or Open House annually.</li>
                 </ul>
             </div>
-            <label>Silver Membership<input type="radio" name="membership" class="membership" id="silver" onclick="membershipInfo()"></label>
-            <div class="nProfit">
+            <label class="radio"><input type="radio" name="membership" class="membership" id="silver" value="Silver Membership">Silver Membership</label>
+            <div class="silver">
+                <h4>Silver Level</h4>
                 <ul>
                     <li>Yearly Fee: $600</li>
                     <li>All the benefits of bronze membership plus...</li>
@@ -140,8 +143,9 @@
                     <li>Host a Chamber after hours event bi-annually.</li>
                 </ul>
             </div>
-            <label>Gold Membership<input type="radio" name="membership" class="membership" id="Gold" onclick="membershipInfo()"></label>
-            <div class="nProfit">
+            <label class="radio"><input type="radio" name="membership" class="membership" id="Gold" value="Gold Membership">Gold Membership</label>
+            <div class="gold">
+                <h4>Gold Level</h4>
                 <ul>
                     <li>Yearly Fee: $1000</li>
                     <li>All the benefits of silver membership plus...</li>
@@ -153,11 +157,8 @@
                 </ul>
             </div>
             <label><input type="hidden" name="timeNow" class="timeNow"></label>
-            <label><input type="submit" name="submit" value="Join Now">
-
-        </fieldset>
-
-
+            </fieldset>
+            <label><input type="submit" name="submit" class="submit" value="Join Now">
       </form>
     </main>
     <footer>
@@ -182,7 +183,7 @@
       <div class="footinfo" id="footbox2">
         <p>
           info@mountaindesertcc.org<br />
-          (480)876-5309
+          📱(480)876-5309
         </p>
         <a class="map-link" href="https://goo.gl/maps/UGyggmw2sBUHP8a87"
           >📍Location Map</a
@@ -203,11 +204,6 @@
     <script src="scripts/date.js"></script>
     <script src="scripts/copyright-year.js"></script>
     <script src="scripts/last-modified.js"></script>
-    <script
-      src="https://kit.fontawesome.com/799ae40fc1.js"
-      crossorigin="anonymous"
-    ></script>
     <script src="scripts/banner.js"></script>
-    <script src="scripts/wind-chill.js"></script>
   </body>
 </html>

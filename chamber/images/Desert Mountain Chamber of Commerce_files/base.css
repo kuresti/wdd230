@@ -310,22 +310,18 @@ footer {
   margin: 0px;
 }
 /*Membership Join page*/
-.joinPage {
-  display: block;
-}
 fieldset {
   border: solid 2px var(--dark-accent-1);
-  margin-top: 10px;
 }
 legend {
   font-size: 1em;
   font-weight: 600;
+  
 }
-form label.above input, 
-form label.above select,
-form label.above textarea {
+form label.above input, form label.above select {
   appearance: none;
   display: block;
+  border: solid 1px var(--dark-accent-1);
   padding: .75rem;
   margin-bottom: 2%;
   background-color: rgba(15, 56, 83, 0.1);
@@ -340,23 +336,7 @@ div.silver,
 div.gold {
   border: solid 2px var(--dark-accent-1);
   margin-bottom: .5rem;
-  background-color: var(--primary-color);
-  color: var(--main-font-color);
-  padding: 7px;
 }
-div.nProfit {
-  background-color: var(--accent-2);  
-}
-div.bronze {
-  background-color: rgb(205,127,50);  
-}
-div.silver {
-  background-color: rgb(192,192,192);  
-}
-div.gold {
-  background-color: rgb(227,192,87);  
-}
-
 input.membership {
   width: 1.25rem;
 }
@@ -364,35 +344,6 @@ form input.submit {
   background-color: var(--light-accent-1);
   color: var(--main-font-color);
   padding: .75rem 1.5rem;
-  margin-top: 10px;
+  width: 100%;
+  max-width: 20rem;
 }
-input {
-  border: 3px solid;
-}
-textarea {
-  border: 3px solid;
-}
-input:optional {
-  border-color: var(--dark-accent-1);
-}
-input:required:valid {
-  border-color: rgb(5, 227, 5);
-}
-input:invalid,
-select,
-textarea {
-  border-color: rgb(209, 4, 4);
-}
-input:focus:invalid {
-  background-color: rgb(209, 4, 4, 0.1);
-}
-
-/* Thank you action page*/
-div.thankYou {
-  grid-column: 2/5;
-  text-align: center;
-}
-div.thankYou h4{
-  font-size: 2rem;
-}
-

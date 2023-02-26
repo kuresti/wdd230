@@ -10,13 +10,5 @@ function toggleMenu(){
 const x = document.querySelector(".hambtn")
 x.onclick = toggleMenu;
 
-//Membership radio button function
-function membershipInfo(){
-    const npInfo = document.querySelector(".npProfit");
-    if (document.querySelector("#nonProfit").checked) {
-        npInfo.style.display = "block";
-    } else {
-        npInfo.style.display = "none";
-    }
-};
+
 

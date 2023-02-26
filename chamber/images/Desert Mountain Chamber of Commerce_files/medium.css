@@ -224,20 +224,4 @@
     text-align: center;
     margin: 0px;
   }
-
-  /*form style at medium view*/
-  form {
-    grid-column: 1/4;
-  }
-  fieldset.memberInfo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  div.nProfit {
-    grid-column: 2/3;
-  }
-  label.radio {
-    font-weight: 600;
-  }
-  
 }
