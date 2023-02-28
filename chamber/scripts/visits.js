@@ -19,19 +19,22 @@ numVisits++;
 //new count is stored in localStorage
 localStorage.setItem("visits-ls", numVisits);
 
-//Retrieve last visit from localStorage
-let lastVisit = Number(window.localStorage.getItem("lastVisit-ls"));
-//Days since last visit
-if (lastVisit !== 0) {
-    const daysSinceLastVisit = (Date.now() - lastVisit) / 84600000;
-    const rounded = Math.round(daysSinceLastVisit);
-    nowDisplay.textContent = rounded;
-} else {
-    nowDisplay.textContent = 'Today is the first day you visited!'
+//function to calculate the number of days since the last visit
+function daysSinceLastVisit(){
+    const today = new Date();
+    const lastVisit = new Date(locateStorage.getItem('lastVisit'));
+    const difference = today - lastVisit;
+    const numDaysSinceLastVisit = Math.round(difference/86400000);
+    return numDaysSinceLastVisit
 };
 
-//lastVisit is stored in localStorage
-localStorage.setItem("lastVisit-lv", lastVisit);
+if (daysSinceLastVisit() >= 1){
+    document.querySelector(".dslastvisit").textContent = daysSinceLastVisit();
+} else {
+    document.querySelector(".dslastvisit").textContent = 0
+};
+
+    
 
 
 
@@ -43,4 +46,3 @@ localStorage.setItem("lastVisit-lv", lastVisit);
 //let daysSinceLastVisit = (Date.now() - lastVisit) /84600000;
 //let rounded = Math.round(daysSinceLastVisit);
 //nowDisplay.textContent = rounded;
-//localStorage.setItem("now-ls", lastVisit);
