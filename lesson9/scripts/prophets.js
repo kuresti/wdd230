@@ -21,6 +21,7 @@ const displayProphets = (prophets) => {
     let bDate = document.createElement("p");
     let dDate = document.createElement("p");
     let bPlace = document.createElement("p");
+    let serviceLength = document.createElement("p");
 
     // order of prophets
     let order = prophet.order;
@@ -35,8 +36,9 @@ const displayProphets = (prophets) => {
     } else {
       let suffix = order + "th";
 
-      //Build the h2 content out to show the prophet's full name - finish the template string
+      //Build the h2 content out to show the prophet's full name and length of service - finish the template string
       h2.textContent = `${prophet.name} ${prophet.lastname}`;
+      serviceLength.textContent = `Length of Service: ${prophet.length} years`;
 
       //build the p content out to show the prophet's birth place, and birth date, and death date
       bDate.textContent = `Birth date: ${prophet.birthdate}`;
@@ -55,7 +57,9 @@ const displayProphets = (prophets) => {
 
       //Append the section(card) with the created elements
       card.appendChild(h2);
+      card.appendChild(serviceLength);
       card.appendChild(bDate);
+      card.appendChild(dDate);
       card.appendChild(bPlace);
       card.appendChild(portrait);
 
