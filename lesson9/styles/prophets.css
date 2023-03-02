@@ -2,7 +2,18 @@ body{
     font-family: "Encode Sans", sans-serif;
     font-size: 16px;
 }
-
+nav {
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;       
+}
+nav ul li a {
+    background-color: rgb(89, 133, 160);
+    text-decoration: none;
+    padding: 0.8rem 2vw;
+    color: whitesmoke; 
+}
 .cards{
     display: grid;
     grid-gap: .75rem;

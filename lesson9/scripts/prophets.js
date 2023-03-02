@@ -19,6 +19,7 @@ const displayProphets = (prophets) => {
     let h2 = document.createElement("h2");
     let portrait = document.createElement("img");
     let bDate = document.createElement("p");
+    let dDate = document.createElement("p");
     let bPlace = document.createElement("p");
 
     // order of prophets
@@ -37,8 +38,9 @@ const displayProphets = (prophets) => {
       //Build the h2 content out to show the prophet's full name - finish the template string
       h2.textContent = `${prophet.name} ${prophet.lastname}`;
 
-      //build the p content out to show the prophet's birth place and birth date
+      //build the p content out to show the prophet's birth place, and birth date, and death date
       bDate.textContent = `Birth date: ${prophet.birthdate}`;
+      dDate.textContent = `Date of death: ${prophet.death}`;
       bPlace.textContent = `Birth place: ${prophet.birthplace}`;
 
       //Build the image portrait by setting all the relevant attributes
@@ -48,8 +50,8 @@ const displayProphets = (prophets) => {
         `Portrait of ${prophet.name} ${prophet.lastname} the ${suffix} prophet`
       );
       portrait.setAttribute("loading", "lazy");
-      portrait.setAttribute("width", "250");
-      portrait.setAttribute("height", "300");
+      portrait.setAttribute("width", "200");
+      portrait.setAttribute("height", "250");
 
       //Append the section(card) with the created elements
       card.appendChild(h2);
