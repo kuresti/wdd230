@@ -36,6 +36,13 @@ const displayProphets = (prophets) => {
     } else {
       let suffix = order + "th";
 
+      //filter for years of service
+          const serviceYears = prophets.filter(card => card.length >= 10);
+      //console.log(serviceYears);
+      
+      //Button for length of Service
+      document.querySelector('button').addEventListener('click', serviceYears)
+
       //Build the h2 content out to show the prophet's full name and length of service - finish the template string
       h2.textContent = `${prophet.name} ${prophet.lastname}`;
       serviceLength.textContent = `Length of Service: ${prophet.length} years`;
