@@ -229,15 +229,27 @@
   form {
     grid-column: 1/4;
   }
+  
+  div.nProfit,
+  div.bronze,
+  div.silver,
+  div.gold {
+    margin: auto;
+    margin-bottom: 0.5rem;
+  }
   fieldset.memberInfo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem;
+    margin: auto;
   }
-  div.nProfit {
-    grid-column: 2/3;
-  }
+ fieldset.personalInfo,
+ fieldset.companyInfo {
+  margin: auto;
+ }
   label.radio {
     font-weight: 600;
   }
+
   
 }

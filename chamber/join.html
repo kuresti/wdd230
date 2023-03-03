@@ -90,8 +90,57 @@
       <div class="date"></div>
     </header>
     <main class="joinPage">
+      <h2 class="membership">Membership Levels</h2>
+      <div class="nProfit">
+        <h2>Non-Profit Level</h2>
+        <ul>
+            <li>Yearly Fee: None</li>
+            <li>Live social media interview with Chamber President annually.</li>
+            <li>Member spotlight on website annually.</li>
+            <li>Free attendance at Chamber-Sponsered events.</li>
+            <li>Access to member discounts.</li>
+            <li>Access to webinar library.</li>
+        </ul>
+    </div>
+    
+    <div class="bronze">
+        <h2>Bronze Level</h2>
+        <ul>
+            <li>Yearly Fee: $365</li>
+            <li>All the benefits of non-profit membership plus...</li>
+            <li>Table sponser at networking event annually.</li>
+            <li>Free professional seminars and educational presentations annually.</li>
+            <li>Ribbon cutton or Open House annually.</li>
+        </ul>
+    </div>
+    
+    <div class="silver">
+        <h2>Silver Level</h2>
+        <ul>
+            <li>Yearly Fee: $600</li>
+            <li>All the benefits of bronze membership plus...</li>
+            <li>Regular job postings on the Chamber website.</li>
+            <li>Sponser of one major event annually.</li>
+            <li>Logo on the Chamber newsletter quarterly.</li>
+            <li>Host a Chamber after hours event bi-annually.</li>
+        </ul>
+    </div>
+    
+    <div class="gold">
+        <h2>Gold Level</h2>
+        <ul>
+            <li>Yearly Fee: $1000</li>
+            <li>All the benefits of silver membership plus...</li>
+            <li>Host/teach a seminar, webinar or event quarterly.</li>
+            <li>Sponser of one major event annually.</li>
+            <li>Contribute an article in the Chamber social media newsletter monthly.</li>
+            <li>Sponsership of a Chamber Games team.</li>
+            <li>A promotional benefits packages is also included.</li>
+        </ul>
+    </div>
+    <h2 class="application">Membership Application</h2>
         <form method="get" action="thankyou.html">
-        <fieldset>
+        <fieldset class="companyInfo">
             <legend>Company Information</legend>
             <label class="above">Business Name*<input type="text" name="bname" title="Business Name" required></label>
             <label class="above">Business Phone Number*<input type="tel" title="Business phone number" name="bphone" required></label>
@@ -99,7 +148,7 @@
             <label class="above">Position in Business<input type="text" name="position" title="Accepted: Min 7characters, ie.(letters, spaces, and hyphens)" pattern="^[Aa-Za-z -]+$"></label>
             <label class="above">Description of Business<textarea name="bdescription" rows="5" required></textarea></label>
         </fieldset>
-        <fieldset>
+        <fieldset class="personalInfo">
             <legend>Personal Contact Information</legend>
             <label class="above">First Name*<input type="text" name="fname" required></label>
             <label class="above">Last Name*<input type="text" name="lname" required></label>
@@ -109,57 +158,18 @@
         <fieldset class="memberInfo">
             <legend>Membership Levels</legend>
             <label class="radio"><input type="radio" name="membership" class="membership" id="nonProfit" value="Non-Profit Membership">Non-Profit Membership</label>
-            <div class="nProfit">
-                <h2>Non-Profit Level</h2>
-                <ul>
-                    <li>Yearly Fee: None</li>
-                    <li>Live social media interview with Chamber President annually.</li>
-                    <li>Member spotlight on website annually.</li>
-                    <li>Free attendance at Chamber-Sponsered events.</li>
-                    <li>Access to member discounts.</li>
-                    <li>Access to webinar library.</li>
-                </ul>
-            </div>
             <label class="radio"><input type="radio" name="membership" class="membership" id="bronze" value="Bronze Membership">Bronze Membership</label>
-            <div class="bronze">
-                <h2>Bronze Level</h2>
-                <ul>
-                    <li>Yearly Fee: $365</li>
-                    <li>All the benefits of non-profit membership plus...</li>
-                    <li>Table sponser at networking event annually.</li>
-                    <li>Free professional seminars and educational presentations annually.</li>
-                    <li>Ribbon cutton or Open House annually.</li>
-                </ul>
-            </div>
             <label class="radio"><input type="radio" name="membership" class="membership" id="silver" value="Silver Membership">Silver Membership</label>
-            <div class="silver">
-                <h2>Silver Level</h2>
-                <ul>
-                    <li>Yearly Fee: $600</li>
-                    <li>All the benefits of bronze membership plus...</li>
-                    <li>Regular job postings on the Chamber website.</li>
-                    <li>Sponser of one major event annually.</li>
-                    <li>Logo on the Chamber newsletter quarterly.</li>
-                    <li>Host a Chamber after hours event bi-annually.</li>
-                </ul>
-            </div>
             <label class="radio"><input type="radio" name="membership" class="membership" id="Gold" value="Gold Membership">Gold Membership</label>
-            <div class="gold">
-                <h2>Gold Level</h2>
-                <ul>
-                    <li>Yearly Fee: $1000</li>
-                    <li>All the benefits of silver membership plus...</li>
-                    <li>Host/teach a seminar, webinar or event quarterly.</li>
-                    <li>Sponser of one major event annually.</li>
-                    <li>Contribute an article in the Chamber social media newsletter monthly.</li>
-                    <li>Sponsership of a Chamber Games team.</li>
-                    <li>A promotional benefits packages is also included.</li>
-                </ul>
-            </div>
             <label><input type="hidden" name="timeNow" class="timeNow"></label>
             </fieldset>
-            <label><input type="submit" name="submit" class="submit" value="Join Now">Join Now</label>
-      </form>
+            <label class="submit"><input type="submit" name="submit" class="submit" value="Join Now"></label>
+      
+          </form>
+
+            
+            
+           
     </main>
     <footer>
       <picture class="footlogo">

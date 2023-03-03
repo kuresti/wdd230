@@ -248,11 +248,11 @@ div.spotlight {
 /*Discover page style*/
 .discover-column {
   display: grid;
-  grid-template-columns: 1fr; 
+  grid-template-columns: 1fr;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   text-align: center;
-  grid-gap: .5em;
+  grid-gap: 0.5em;
 }
 #desert-mountain-img {
   margin-top: 1em;
@@ -264,11 +264,10 @@ img.discover {
 article.town-info {
   width: 300px;
   height: 300px;
-  padding: .5em;
+  padding: 0.5em;
   text-align: left;
   justify-self: center;
 }
-
 
 /*Footer style small view*/
 footer {
@@ -315,46 +314,65 @@ footer {
 }
 fieldset {
   border: solid 2px var(--dark-accent-1);
-  margin-top: 10px;
+  margin-top: 2rem;
+  max-width: 400px;
+}
+h2.membership {
+  background-color: var(--light-accent-1);
+  padding: 1rem;
+  text-align: center;
+  border: solid 2px var(--dark-accent-1);
 }
 legend {
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 600;
+  text-align: center;
 }
-form label.above input, 
+form label.above input,
 form label.above select,
 form label.above textarea {
   appearance: none;
   display: block;
-  padding: .75rem;
+  padding: 0.75rem;
+  margin: auto;
   margin-bottom: 2%;
   background-color: rgba(15, 56, 83, 0.1);
 }
-form label.radio {
-    display: block;
-    padding: .25rem;
+form label.above {
+  margin-left: 70px;
 }
-div.nProfit, 
+fieldset.personalInfo,
+ fieldset.companyInfo {
+  margin-bottom: 2rem;
+ }
+
+form label.radio {
+  display: block;
+  padding: 0.75rem;
+  margin-left: 50px;
+}
+div.nProfit,
 div.bronze,
 div.silver,
 div.gold {
   border: solid 2px var(--dark-accent-1);
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   background-color: var(--primary-color);
   color: var(--main-font-color);
-  padding: 7px;
+  padding: 1rem;
+  max-width: 400px;
 }
 div.nProfit {
-  background-color: var(--accent-2);  
+  background-color: var(--accent-2);
 }
 div.bronze {
-  background-color: rgb(205,127,50);  
+  background-color: rgb(205, 127, 50);
 }
 div.silver {
-  background-color: rgb(192,192,192);  
+  background-color: rgb(192, 192, 192);
 }
 div.gold {
-  background-color: rgb(227,192,87);  
+  background-color: rgb(227, 192, 87);
 }
 
 input.membership {
@@ -363,7 +381,7 @@ input.membership {
 form input.submit {
   background-color: var(--light-accent-1);
   color: var(--main-font-color);
-  padding: .75rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   margin-top: 10px;
 }
 input {
@@ -379,12 +397,22 @@ input:required:valid {
   border-color: rgb(5, 227, 5);
 }
 input:invalid,
-select,
-textarea {
+select {
   border-color: rgb(209, 4, 4);
 }
 input:focus:invalid {
   background-color: rgb(209, 4, 4, 0.1);
+}
+
+label.submit {
+  display: flex;
+  justify-content: center;
+}
+.application {
+  background-color: var(--light-accent-1);
+  padding: 1rem;
+  text-align: center;
+  border: solid 2px var(--dark-accent-1);
 }
 
 /* Thank you action page*/
@@ -392,7 +420,6 @@ div.thankYou {
   grid-column: 2/5;
   text-align: center;
 }
-div.thankYou h4{
+div.thankYou h4 {
   font-size: 2rem;
 }
-
