@@ -24,55 +24,57 @@ const displayProphets = (prophets) => {
     let serviceLength = document.createElement("p");
 
     // order of prophets
-    let order = prophet.order;
-    let case1 = order % 10;
-
-    if (case1 == 1 && case1 != 11) {
-      let suffix = order + "st";
-    } else if (case1 == 2 && case1 != 12) {
-      let suffix = order + "nd";
-    } else if (case1 == 3 && case1 != 13) {
-      let suffix = order + "rd";
-    } else {
-      let suffix = order + "th";
-
-      //filter for years of service
-          const serviceYears = prophets.filter(card => card.length >= 10);
-      //console.log(serviceYears);
+      let order = prophet.order;
+      let remainder = order % 10;
+      let suffix = "th";
       
-      //Button for length of Service
-      document.querySelector('button').addEventListener('click', serviceYears)
+      if (remainder == 1 && order != 11) {
+         suffix = order + "st";
+      } else if  (remainder == 2 && order != 12) {
+         suffix= order + "nd";
+      } else  if (remainder == 3 && order != 13){
+         suffix = order + "rd";
+      } else{
+        suffix = order + "th"
+      }
+    
+    //filter for years of service
+    const serviceYears = prophets.filter((card) => card.length >= 10);
+    //console.log(serviceYears);
 
-      //Build the h2 content out to show the prophet's full name and length of service - finish the template string
-      h2.textContent = `${prophet.name} ${prophet.lastname}`;
-      serviceLength.textContent = `Length of Service: ${prophet.length} years`;
+    //Button for length of Service
+    document.querySelector("button").addEventListener("click", serviceYears);
 
-      //build the p content out to show the prophet's birth place, and birth date, and death date
-      bDate.textContent = `Birth date: ${prophet.birthdate}`;
-      dDate.textContent = `Date of death: ${prophet.death}`;
-      bPlace.textContent = `Birth place: ${prophet.birthplace}`;
+    //Build the h2 content out to show the prophet's full name and length of service - finish the template string
+    h2.textContent = `${prophet.name} ${prophet.lastname}`;
+    serviceLength.textContent = `Length of Service: ${prophet.length} years`;
 
-      //Build the image portrait by setting all the relevant attributes
-      portrait.setAttribute("src", prophet.imageurl);
-      portrait.setAttribute(
-        "alt",
-        `Portrait of ${prophet.name} ${prophet.lastname} the ${suffix} prophet`
-      );
-      portrait.setAttribute("loading", "lazy");
-      portrait.setAttribute("width", "200");
-      portrait.setAttribute("height", "250");
+    //build the p content out to show the prophet's birth place, and birth date, and death date
+    bDate.textContent = `Birth date: ${prophet.birthdate}`;
+    dDate.textContent = `Date of death: ${prophet.death}`;
+    bPlace.textContent = `Birth place: ${prophet.birthplace}`;
 
-      //Append the section(card) with the created elements
-      card.appendChild(h2);
-      card.appendChild(serviceLength);
-      card.appendChild(bDate);
-      card.appendChild(dDate);
-      card.appendChild(bPlace);
-      card.appendChild(portrait);
+    //Build the image portrait by setting all the relevant attributes
+    portrait.setAttribute("src", prophet.imageurl);
+    portrait.setAttribute(
+      "alt",
+      `Portrait of ${prophet.name} ${prophet.lastname} the ${suffix} prophet`
+    );
+    portrait.setAttribute("loading", "lazy");
+    portrait.setAttribute("width", "200");
+    portrait.setAttribute("height", "250");
 
-      cards.appendChild(card);
-    }
+    //Append the section(card) with the created elements
+    card.appendChild(h2);
+    card.appendChild(serviceLength);
+    card.appendChild(bDate);
+    card.appendChild(dDate);
+    card.appendChild(bPlace);
+    card.appendChild(portrait);
+
+    cards.appendChild(card);
   });
 };
+
 
 getProphetData();
