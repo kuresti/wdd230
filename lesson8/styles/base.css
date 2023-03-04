@@ -9,7 +9,7 @@ caption {
     text-align: center;
 }
 
-table, th, td{
+table, td{
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-collapse: collapse;
     padding: 5px;
