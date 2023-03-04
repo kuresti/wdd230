@@ -1,4 +1,4 @@
 //Date time for hidden form input
 document.querySelector(
-    ".hidden"
+    ".hidden-date"
 ).textContent = now.toLocaleString();
