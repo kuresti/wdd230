@@ -1,0 +1,85 @@
+{
+    "companies": [
+      {
+        "name": "Happy Movers",
+        "address": "7680 South Peach Tree, Desert Mountain",
+        "membershipLevel": "Silver",
+        "phone": "(888)564-9909",
+        "url": "https://www.happymovers.com",
+        "img": "🚚",
+        "rating": 4.7        
+      },
+      {
+        "name": "Premier Online School",
+        "address": "34456 Open Road Way, Desert Mountain",
+        "membershipLevel": "Gold",
+        "phone": "(855)675-3456",
+        "url": "https://www.premieronline.edu",
+        "img": "👩‍🏫",
+        "rating": 4.2
+      },
+      {
+        "name": "Cookies 'R' Us",
+        "address": "4567 West Pitch Lane, Desert Mountain",
+        "membershipLevel": "Bronze",
+        "phone": "(870)419-5226",
+        "url": "https://www.cookiesrus.com",
+        "img": "🍪",
+        "rating": 4.2
+      },
+      {
+        "name": "We Fly Best Airlines",
+        "address": "8995 Skyline Dr., Desert Mountain",
+        "membershipLevel": "Gold",
+        "phone": "(870)465-8574",
+        "url": "https://www.weflybest.com",
+        "img": "🛫",
+        "rating": 3.9
+      },
+      {
+        "name": "Mountain Realty",
+        "address": "7922 Empire Rd., Desert Mountain",
+        "membershipLevel": "Gold",
+        "phone": "(870)463-8434",
+        "url": "https://www.mountainrealty.com",
+        "img": "🏡",
+        "rating": 4.6
+      },
+      {
+        "name": "Desert Mountain Hospital",
+        "address": "8526 All Pain Rd., Desert Mountain",
+        "membershipLevel": "non-profit",
+        "phone": "(870)895-7667",
+        "url": "https://www.desertmountainhospital.com",
+        "img": "🏥",
+        "rating": 1.2
+      },
+    {
+        "name": "Arson Fire Department",
+        "address": "22908 Water Rd., Desert Mountain",
+        "membershipLevel": "Bronze",
+        "phone": "(870)359-2652",
+        "url": "https://www.arsonfd.com",
+        "img": "🚒",
+        "rating": 0.5
+    },
+    {
+        "name": "Potter's Pantry",
+        "address": "4244 Privett Dr., Desert Mountain",
+        "membershipLevel": "Silver",
+        "phone": "(870)962-5887",
+        "url": "https://www.potterspantry.com",
+        "img": "🛒",
+        "rating": 4.5   
+    },
+    {
+        "name": "Cinderella's Dresses",
+        "address": "5965 Midnight Way., Desert Mountain",
+        "membershipLevel": "Gold",
+        "phone": "(870)857-1236",
+        "url": "https://www.cinderella.com",
+        "img": "👗",
+        "rating": 4.9   
+    }    
+    ]
+}
