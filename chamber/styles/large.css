@@ -147,4 +147,15 @@
     grid-column: 3/4;
     grid-row: 6;
   }
+
+  /* Directory Page at Large view */
+  #listBtn {
+    margin-left: 0;
+  }
+  #gridBtn {
+    margin-left: 43.5rem;
+  }
+  div.grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

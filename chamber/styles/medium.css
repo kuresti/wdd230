@@ -251,5 +251,25 @@
     font-weight: 600;
   }
 
+/* Directory Page at medium view*/
+.main-directory {
+  display: block;
+}
+
+#listBtn {
+  margin-left: 0;
+}
+#gridBtn {
+  margin-left: 21.5rem;
+}
+div.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+p.coInfo {
+  font-size: 1.5rem;
+}
+
+
   
 }
