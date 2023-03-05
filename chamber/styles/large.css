@@ -152,10 +152,14 @@
   #listBtn {
     margin-left: 0;
   }
-  #gridBtn {
-    margin-left: 43.5rem;
-  }
+  
   div.grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .list div.info {
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+  }
+  .list .address {
+    display: contents;
   }
 }

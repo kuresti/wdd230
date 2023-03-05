@@ -5,8 +5,8 @@
   --primary-color: #254d63;
   --accent-1: #4b8d97;
   --dark-accent-1: #1a4239;
-  --light-accent-1: #6cc3f5;
-  --accent-2: #fcd577;
+  --light-accent-1: rgb(108, 195, 245);
+  --accent-2: rgb(252, 213, 119);
   --main-font-color: rgb(19, 18, 18);
   --font-color-on-color: whitesmoke;
   --fb-color: #3b5998;
@@ -439,21 +439,24 @@ div.thankYou h4 {
 #gridBtn {
   margin-left: 0rem;
 }
-.main-directory {
+.infoBtn {
   text-align: center;
 }
-section.info {
+section {
+  background-color: rgb(252, 213, 119, 0.2);
   border: 1px solid #555;
-  padding: 0.5rem;
+  padding: 0.5rem;  
 }
-.grid .info {
-  border: 1px solid #555;
+.grid section {
+  box-shadow: 7px 7px 2px 0px rgba(0,0,0,0.3);
   margin: .75rem;
-  box-shadow: 7px 7px 2px 0px rgba(0,0,0,0.3) ;
+}
+.grid .name {
+  display: none;
 }
 .grid p.address, 
 p.phone,
-p.url {
+p.web-address {
   font-family: var(--heading-font) ;
   text-align: center;
   font-size: 1rem;
@@ -461,13 +464,24 @@ p.url {
 p.level {
   display: none;
 }
+.grid .web-address {
+  text-align: center;
+}
 .grid img.coimg {
   margin: 3rem;
+}
+.list section > * {
+  margin: 0 1rem;
+}
+.list section:nth-child(even){
+  background-color: rgb(108, 195, 245, 0.3);
 }
 .list {
   display: flex;
   flex-direction: column;
-}
+  margin: 0;
+  padding: .25rem;
+} 
 .list .info {
   margin: 0;
   box-shadow: 0;
@@ -475,9 +489,13 @@ p.level {
 .list .coimg {
   display: none;
 }
-.list .coInfo {
-  display: flex;
-  flex-wrap: wrap;
+.list .phone {
+  text-align: justify;
 }
+.list .web-address {
+  text-align: justify;
+}
+
+
 
 

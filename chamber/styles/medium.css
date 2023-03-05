@@ -259,15 +259,19 @@
 #listBtn {
   margin-left: 0;
 }
-#gridBtn {
-  margin-left: 21.5rem;
-}
 div.grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 p.coInfo {
   font-size: 1.5rem;
+}
+.list div.info {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+.list .address {
+  display: none;
 }
 
 

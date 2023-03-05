@@ -33,19 +33,23 @@ const displayCompanies = (companies) => {
     companies.forEach((company) => {
         //Create elements to add to cards
         let card = document.createElement("section");
+        let coInfo = document.createElement("div");
+        let name = document.createElement("h3");
         let img = document.createElement("img");
         let address = document.createElement("p");
         let phone = document.createElement("p");
-        let url = document.createElement("p");
+        let url = document.createElement("a");
         let membership = document.createElement("p");
 
         //Add a class and  to the section and <p> elements
-        card.classList.add("info");
+        coInfo.classList.add("info");
         membership.classList.add("level");
         address.classList.add("address");
         phone.classList.add("phone");
-        url.classList.add("url");
+        url.classList.add("web-address");
         img.classList.add("coimg");
+        name.classList.add("name");
+        url.classList.add("url");
 
 
     //Build the content info
@@ -53,6 +57,7 @@ const displayCompanies = (companies) => {
     phone.textContent = `${company.phone}`;
     url.textContent = `${company.url}`;
     membership.textContent = `${company.membership}`;
+    name.textContent = `${company.name}`;
     
 
     //Build the image portrait by setting all the relevant attributes
@@ -68,10 +73,13 @@ const displayCompanies = (companies) => {
     //Append the section(card) with the created elements
     cards.appendChild(card);
     card.appendChild(img);
-    card.appendChild(address);
-    card.appendChild(phone);
-    card.appendChild(url);
-    card.appendChild(membership);
+    coInfo.appendChild(name);
+    coInfo.appendChild(address);
+    coInfo.appendChild(phone);
+    coInfo.appendChild(url);
+    coInfo.appendChild(membership);
+    card.appendChild(coInfo);
+    
     });  
     
 }
