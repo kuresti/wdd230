@@ -46,7 +46,7 @@ const displayCompanies = (companies) => {
         membership.classList.add("level");
         address.classList.add("address");
         phone.classList.add("phone");
-        url.classList.add("web-address");
+        //url.classList.add("web-address");
         img.classList.add("coimg");
         name.classList.add("name");
         url.classList.add("url");

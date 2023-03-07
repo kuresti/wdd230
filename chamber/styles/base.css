@@ -450,13 +450,18 @@ section {
 .grid section {
   box-shadow: 7px 7px 2px 0px rgba(0,0,0,0.3);
   margin: .75rem;
+  display: flex;
+  flex-direction: column;
+}
+.grid .coimg {
+  margin: 0 auto;
 }
 .grid .name {
   display: none;
 }
 .grid p.address, 
 p.phone,
-p.web-address {
+p.url{
   font-family: var(--heading-font) ;
   text-align: center;
   font-size: 1rem;
@@ -464,15 +469,10 @@ p.web-address {
 p.level {
   display: none;
 }
-.grid .web-address {
+.grid .url {
   text-align: center;
 }
-.grid img.coimg {
-  margin: 3rem;
-}
-.list section > * {
-  margin: 0 1rem;
-}
+
 .list section:nth-child(even){
   background-color: rgb(108, 195, 245, 0.3);
 }

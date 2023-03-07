@@ -22,10 +22,15 @@ localStorage.setItem("visits-ls", numVisits);
 //function to calculate the number of days since the last visit
 function daysSinceLastVisit(){
     const today = new Date();
-    const lastVisit = new Date(locateStorage.getItem('lastVisit'));
-    const difference = today - lastVisit;
+    const lastVisit = window.localStorage.getItem('lastVisit');
+    if (!lastVisit) {
+        return 0;
+    }
+    const difference = today - new Date(lastVisit);
     const numDaysSinceLastVisit = Math.round(difference/86400000);
+    //console.log(lastVisit);
     return numDaysSinceLastVisit
+    
 };
 
 if (daysSinceLastVisit() >= 1){
@@ -35,7 +40,6 @@ if (daysSinceLastVisit() >= 1){
 };
 
     
-
 
 
 
