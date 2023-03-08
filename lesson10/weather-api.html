@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--viewport for responsive design-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Kimberly Uresti">
+        <meta name="description" content="Assignment portal for Kimberly Uresti WDD230">
+        <title>kuresti Lesson Portal</title>
+        <!--CSS styles-->
+        <!--<link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">-->
+        <!--Google Font API-->
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans&family=Lora&display=swap" rel="stylesheet">
+    
+    </head>
+<body>
+    <header>
+        <h1>Weather API Activity</h1>
+        <button onclick="window.location.href='https://kuresti.github.io/wdd230/';">Home</button> 
+    </header>
+    <main>
+        <h2>OpenWeatherMap.org API Test</h2>
+        <p>The current temperature in Fairbanks, Alaska is <span id="current-temp"></span>&deg;F</p>
+        <h3>Current Condition Icon</h3>
+        <figure>
+            <img src="" alt="weather-icon">
+            <figcaption></figcaption>
+        </figure>
+    </main>
+    <footer>
+        <p class="copyright">&copy;<span class="copyright-year"></span> | Kimberly Uresti |
+        Arizona |<br>
+        <a class="byui-link" href="https://www.byui.edu/online">BYUI Online Learning</a>
+        | Today's date: <span class="current-date"></span> |
+        <br>
+        Last Modified: <span class="last-modified"></span>
+        </p>
+    </footer>
+    <script src="/scripts/last-modified.js"></script>
+    <script src="/scripts/current-date.js"></script>
+    <script src="/scripts/copyright-year.js"></script>
+    <script src="scripts/weatherapi.js"></script> 
+</body>
+</html>
