@@ -9,9 +9,9 @@
         <meta name="description" content="Assignment portal for Kimberly Uresti WDD230">
         <title>kuresti Lesson Portal</title>
         <!--CSS styles-->
-        <!--<link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/small.css">
-        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <!--<link rel="stylesheet" href="styles/medium.css">
         <link rel="stylesheet" href="styles/large.css">-->
         <!--Google Font API-->
         <link href="https://fonts.googleapis.com/css2?family=Encode+Sans&family=Lora&display=swap" rel="stylesheet">
@@ -23,13 +23,15 @@
         <button onclick="window.location.href='https://kuresti.github.io/wdd230/';">Home</button> 
     </header>
     <main>
+        <div class="wrapper">
         <h2>OpenWeatherMap.org API Test</h2>
         <p>The current temperature in Fairbanks, Alaska is <span id="current-temp"></span>&deg;F</p>
         <h3>Current Condition Icon</h3>
         <figure>
-            <img src="" alt="weather-icon">
+            <img src="" alt="" id="weather-icon">
             <figcaption></figcaption>
         </figure>
+    </div>
     </main>
     <footer>
         <p class="copyright">&copy;<span class="copyright-year"></span> | Kimberly Uresti |

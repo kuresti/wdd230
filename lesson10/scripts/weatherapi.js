@@ -10,7 +10,7 @@ async function apiFetch() {
         if (response.ok) {
             const data = await response.json();
             //console.log(data);//for testing
-             displayResults(data);
+            displayResults(data);
         } else {
             throw Error(await response.text());
         }
@@ -22,12 +22,24 @@ async function apiFetch() {
 function displayResults(weatherData) {
     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
 
-    const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
-    const desc = weatherData.weather[0].description;
+    const iconsrc1 = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+    const desc1 = weatherData.weather[0].description;
 
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', desc);
-    captionDesc.textContent = desc;
+    // The commented section shows how I might code and display the results of multiple weather events. The code throws an error because there is not more than one weather event in the array
+    //const iconsrc2 = `https://openweathermap.org/img/w/${weatherData.weather[1].icon}.png`;
+    //const desc2 = weatherData.weather[0].description;
+
+
+    const newDesc1 = desc1.split(" ").reduce((total, word) => total + word.charAt(0).toUpperCase() + word.substring(1) + " ","").trim();
+
+    //const newDesc2 = desc2.split(" ").reduce((total, word) => total + word.charAt(0).toUpperCase() + word.substring(1) + " ","").trim();  
+
+    weatherIcon.setAttribute('src', iconsrc1);
+    //weatherIcon.setAttribute('src', iconsrc2);
+    weatherIcon.setAttribute('alt', newDesc1);
+    //weatherIcon.setAttribute('alt', newDesc2);
+    captionDesc.textContent = newDesc1;
+    //captionDesc.textContent = newDesc2;
 }
 
 apiFetch();

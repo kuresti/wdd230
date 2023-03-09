@@ -1,0 +1,42 @@
+body {
+    font-family: "Lora", serif;
+    max-width: 100%;
+  }
+  h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Encode Sans", sans-serif;
+}
+header {
+     background-color: aqua;
+     text-align: center;
+     padding: 1rem;
+}
+button {
+    background-color:darkorange;
+    padding: .5rem;
+    font-weight: 600;
+}
+.wrapper {
+    border: solid 3px black;
+    margin: 1rem;
+    box-shadow: 10px 10px 20px 10px grey;
+    padding: 1rem;
+}
+/*Footer style small view*/
+footer {
+    text-align: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #254d63;
+    color: whitesmoke;
+    margin-top: 10px;
+  }
+  .byui-link {
+    color: #7ad6e5;
+  }
+  
