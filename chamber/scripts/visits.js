@@ -6,26 +6,35 @@ const nowDisplay = document.querySelector(".now");
 //Retrieve the visit value from localStorage
 let numVisits = Number(window.localStorage.getItem("visits-ls"));
 
+//Retrieve the date of last visit from localStorage
+const lastVisit = window.localStorage.getItem('lastVisit');
+
+// set the last visite date in locatStorage
+localStorage.setItem("date-ld", new Date());
+
+//Increase count of visits
+numVisits++;
+
+//new count is stored in localStorage
+localStorage.setItem("visits-ls", numVisits);
 
 //Is this the first visit?
-if (numVisits !== 0) {
+if (numVisits !== 1) {
     visitsDisplay.textContent = numVisits;
 } else {
     visitsDisplay.textContent = 'Welcome, this is your first visit!';
 }
 
-//Increase count of visits
-numVisits++;
-//new count is stored in localStorage
-localStorage.setItem("visits-ls", numVisits);
+
+
 
 //function to calculate the number of days since the last visit
 function daysSinceLastVisit(){
-    const today = new Date();
-    const lastVisit = window.localStorage.getItem('lastVisit');
     if (!lastVisit) {
         return 0;
     }
+
+    const today = new Date();    
     const difference = today - new Date(lastVisit);
     const numDaysSinceLastVisit = Math.round(difference/86400000);
     //console.log(lastVisit);
