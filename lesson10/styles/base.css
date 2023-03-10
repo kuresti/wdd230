@@ -39,4 +39,6 @@ footer {
   .byui-link {
     color: #7ad6e5;
   }
-  
+  q {
+    font-size: .75rem;
+  }

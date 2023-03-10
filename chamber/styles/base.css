@@ -49,6 +49,9 @@ header {
   background-color: var(--primary-color);
   color: var(--font-color-on-color);
 }
+header h1 {
+  font-size: 3rem;
+}
 /*style log at the base view*/
 .headerlogo {
   display: flex;
@@ -71,6 +74,7 @@ header {
   text-align: center;
   grid-column: 1/6;
   grid-row: 4/5;
+  padding: .5rem;
 }
 /*Navigation style*/
 nav ul {

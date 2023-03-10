@@ -20,10 +20,11 @@ async function apiFetch() {
 }
 
 function displayResults(weatherData) {
+   
     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
 
-    const iconsrc1 = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
-    const desc1 = weatherData.weather[0].description;
+   const iconsrc1 = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+   const desc1 = weatherData.weather[0].description;
 
     // The commented section shows how I might code and display the results of multiple weather events. The code throws an error because there is not more than one weather event in the array
     //const iconsrc2 = `https://openweathermap.org/img/w/${weatherData.weather[1].icon}.png`;
@@ -40,6 +41,6 @@ function displayResults(weatherData) {
     //weatherIcon.setAttribute('alt', newDesc2);
     captionDesc.textContent = newDesc1;
     //captionDesc.textContent = newDesc2;
-}
+};
 
 apiFetch();
