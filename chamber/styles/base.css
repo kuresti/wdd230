@@ -58,6 +58,9 @@ header h1 {
   width: 100%;
   grid-column: 1/5;
 }
+.headerlogo picture {
+  margin: 0 auto;
+}
 /*Chamber Title and slogan*/
 .headerlogo p {
   letter-spacing: 1pt;
@@ -75,6 +78,14 @@ header h1 {
   grid-column: 1/6;
   grid-row: 4/5;
   padding: .5rem;
+}
+/*Social links*/
+.social{
+  grid-column: 5/6;
+  grid-row: 2;
+}
+.social a {
+  transition-property: transform, border-top-left-radius;
 }
 /*Navigation style*/
 nav ul {
