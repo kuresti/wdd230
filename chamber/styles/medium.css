@@ -1,7 +1,16 @@
 /*35rem is also 560px when basefont is 16px */
 @media only screen and (min-width: 35rem) {
   /*header styles at medium view*/
-
+ /*header logo at medium view*/
+ .headerlogo{
+  grid-column: 1/2;
+ }
+ /*h1 in header at medium view*/
+ header h1 {
+  font-size: 3rem;
+  grid-column: 2/5;
+  grid-row: 1;
+ }
   /*Banner styles at medium view*/
   .announcement {
     font-size: 1em;
@@ -10,10 +19,23 @@
   .date {
     font-size: 1rem;
   }
+  /*Social media styles at medium view*/
+  .fb{
+    grid-row: 2;
+  }
+  .fb img {
+    margin-left: 10%;
+  }
+  .in {
+    grid-row: 2;
+  }
   /*Hamburger Button styles at medium view*/
+  .hambtn {
+    grid-row: 2;
+  }
   nav {
     grid-column: 1/5;
-    grid-row: 2;
+    grid-row: 3;
   }
 
   button span {

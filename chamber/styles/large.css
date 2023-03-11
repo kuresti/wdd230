@@ -2,13 +2,19 @@
 @media only screen and (min-width: 64rem) {
   /*Header styles at large view*/
   .headerlogo {
-    grid-column: 1/4;
+    grid-column: 1/2;
    
   }
   .headerlogo p {
     padding: 5px;
   }
-
+  header h1 {
+    grid-column: 2/4;
+  }
+/*Hamburger button style large view*/
+.hambtn {
+  display: none;
+}
   /*Navigation style large view*/
   nav {
     grid-column: 1/6;
@@ -26,6 +32,10 @@
   }
   nav ul li a {
     border: none;
+  }
+  /* Social style at large view*/
+  .social {
+    margin-left: 12rem;
   }
   /*Main style at large view */
   main {
