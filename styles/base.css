@@ -25,8 +25,12 @@ h2 {
     text-align: left;
     border-bottom: 2px solid black;
 }
-.lessonLinks {
+li {
     font-family: 'Lora', 'Open Serif', sans-serif;
+    font-size: 1.5rem;
+}
+.lesson{
+    font-weight: 600;
 }
 header,
 footer {
