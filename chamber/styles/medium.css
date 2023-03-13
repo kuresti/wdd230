@@ -1,6 +1,10 @@
 /*35rem is also 560px when basefont is 16px */
 @media only screen and (min-width: 35rem) {
   /*header styles at medium view*/
+  /* P tags at medium view*/
+  p {
+    font-size: 1rem;
+  }
  /*header logo at medium view*/
  .headerlogo{
   grid-column: 1/2;
@@ -90,8 +94,7 @@
     display: flex;
     flex-direction: column;
     background-color: var(--accent-1);
-    color: var(--font-color-on-color);
-    font-size: 1.5rem;
+    color:var(--main-font-color);
     text-align: left;
     margin-top: 0.5em;
     padding: 1em;
@@ -133,6 +136,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 0.5em;
+    
+  }
+  div.spotlight1, .spotlight2 {
+    box-shadow: 0px 0px 0px 0px;
   }
 
   /*Event style at medium view */
@@ -140,12 +147,14 @@
     grid-column: 1/4;
     grid-row: 6/7;
     margin-top: 0.5em;
+    box-shadow: 0px 0px 0px 0px;
   }
   /*Weather style at medium view */
   .weather {
     grid-column: 4/6;
     grid-row: 6/7;
     margin-top: 0.5em;
+    box-shadow: 0px 0px 0px 0px;
   }
   /*Discover page style at medium view */
   .discover-pg {

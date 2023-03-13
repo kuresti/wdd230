@@ -3,7 +3,7 @@
   --heading-font: "Encode Sans", sans-serif;
   --paragraph-font: "Lora", serif;
   --primary-color: #254d63;
-  --accent-1: #4b8d97;
+  --accent-1: #95BCD2;
   --dark-accent-1: #1a4239;
   --light-accent-1: rgb(108, 195, 245);
   --accent-2: rgb(252, 213, 119);
@@ -200,6 +200,7 @@ nav ul li.active a:hover {
 }
 .hambtn button {
   border-radius: 10px;
+  box-shadow: 5px 5px 0px 2px rgba(0, 0, 0, 0.2);
 }
 .hambtn span:nth-child(1) {
   display: flex;
@@ -259,12 +260,13 @@ main {
 }
 .event {
   background-color: var(--accent-1);
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  color: var(--font-color-on-color);
+  border: 1px solid var(--dark-accent-1);
+  color: var(--main-font-color);
   text-align: center;
   justify-content: center;
   padding: 10px;
   align-items: center;
+  box-shadow: 7px 7px 0px 5px rgba(0, 0, 0, 0.2);
 }
 hr {
   height: 2px;
@@ -277,6 +279,10 @@ hr {
   text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.2);
   margin-top: 1em;
+  box-shadow: 7px 7px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.weather p figcaption{
+  font-size: 1.5rem;
 }
 /*News style small view*/
 #news {
@@ -286,6 +292,7 @@ hr {
   text-align: center;
   margin-top: 1em;
   margin-bottom: 1em;
+  box-shadow: 7px 7px 0px 5px rgba(0, 0, 0, 0.2);
 }
 /*Join style small view*/
 .join {
@@ -307,18 +314,19 @@ div.spotlight {
 
 /*Spotlight 3 styles at base view*/
 div.spotlight {
-  color: var(--font-color-on-color);
+  color: var(--main-font-color);
   margin: 2px;
 }
 .spotlight1 {
   border: 1px solid rgba(0, 0, 0, 0.5);
-  background-color: rgba(0, 0, 0, 0.2);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  background-color: var(--accent-1);
+  box-shadow: 7px 7px 0px 5px rgba(0, 0, 0, 0.2);
 }
 .spotlight2 {
   border: 1px solid rgba(0, 0, 0, 0.5);
-  background-color: rgba(0, 0, 0, 0.2);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  background-color: var(--accent-1);
+  box-shadow: 7px 7px 0px 5px rgba(0, 0, 0, 0.2);
+  margin-top: .5rem;
 }
 /*Discover page style*/
 .discover-column {
