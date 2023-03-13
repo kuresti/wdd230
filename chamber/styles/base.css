@@ -34,7 +34,7 @@ h6 {
   text-align: center;
   padding: 10px 10px 10px 10px;
   grid-column: 1/6;
-  grid-row: 5;
+  grid-row: 6;
 }
 div.showme {
   display: block;
@@ -92,64 +92,6 @@ header h1 {
 .social img {
   padding: 15px;
   border-radius: 25px;
-}
-
-.fb a {
-  text-decoration: none !important;
-  width: 60px;
-  height: 60px;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-
-  transition: transform 0.4s linear 0s, border-top-left-radius 0.1s linear 0s,
-    border-top-right-radius 0.1s linear 0.1s,
-    border-bottom-right-radius 0.1s linear 0.2s,
-    border-bottom-left-radius 0.1s linear 0.3s;
-}
-.fb img {
-  position: relative;
-  z-index: 3;
-  transition: transform 0.4s linear 0s;
-  border-radius: 20px;
-  padding: 10px;
-}
-
-.fb a:hover {
-  transform: rotate(360deg);
-  border-radius: 50%;
-}
-.fb a:hover img {
-  transform: rotate(-360deg);
-}
-
-.in a {
-  text-decoration: none !important;
-  width: 60px;
-  height: 60px;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-
-  transition: transform 0.4s linear 0s, border-top-left-radius 0.1s linear 0s,
-    border-top-right-radius 0.1s linear 0.1s,
-    border-bottom-right-radius 0.1s linear 0.2s,
-    border-bottom-left-radius 0.1s linear 0.3s;
-}
-.in img {
-  position: relative;
-  z-index: 3;
-  transition: transform 0.4s linear 0s;
-  border-radius: 20px;
-  padding: 10px;
-}
-
-.in a:hover {
-  transform: rotate(360deg);
-  border-radius: 50%;
-}
-.in a:hover img {
-  transform: rotate(-360deg);
 }
 
 /*Navigation style*/
@@ -366,6 +308,8 @@ footer {
   grid-column: 1;
   grid-row: 1;
   background-color: var(--accent-1);
+  color: var(--main-font-color);
+  padding: 0.5rem;
 }
 .footlogo {
   grid-column: 1;

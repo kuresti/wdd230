@@ -36,6 +36,64 @@
   .social {
     margin-left: 12rem;
   }
+  .fb a {
+    text-decoration: none !important;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  
+    transition: transform 0.4s linear 0s, border-top-left-radius 0.1s linear 0s,
+      border-top-right-radius 0.1s linear 0.1s,
+      border-bottom-right-radius 0.1s linear 0.2s,
+      border-bottom-left-radius 0.1s linear 0.3s;
+  }
+  .fb img {
+    position: relative;
+    z-index: 3;
+    transition: transform 0.4s linear 0s;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  
+  .fb a:hover {
+    transform: rotate(360deg);
+    border-radius: 50%;
+  }
+  .fb a:hover img {
+    transform: rotate(-360deg);
+  }
+  
+  .in a {
+    text-decoration: none !important;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  
+    transition: transform 0.4s linear 0s, border-top-left-radius 0.1s linear 0s,
+      border-top-right-radius 0.1s linear 0.1s,
+      border-bottom-right-radius 0.1s linear 0.2s,
+      border-bottom-left-radius 0.1s linear 0.3s;
+  }
+  .in img {
+    position: relative;
+    z-index: 3;
+    transition: transform 0.4s linear 0s;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  
+  .in a:hover {
+    transform: rotate(360deg);
+    border-radius: 50%;
+  }
+  .in a:hover img {
+    transform: rotate(-360deg);
+  }
+  
   /*Main style at large view */
   main {
     display: grid;

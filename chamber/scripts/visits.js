@@ -7,10 +7,11 @@ const nowDisplay = document.querySelector(".now");
 let numVisits = Number(window.localStorage.getItem("visits-ls"));
 
 //Retrieve the date of last visit from localStorage
-const lastVisit = window.localStorage.getItem('lastVisit');
+const lastVisit = window.localStorage.getItem('date-ld');
 
 // set the last visite date in locatStorage
 localStorage.setItem("date-ld", new Date());
+
 
 //Increase count of visits
 numVisits++;
