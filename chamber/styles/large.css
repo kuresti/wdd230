@@ -43,7 +43,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-  
+
     transition: transform 0.4s linear 0s, border-top-left-radius 0.1s linear 0s,
       border-top-right-radius 0.1s linear 0.1s,
       border-bottom-right-radius 0.1s linear 0.2s,
@@ -56,7 +56,7 @@
     border-radius: 20px;
     padding: 10px;
   }
-  
+
   .fb a:hover {
     transform: rotate(360deg);
     border-radius: 50%;
@@ -64,7 +64,7 @@
   .fb a:hover img {
     transform: rotate(-360deg);
   }
-  
+
   .in a {
     text-decoration: none !important;
     width: 60px;
@@ -72,7 +72,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-  
+
     transition: transform 0.4s linear 0s, border-top-left-radius 0.1s linear 0s,
       border-top-right-radius 0.1s linear 0.1s,
       border-bottom-right-radius 0.1s linear 0.2s,
@@ -85,7 +85,7 @@
     border-radius: 20px;
     padding: 10px;
   }
-  
+
   .in a:hover {
     transform: rotate(360deg);
     border-radius: 50%;
@@ -93,7 +93,7 @@
   .in a:hover img {
     transform: rotate(-360deg);
   }
-  
+
   /*Main style at large view */
   main {
     display: grid;
@@ -134,14 +134,14 @@
     grid-row: 2/3;
     font-size: 1.5rem;
     box-shadow: 7px 7px 0px 2px rgba(0, 0, 0, 0.2);
-    width:300px;    
+    width: 300px;
   }
   /*Join style at large view */
   .join {
     grid-column: 1/2;
     grid-row: 3/4;
     font-size: 1.5rem;
-    box-shadow: 7px 7px 0px 2px rgba(0, 0, 0, 0.2);    
+    box-shadow: 7px 7px 0px 2px rgba(0, 0, 0, 0.2);
   }
 
   /*News style at large view */
@@ -227,7 +227,6 @@
   #listBtn {
     margin-left: 0;
   }
-
   div.grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -237,4 +236,36 @@
   .list .address {
     display: contents;
   }
+  /*Contact style at large view*/
+  /*.main-contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }*/
+  section.location {
+    
+    width: 1200px;
+    height: 490px;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .dmcontact {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .contact-form {
+    margin: 0;
+    padding: 2rem;
+  }
+  /*.dmpeople {
+    display: block;
+    grid-column: 1/4;
+  }/
 }

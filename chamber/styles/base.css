@@ -430,7 +430,19 @@ select {
 input:focus:invalid {
   background-color: rgb(209, 4, 4, 0.1);
 }
-
+textarea.question:optional {
+  border-color: var(--dark-accent-1);
+}
+textarea.question:required:valid {
+  border-color: rgb(5, 227, 5);
+}
+textarea.question:invalid,
+select {
+  border-color: rgb(209, 4, 4);
+}
+textarea.question:focus:invalid {
+  background-color: rgb(209, 4, 4, 0.1) ;
+}
 label.submit {
   display: flex;
   justify-content: center;
@@ -441,6 +453,7 @@ label.submit {
   text-align: center;
   border: solid 2px var(--dark-accent-1);
 }
+
 
 /* Thank you action page*/
 div.thankYou {
@@ -522,4 +535,50 @@ p.level {
 }
 .list .web-address {
   text-align: justify;
+}
+/*Contact Page*/
+hr.vertical {
+  display: none;
+}
+.contact-p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+.dmcontact {
+  padding: 1rem;
+}
+.contact-info {
+  margin: 0 auto;
+}
+div.dmcontact p {
+  font-size: 1rem;
+}
+section.president, 
+section.vp,
+section.membership-director, 
+section.grant {
+  border: 1px solid var(--dark-accent-1);
+  text-align: center;
+  margin-top: 10px;
+  box-shadow: 5px 5px 0px 3px hsla(0, 0%, 0%, 0.2);
+  background-color: var(--accent-1);
+}
+.president img,
+.vp img,
+.membership-director img,
+.grant img {
+  box-shadow: 5px 5px 0px 3px hsla(0, 0%, 0%, 0.2);
+  border: 1px solid black;  
+}
+.location {
+  background-color: var(--accent-1);
+  box-shadow: 5px 5px 0px 3px hsla(0, 0%, 0%, 0.2);
+  margin-top: 1.5rem;
+}
+.location img {
+  display: block;
+  max-width:  100%;
+  max-height: 100%;
 }

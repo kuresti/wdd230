@@ -304,6 +304,54 @@ p.coInfo {
 .list .address {
   display: none;
 }
+/*Contact style at medium view*/
+.main-contact {
+  display: flex;
+  flex-direction: column;
+}
+section.president,
+section.vp,
+section.membership-director,
+section.grant {
+ width: 300px;
+ height: 450px;
+ margin: 0 auto;
+ margin-top: 1.5rem;
+}
+form label.above{
+  font-size: 1.5rem;
+}
+form label.submit {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+legend{
+  font-size: 2rem;
+}
+.contact-p {
+  padding: 1rem;
+}
+.contact-form {
+  margin: 0 auto;
+}
+div.dmcontact h2{
+  font-size: 2rem;
+}
+div.dmcontact h3 {
+  font-size: 1.75rem;
+}
+div.dmcontact p {
+  font-size: 1.5rem;
+}
+.location {
+  margin: 1.5rem 1rem 1rem 1rem;
+}
+.dmpeople {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
 
 
   

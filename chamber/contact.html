@@ -78,59 +78,182 @@
           <li class="active hover-color"><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+
+      <!--Banner announcement-->
+      <div class="announcement">
+        🤝 Come join us for the chamber meet and greet Wednesday at 7:00p.m.
+      </div>
       <!--Date-->
       <div class="date"></div>
     </header>
-    <main class="contact-main">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3339.9989659413372!2d-111.5447712!3d33.161654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872a4918d314a929%3A0xf643d76b1b040c86!2s3647%20E%20Bella%20Vista%20Rd%2C%20San%20Tan%20Valley%2C%20AZ%2085143!5e0!3m2!1sen!2sus!4v1678734376152!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-    </main>
-    <footer>
-        <picture class="footlogo">
+    <main class="main-contact">
+      <section class="location">
+        <picture class="location-image">
           <source
-            srcset="images/desertmountainlogomobile.webp"
-            media="(Min-width:
-                      300px) and (max-width: 499px)"
+            media="(min-width: 1100px)"
+            srcset="images/dmbuilding-large.webp"
+          />
+          <source
+            media="(min-width: 800px)"
+            srcset="images/dmbuilding-medium.webp"
           />
           <img
-            src="images/business-logo(2).webp"
-            alt="Desert Mountain Chamber of Commerce Logo"
+            src="images/dmbuilding-small.webp"
+            alt="Deser Mountain Chamber Building"
           />
         </picture>
-        <div class="footinfo" id="footbox1">
-          <h4>Mountain Desert Chamber of Commerce</h4>
-          <span
-            >3647 East Bella vista Road <br />
-            San Tan Valley, AZ 85140</span
-          >
-        </div>
-        <div class="footinfo" id="footbox2">
+      </section>
+      <div class="contact-wrapper">
+        <div class="question">
+      <p class="contact-p">
+        Please fill out the form below if you have any questions.
+      </p>
+      <!--Question/Concern Form-->
+      <form class="contact-form" method="get" action="response.html">
+        <fieldset class="contact-info">
+          <legend>Contact Information</legend>
+          <label class="above"
+            >First Name*<input type="text" name="fname" required
+          /></label>
+          <label class="above"
+            >Last Name*<input type="text" name="lname" required
+          /></label>
+          <label class="above">Company<input type="text" name="cname" /></label>
+          <label class="above"
+            >Email*<input
+              type="email"
+              name="email"
+              placeholder="myemail@gmail.com"
+              required
+          /></label>
+          <label class="above"
+            >Question*<textarea
+              class="question"
+              name="question"
+              rows="6"
+              cols="21"
+              required
+            ></textarea>
+          </label>
+          <label class="submit"
+            ><input
+              type="submit"
+              class="submit"
+              name="submit"
+              value="Ask Your Question"
+          /></label>
+        </fieldset>
+      </form>
+    </div>
+<div class="dmcontact">
+      <h2>Contact Us</h2>
+      <hr />
+      <h3>Address</h3>
+      <p>
+        3647 E Bella Vista Rd<br />
+        San Tan Valley, AZ 85140
+      </p>
+      <h3>Phone</h3>
+      <p>(480)876-5309</p>
+      <h3>Email</h3>
+      <p>chamber@desertmountain.gov</p>
+    </div>
+  </div>
+      <h2>People of Importance</h2>
+      <hr />
+    
+      <div class="dmpeople">
+        <section class="president">
+          <p> Jackie Flappin</p>
+          <picture></picture>
+          <img
+            src="images/jackie-flappin.webp"
+            alt="Jackie Flappin, CEO and President"
+          />
+        </picture>
           <p>
-            info@mountaindesertcc.org<br />
-            📱(480)876-5309
+            President & CEO<br />
+            (480)654-6789, ext. 123
           </p>
-          <a class="map-link" href="https://goo.gl/maps/UGyggmw2sBUHP8a87"
-            >📍Location Map</a
-          >
-          <hr />
-        </div>
-  
-        <div class="footinfo" id="footbox3">
+        </section>
+        <section class="vp">
+          <p> John Long</p>
+          <picture>
+            <img
+              src="images/john-long.webp"
+              alt="John Long VP of Marketing and Media Communications"
+            />
+          </picture>
+          <p>           
+            VP of Marketing and Media Communications<br />
+            (480)765-4321, ext. 456
+          </p>
+        </section>
+        <section class="membership-director">
+          <p>Pippy LongStocking</p>
+          <picture>
+          <img
+            src="images/pippy-longstocking.webp"
+            alt="Pippy LongStocking, Membership Director"
+          />
+        </picture>
+          <p>            
+            Membership Director<br />
+            (480)677-9983
+          </p>
+        </section>
+        <section class="grant">
+          <p>Ron Weasley</p>
+          <picture>
+          <img src="images/ron-weasley.webp" alt="Ron Weasley, Grant Manager" />
+        </picture>
           <p>
-            &copy;<span class="copyright-year"></span>Mountain Desert Chamber
-            <br />
-            Kimberly Uresti <br />WDD 230 Project <br />
-            Last Modified: <span class="last-modified"></span>
+            
+            Grant Manager<br />
+            (480)988-5464
           </p>
-        </div>
-      </footer>
-      <script src="scripts/menu.js"></script>
-      <script src="scripts/date.js"></script>
-      <script src="scripts/copyright-year.js"></script>
-      <script src="scripts/last-modified.js"></script>
-      <script src="scripts/banner.js"></script>
-      <script src="scripts/wind-chill.js"></script>
-      <script src="scripts/weather.js"></script>
-    </body>
-  </html>
-  
+        </section>
+      </div>
+    </main>
+    <footer>
+      <picture class="footlogo">
+        <img
+          src="images/business-logo(2).webp"
+          alt="Desert Mountain Chamber of Commerce Logo"
+        />
+      </picture>
+      <div class="footinfo" id="footbox1">
+        <h4>Mountain Desert Chamber of Commerce</h4>
+        <span
+          >3647 East Bella Vista Road <br />
+          San Tan Valley, AZ 85140</span
+        >
+      </div>
+      <div class="footinfo" id="footbox2">
+        <p>
+          info@mountaindesertcc.org<br />
+          📱(480)876-5309
+        </p>
+        <a class="map-link" href="https://goo.gl/maps/UGyggmw2sBUHP8a87"
+          >📍Location Map</a
+        >
+        <hr />
+      </div>
+
+      <div class="footinfo" id="footbox3">
+        <p>
+          &copy;<span class="copyright-year"></span>&nbsp;Mountain Desert
+          Chamber
+          <br />
+          Kimberly Uresti <br />WDD 230 Project <br />
+          Last Modified: <span class="last-modified"></span>
+        </p>
+      </div>
+    </footer>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/copyright-year.js"></script>
+    <script src="scripts/last-modified.js"></script>
+    <script src="scripts/banner.js"></script>
+  </body>
+</html>
