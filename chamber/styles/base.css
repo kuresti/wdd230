@@ -45,21 +45,21 @@ div.hideme {
 /*Styling of the Header*/
 header {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   background-color: var(--primary-color);
   color: var(--font-color-on-color);
 }
 header h1 {
   font-size: 2rem;
   padding: 0.75rem;
-  grid-column: 1/5;
+  grid-column: 1/3;
   grid-row: 2;
   text-align: center;
 }
 /*style log at the base view*/
 .headerlogo {
+  grid-column: 1/3;
   width: 100%;
-  grid-column: 1/5;
   text-align: center;
 }
 .headerlogo picture {
@@ -86,7 +86,8 @@ header h1 {
 }
 /*Social links*/
 .social {
-  grid-column: 4/5;
+  grid-column: 2/3;
+  grid-row: 3;
   display: flex;
 }
 .social img {
@@ -255,6 +256,9 @@ div.spotlight {
 }
 
 /*Spotlight 3 styles at base view*/
+.spotlight section:nth-child(3) {
+  display: none;
+}
 div.spotlight {
   color: var(--main-font-color);
   margin: 2px;
@@ -270,6 +274,7 @@ div.spotlight {
   box-shadow: 7px 7px 0px 5px rgba(0, 0, 0, 0.2);
   margin-top: .5rem;
 }
+
 /*Discover page style*/
 .discover-column {
   display: grid;

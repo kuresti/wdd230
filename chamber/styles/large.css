@@ -1,14 +1,14 @@
 /*64em is also 1028px when basefont is 16px */
 @media only screen and (min-width: 64rem) {
   /*Header styles at large view*/
-  .headerlogo {
-    grid-column: 1/2;
-  }
+ header {
+  grid-template-columns: repeat(3, 1fr);
+ }
   .headerlogo p {
-    padding: 5px;
+    padding: 5px;    
   }
   header h1 {
-    grid-column: 2/4;
+    grid-column: 2/3;
   }
   /*Hamburger button style large view*/
   .hambtn {
@@ -35,6 +35,8 @@
   /* Social style at large view*/
   .social {
     margin-left: 12rem;
+    grid-column: 3/4;
+    grid-row: 1;
   }
   .fb a {
     text-decoration: none !important;
@@ -105,7 +107,7 @@
   .joinbtn1 {
     font-size: 2rem;
     height: 8%;
-    left: 450px;
+    left: 5rem;
   }
   /*Hero image and div style at large view */
 
@@ -150,6 +152,9 @@
     grid-row: 3/4;
   }
   /*Spotlight style at large view*/
+  .spotlight section:nth-child(3) {
+    display: block;
+  }
   div.spotlight {
     grid-template-columns: 1fr;
     height: auto;
