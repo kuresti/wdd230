@@ -525,7 +525,7 @@ p.level {
 }
 .list .info {
   margin: 0;
-  box-shadow: 0px;
+  box-shadow: none;
 }
 .list .coimg {
   display: none;
