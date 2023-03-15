@@ -48,6 +48,9 @@ randomCompanies.forEach((company) => {
     url.textContent = `${company.url}`;
     name.textContent = `${company.name}`;
 
+    //Set attribuite of href for a tags
+    url.setAttribute("href", company.url);
+
     //Build the image portrait by setting all the relevant attributes
     img.setAttribute("src", company.img);
     img.setAttribute(

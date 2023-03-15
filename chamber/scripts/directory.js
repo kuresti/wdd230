@@ -51,13 +51,15 @@ const displayCompanies = (companies) => {
         name.classList.add("name");
         url.classList.add("url");
 
+        //Set attribuite of href for a tags
+        url.setAttribute("href", company.url);
 
     //Build the content info
     address.textContent = `${company.address}`;
-    phone.textContent = `${company.phone}`;
-    url.textContent = `${company.url}`;
+    phone.textContent = `${company.phone}`;    
     membership.textContent = `${company.membership}`;
     name.textContent = `${company.name}`;
+    url.textContent = `${company.url}`;
     
 
     //Build the image portrait by setting all the relevant attributes
