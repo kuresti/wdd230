@@ -16,13 +16,13 @@
       href="https://fonts.googleapis.com/css2?family=Encode+Sans&family=Lora&display=swap"
       rel="stylesheet"
     />
-    <!--link to favixon-->
+    <!--link to favicon-->
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <!--CSS stylesheet links-->
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/medium.css" />
-    <link rel="stylesheet" href="styles/large.css" />
+    <link rel="stylesheet" href="styles/normalize.min.css" />
+    <link rel="stylesheet" href="styles/base.min.css" />
+    <link rel="stylesheet" href="styles/medium.min.css" />
+    <link rel="stylesheet" href="styles/large.min.css" />
   </head>
   <body>
     <!--Header with logo, motto, and responsive navigation.-->
@@ -92,17 +92,23 @@
       <div id="hero">
         <picture class="hero-img">
           <source
-            media="(min-width: 800px)"
-            srcset="images/large-fallpark.webp"
-          />
+          media="(min-width: 1028px)"
+          srcset="images/fallpark-large.jpg"
+        />
+         
           <source
-            media="(min-width: 800px)"
-            srcset="images/medium-fallpark.webp"
+          media="(min-width: 564px)"
+          srcset="images/fallpark-medium.jpg"
+        />
+          <source
+            media="(min-width: 390px)"
+            srcset="images/fallpark.jpg"
           />
-          <img src="images/small-fallparg.webp" alt="Park in the Fall" />
+        
+          <img src="images/fallpark-large.jpg" alt="Park in the Fall" />
         </picture>
         <a class="joinbtn1" href="join.html">Join The Chamber</a>
-      </div>
+        </div>
 
       <section class="event">
         <h2>Grand Opening!</h2>
@@ -110,6 +116,8 @@
         <picture>
           <img
             src="images/desert-mountain-airpark.webp"
+            width="250"
+            height="250"
             alt="Desert Mountain Airpark Logo"
           />
         </picture>
