@@ -217,7 +217,11 @@ hr {
   background-color: var(--accent-2);
 }
 /*Weather style small view*/
+section.weather-card {
+  flex-grow: 1;
+}
 .weather {
+  display: flex;
   background-color: var(--light-accent-1);
   text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.2);
