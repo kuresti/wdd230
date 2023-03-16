@@ -1,8 +1,3 @@
-//Variables to hold weather information
-//const currentTemp = document.querySelector(".temp");
-//const weatherIcon = document.querySelector("#weather-icon");
-//const captionDesc = document.querySelector("figcaption");
-//const windSpeed = document.querySelector(".wind");
 
 // Variable to hold the url for openweathermap.org
 const url =
@@ -94,19 +89,29 @@ function displayResults(weatherData) {
     updateWindChill();   
   };
 
-  //currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>℉`;
-
-  // windSpeed.innerHTML = `<strong>${weatherData.wind.speed.toFixed(0)}</strong>mph`
-
-  //const iconsrc1 = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
-  //const desc1 = weatherData.weather[0].description;
-
-  // const newDesc1 = desc1.split(" ").reduce((total, word) => total + word.charAt(0).toUpperCase() + word.substring(1) + " ","").trim();
-
-  // let img = document.createElement("img");
-  // weatherIcon.setAttribute('src', iconsrc1);
-  // weatherIcon.setAttribute('alt', newDesc1);
-  // captionDesc.textContent = newDesc1;
+  function updateWindChill() {
+    const temp1 = document.querySelector(".temp");
+    const speed1 = document.querySelector(".wind");
+    const chill = document.querySelector(".wind-chill");
+    
+    let temp2 = parseInt(temp1.textContent);
+    let speed2 = parseInt(speed1.textContent);
+    
+    let factor = 0;
+    
+    if (temp2 <= 50 && speed2 > 3) {
+      let factor =
+        35.74 +
+        0.6215 * temp2 -
+        35.75 * speed2 ** 0.16 +
+        0.4275 * temp2 * speed2 ** 0.16;
+    
+      factor = Math.round(factor).toString();
+      chill.innerText = factor;
+    } else {
+      chill.innerText = "NA";
+    }
+    }
 
 
 apiFetch();
