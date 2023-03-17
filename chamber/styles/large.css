@@ -242,16 +242,9 @@
     display: contents;
   }
   /*Contact style at large view*/
-  /*.main-contact {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }*/
-  section.location {
+  
+  .location {    
     
-    width: 1200px;
-    height: 490px;
-    display: grid;
-    grid-template-columns: 1fr;
     margin: 0 auto;
     margin-top: 1rem;
     justify-content: center;

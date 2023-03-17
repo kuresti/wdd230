@@ -57,7 +57,7 @@
     font-size: 2em;
     bottom: 80%;
   }
-  main {
+  main.home-page {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
