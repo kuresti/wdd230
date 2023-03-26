@@ -1,0 +1,108 @@
+:root {
+  --heading-font: "Monserrat", sans-serif;
+  --paragraph-font: "Cormorant", serif;
+  --primary-color: rgb(87, 116, 75);
+  --accent1: rgb(171, 185, 162);
+  --accent2: rgb(155, 78, 54);
+  --accent3: rgb(242, 173, 117);
+  --accent4: #ffffff;
+  --main-font-color: #0d0d0d;
+  --font-color-on-color: whitesmoke;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  background-color: var(--accent3);
+  position: fixed;
+  transition: all 0.5s ease;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  text-align: center;
+}
+.headingbox h1 {
+  font-family: "Bad Script";
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--font-color-on-color);
+  background-color: var(--primary-color);
+  padding: 1.5rem;
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);
+  grid-row: 2;
+}
+.logo {
+    grid-row: 1;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+nav ul.open {
+  display: flex;
+  flex-direction: column;
+}
+nav {
+  background-color: var(--primary-color);
+  color: var(--font-color-on-color);
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);
+  grid-column: 1 / 2;
+  grid-row: 5/6;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  font-family: var(--heading-font);
+  font-size: 1.5rem;
+  background-color: var(--primary-color);
+}
+nav ul li a {
+    
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  padding: 0.8rem 2vw;
+  text-decoration: none;
+  color: var(--font-color-on-color);
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+.hover-color a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: var(--font-color-on-color);
+}
+/*Wayfinding*/
+nav ul li.active a {
+  background-color: var(--accent2);
+  color: var(--font-color-on-color);
+}
+nav ul li.active a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/*Hamburger button*/
+.hambtn {
+  font-size: 3rem;
+  grid-column: 1/2;
+  grid-row: 3/4;
+  padding: 20px;
+}
+.hambtn button {
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  color: var(--font-color-on-color);
+  box-shadow: 5px 5px 0px 2px rgba(0, 0, 0, 0.2);
+}
+.hambtn span:nth-child(1) {
+  display: flex;
+  justify-content: flex-start;
+}
+.hambtn span:nth-child(2) {
+  display: none;
+}
+.hambtn.open span:nth-child(1) {
+  display: none;
+}
+.hambtn.open span:nth-child(2) {
+  display: flex;
+  justify-content: flex-start;
+}
