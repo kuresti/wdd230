@@ -1,28 +1,34 @@
 :root {
   --heading-font: "Monserrat", sans-serif;
   --paragraph-font: "Cormorant", serif;
-  --primary-color: rgb(87, 116, 75);
-  --accent1: rgb(171, 185, 162);
-  --accent2: rgb(155, 78, 54);
-  --accent3: rgb(242, 173, 117);
+  --brand-font: "Bad Script";
+  --primary-color: #57744b;
+  --accent1: #abb9a2;
+  --accent2: #9b4e36;
+  --accent3: #f2ad75;
   --accent4: #ffffff;
   --main-font-color: #0d0d0d;
   --font-color-on-color: whitesmoke;
 }
-
+html {
+  box-sizing: border-box;
+}
+body {
+  padding: 20px;
+}
+/*Header at small view*/
 header {
   width: 100%;
   height: auto;
   background-color: var(--accent3);
-  position: fixed;
-  transition: all 0.5s ease;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   text-align: center;
+  border-bottom: 4mm ridge rgb(87, 116, 75, 0.6);
 }
 .headingbox h1 {
-  font-family: "Bad Script";
+  font-family: var(--brand-font);
   font-weight: 600;
   font-size: 2rem;
   color: var(--font-color-on-color);
@@ -32,11 +38,12 @@ header {
   grid-row: 2;
 }
 .logo {
-    grid-row: 1;
-    width: 100%;
-    height: auto;
-    margin-bottom: 0;
+  grid-row: 1;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
 }
+/*Nave at small view*/
 nav ul.open {
   display: flex;
   flex-direction: column;
@@ -58,7 +65,6 @@ nav ul {
   background-color: var(--primary-color);
 }
 nav ul li a {
-    
   display: block;
   overflow: hidden;
   text-align: center;
@@ -105,4 +111,109 @@ nav ul li.active a:hover {
 .hambtn.open span:nth-child(2) {
   display: flex;
   justify-content: flex-start;
+}
+/*Footer at small view*/
+footer {
+  background-color: var(--accent3);
+  border-top: 4mm ridge rgb(87, 116, 75, 0.6);
+  display: grid;
+  grid-template-columns: 1fr;  
+}
+.footer-logo {
+  grid-column: 1;
+  margin: 0 auto;
+}
+.footer-logo-line {
+  border: 10px solid var(--primary-color);
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.footer-drinks {
+  display: none;
+}
+.footer-info1 h2 {
+  font-family: var(--brand-font);
+  font-size: 1.5rem;
+}
+.footer-info1 {
+  text-align: center;
+  font-family: var(--paragraph-font);
+  font-size: 1.5rem;
+}
+.footer-logo-line2 {
+  border: 2px solid var(--primary-color);
+  width: 100%;
+  box-sizing: inherit;
+  overflow: hidden;
+}
+.footer-info2 {
+  text-align: center;
+  font-size: var(--paragraph-font);
+}
+.social-media {
+  display: flex;
+  justify-content:space-around;
+}
+/*-----Juice Card-----*/
+.juice-card {
+  width: 650px;
+  height: 400px;
+  box-shadow: 10px 10px 13px -6px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+#juice-top {
+  width: 100%;
+  height: 45%;
+  padding: 0px;
+}
+#juice-top h2 {
+  font-family: var(--heading-font);
+  margin-bottom: 0px;
+}
+#juice-top p {
+  font-family: var(--paragraph-font);
+  padding: 5px 3px 0px 3px;
+}
+#juice-bottom {
+  display: flex;
+  height: 55%;
+  flex-direction: column;
+  background-color: var(--accent1);
+}
+.juice-img {
+  object-fit: cover;
+  
+}
+.juice-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+#juice-bottom-left {
+  flex-basis: 50%;
+}
+#juice-bottom-right {
+  flex-basis: 50%;
+}
+.btn-cta {
+  position: relative;
+  font-family: var(--heading-font);
+  font-weight: 600;
+  color: var(--main-font-color);
+  background-color: var(--accent1);
+  text-decoration: none;
+  border-radius: 15px;
+  width: 271px;
+  padding: .8rem;
+  bottom: 175px;
+  left: 10px;
+}
+.juice-card, 
+#juice-bottom-left,
+#juice-bottom-right {
+  width: 100%;
+  height: auto;
 }

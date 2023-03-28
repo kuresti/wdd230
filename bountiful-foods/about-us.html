@@ -8,7 +8,8 @@
     <meta name="description" content="Home page for Bountiful Foods" />
     <title>Bountiful Foods</title>
     <!--link to google font pg-->
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant&family=Montserrat&display=swap" rel="stylesheet">
+    <link
+       href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Cormorant&family=Montserrat&display=swap" rel="stylesheet">
     <!--link to favicon-->
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <!--links to stylesheets-->
@@ -21,10 +22,24 @@
     <header>
       <div class="logo">
         <picture>
-        <img src="images/Fresh, Organic (1).webp" alt="Bountiful Foods Logo" width="200" height="200">
-      </picture>
+          <img
+            src="images/Fresh, Organic (1).webp"
+            alt="Bountiful Foods Logo"
+            width="225"
+            height="225"
+          />
+        </picture>
       </div>
-      <h1>BOUNTIFUL FOODS</h1>
+      <div class="headingbox">
+        <h1>BOUNTIFUL FOODS</h1>
+      </div>
+      <!--Hamburger button-->
+      <div class="hambtn">
+        <button>
+          <span>&#9776;</span>
+          <span>🗙</span>
+        </button>
+      </div>
       <!--Navigation with a hamburger button-->
       <nav>
         <ul class="primarynav">
@@ -33,9 +48,8 @@
           <li class="active hover-color"><a href="about-us.html">About Us</a></li>
         </ul>
       </nav>
-      <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
-        <path d="M0,100 C150,150 250,0 500,100 L500,00 L0,0 Z"></path>
-      </svg>
+    </div>
     </header>
+    <script defer src="scripts/menu.js"></script>
   </body>
 </html>
