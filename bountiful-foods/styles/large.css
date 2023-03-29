@@ -1,5 +1,5 @@
 /*64em is also 1028px when basefont is 16px */
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 64em) {
   /*Title large view*/
   .headingbox h1 {
     font-size: 3rem;

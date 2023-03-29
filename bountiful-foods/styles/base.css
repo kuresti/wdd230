@@ -5,7 +5,7 @@
   --primary-color: #57744b;
   --accent1: #abb9a2;
   --accent2: #9b4e36;
-  --accent3: #f2ad75;
+  --accent3: rgb(242, 173, 117);
   --accent4: #ffffff;
   --main-font-color: #0d0d0d;
   --font-color-on-color: whitesmoke;
@@ -181,16 +181,17 @@ footer {
   display: flex;
   height: 55%;
   flex-direction: column;
-  background-color: var(--accent1);
+  background-color: rgba(242, 173, 117, 0.4);
+  border-radius: 15px;
 }
 .juice-img {
   object-fit: cover;
-  
 }
 .juice-img img {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  border-radius: 15px;
 }
 #juice-bottom-left {
   flex-basis: 50%;
@@ -216,4 +217,34 @@ footer {
 #juice-bottom-right {
   width: 100%;
   height: auto;
+}
+/*-----Summary Card---*/
+.summary {
+  background-color: var(--accent1);
+  border-radius: 15px;
+  box-shadow: 10px 10px 13px -6px rgba(0, 0, 0, 0.4);
+  margin-bottom: 10px;
+}
+.farmer-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.market-img {
+  display: none;
+}
+.fresh-fruit-img {
+  display: none;
+}
+.tractor-img {
+  display: none;
+  
+}
+.summary-bottom h2 {
+  font-family: var(--heading-font);
+}
+.summary-bottom {
+  padding: 10px;
+  font-family: var(--paragraph-font);
 }

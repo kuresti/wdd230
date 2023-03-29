@@ -62,20 +62,65 @@
         <div id="juice-bottom">
           <div id="juice-bottom-left">
             <picture class="juice-img">
-          <img src="images/orange-drink.webp" alt="Orange juice in glass with fruit">
+              <source
+                srcset="images/large-orange-drink.webp"
+                media="(min-width: 64em)">
+              <source
+                 srcset="images/medium-orange-drink.webp"
+                 media="(min-width: 35em)">
+              <img
+                src="images/small-orange-drink.webp"
+                alt="Orange Juice in glass with fruit around."
+                loading="lazy">
         </picture>
         <a href="fresh.html"class="btn-cta juice-cta">Order Now</a>   
           </div>
           <div id="juice-bottom-right">
             <picture class="juice-img">
-            <img src="images/juice-bottles.webp" alt="Three bottles of juice">
+              <source
+                srcset="images/large-juice-bottles.webp"
+                media="(min-width: 1028px)">
+              <source
+                srcset="images/medium-juice-bottles.webp"
+                media="(min-width: 564px)">
+                <source
+                srcset="images/small-juice-bottles.webp"
+                media="(min-width: 390px)">
+              <img
+                src="images/small-juice-bottles.webp"
+                alt="Three bottles of juice">
           </picture>                     
           </div>
         </div>
       </div>
 </div>
 <!--Coastal Area summary-->
-
+<div class="summary">
+  <div class="summary-market">
+    <picture class="market-img">
+      <img src="images/encinitas-farmer-market.webp" alt="Farmer's market" loading="lazy" width="300" height="300">
+    </picture>
+  </div>
+  <div class="farmer">
+    <picture class="farmer-img">
+      <img src="images/farmer.webp" alt="Farmer with a basket of produce" loading="lazy" width="300" height="300">
+    </picture>
+  </div>
+  <div class="fresh-produce">
+    <picture class="fresh-fruit-img">
+      <img src="images/fresh-fruit.webp" alt="Fresh Fruit" loading="lazy" width="300" height="300">
+    </picture>
+  </div>
+  <div class="tractor">
+    <picture class="tractor-img">
+      <img src="images/tractor.webp" alt="Red tractor with flag" loading="lazy" width="300" height="300">
+    </picture>
+  </div>
+  <div class="summary-bottom">
+    <h2>Encinitas Farming</h2>
+    <p>Encinitas farmers are mostly small-scale farmers that focus on sustainable, organic, and local food production. Here in the mild climate of California the soil is fertile and well-suited for growing a variety of crops that include fruits, vegetables, and herbs. This area is known for its specialization in rare organic heirloom varieties rarely found in large supermarkets. The main vehicle of sale for these farmers is local farmer's markets and Bountiful Foods. Both provide popular destinations for residents and visitors alike, offering fresh produce and fruit. Some area farmers offer tours and farm-to-table dining experiences that teach visitors about sustainable farming while supporting local farmers. </p>
+  </div>
+</div>
     </main>
     <footer>     
       <div class="footer-logo">
