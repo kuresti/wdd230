@@ -51,9 +51,30 @@ function displayFruit(data) {
 
 //console.log(fruits); //For testing
 const submitBtn = document.querySelector("#order");
+
 //--Event listener to handle form submission
 submitBtn.addEventListener("click", (event) => {
-  event.preventDefault();
+    //Check if all required fields are filled
+    if (!checkRequiredFields()) {
+        //Prevent the form from submitting
+        event.preventDefault();
+    }
+  
+
+  let totalDrinks = Number(window.localStorage.getItem("drinks-lc"));
+  
+  //--Total Drinks ordered
+  totalDrinks++;
+
+  //--Store drinks ordered in local storage
+  localStorage.setItem("drinks-lc", totalDrinks);
+
+  
+  
+  
+  
+
+
 
   //Date function
   const date = orderDate();
@@ -87,9 +108,9 @@ submitBtn.addEventListener("click", (event) => {
   orderTitle.textContent = `Your Juice Order`;
   oDate.textContent = `Today: ${date}`;
   fName.textContent = `First Name: ${firstName}`;
-  orderEmail.textContent = `Email: ${orderEmail}`;
-  orderPhone.textContent = `Phone: ${orderPhone}`;
-  orderTextArea.textContent = `Special Intructions: ${orderTextArea}`;
+  orderEmail.textContent = `Email: ${email}`;
+  orderPhone.textContent = `Phone: ${phone}`;
+  orderTextArea.textContent = `Special Intructions: ${textArea}`;
   
 
   //object to track selected fruit
