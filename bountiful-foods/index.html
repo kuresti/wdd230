@@ -23,14 +23,20 @@
   <body>
     <header>
       <div class="logo-box">
-        <picture class="logo">
+        <picture class="header-logo">
+          <source
+            srcset="images/large-logo.webp"
+            media="(min-width: 1028px)">   
+            <source
+              srcset="images/medium-logo.webp"
+              media="(min-width: 560px)">       
+            <source
+            srcset="images/small-logo.webp"
+            media="(min-width: 390px)">
           <img
-            src="images/Fresh, Organic (1).webp"
-            alt="Bountiful Foods Logo"
-            width="225"
-            height="225"
-          />
-        </picture>
+            src="images/small-logo.webp"
+            alt="Bountiful Foods Logo">
+      </picture>    
       </div>
       <div class="headingbox">
         <h1>BOUNTIFUL FOODS</h1>
@@ -53,54 +59,38 @@
     </div>
     </header>
     <main class="home">
-      <!--Juice Call to Action-->
-      <div class="juice-card">
-        <div id="juice-top">
-          <h2>Good Health In Every Sip, Order Today!</h2>
-          <p>Need a health boost today? Our fresh juice is packed with essential vitamins, minerals, and antioxidants that help to boost your immune system and increase energy. Customize your drink today to fit your tastes and nutritional needs, what better way to nourish and care for your body. Order now and sip your way to better health with a refreshing glass of our fresh juice today!</p>
-        </div>
-        <div id="juice-bottom">
-          <div id="juice-bottom-left">
-            <picture class="juice-img">
-              <source
-                srcset="images/large-orange-drink.webp"
-                media="(min-width: 64em)">
-              <source
-                 srcset="images/medium-orange-drink.webp"
-                 media="(min-width: 35em)">
-              <img
+      <!--juice cards-->      
+      <div class="juice-cards">
+        <!--Juice Call to Action-->
+      <div class="juice-cta">
+        <h2>Good Health In Every Sip!</h2>
+        <ul>
+          <li class="order"><a href="fresh.html"class="btn-cta juice-cta">Order Now</a> </li>
+        </ul>
+        <img
                 src="images/small-orange-drink.webp"
                 alt="Orange Juice in glass with fruit around."
-                loading="lazy">
-        </picture>
-        <a href="fresh.html"class="btn-cta juice-cta">Order Now</a>   
-          </div>
-          <div id="juice-bottom-right">
-            <picture class="juice-img">
-              <source
-                srcset="images/large-juice-bottles.webp"
-                media="(min-width: 1028px)">
-              <source
-                srcset="images/medium-juice-bottles.webp"
-                media="(min-width: 564px)">
-                <source
-                srcset="images/small-juice-bottles.webp"
-                media="(min-width: 390px)">
+                loading="lazy" width="250" height="250">
+      </div>
+
+        <!--Juice Pic Drinks ordered output-->
+          <div class="juice-orders">
               <img
                 src="images/small-juice-bottles.webp"
-                alt="Three bottles of juice">
-          </picture>                     
+                alt="Three bottles of juice"
+                loading="lazy" width="250" height="250">                     
+          <div class="ordered-drinks"></div>
           </div>
-        </div>
       </div>
-</div>
+      
+
 <!--Coastal Area summary-->
 <div class="summary">
   <div class="summary-market">
     <picture class="market-img">
       <img src="images/encinitas-farmer-market.webp" alt="Farmer's market" loading="lazy" width="300" height="300">
     </picture>
-  </div>
+  
   <div class="farmer">
     <picture class="farmer-img">
       <img src="images/farmer.webp" alt="Farmer with a basket of produce" loading="lazy" width="300" height="300">
@@ -116,27 +106,38 @@
       <img src="images/tractor.webp" alt="Red tractor with flag" loading="lazy" width="300" height="300">
     </picture>
   </div>
+</div>
   <div class="summary-bottom">
     <h2>Encinitas Farming</h2>
     <p>Encinitas farmers are mostly small-scale farmers that focus on sustainable, organic, and local food production. Here in the mild climate of California the soil is fertile and well-suited for growing a variety of crops that include fruits, vegetables, and herbs. This area is known for its specialization in rare organic heirloom varieties rarely found in large supermarkets. The main vehicle of sale for these farmers is local farmer's markets and Bountiful Foods. Both provide popular destinations for residents and visitors alike, offering fresh produce and fruit. Some area farmers offer tours and farm-to-table dining experiences that teach visitors about sustainable farming while supporting local farmers. </p>
   </div>
 </div>
+<div class="weather-wrapper">
+  <div class="weather-today"></div>
+  <div class="three-day-forecast"></div>
+</div>
     </main>
     <footer>     
       <div class="footer-logo">
-        <picture>
+        <picture class="header-logo">
+          <source
+            srcset="images/large-logo.webp"
+            media="(min-width: 1028px)">   
+            <source
+              srcset="images/medium-logo.webp"
+              media="(min-width: 560px)">       
+            <source
+            srcset="images/small-logo.webp"
+            media="(min-width: 390px)">
           <img
-            src="images/Fresh, Organic (1).webp"
-            alt="Bountiful Foods Logo"
-            width="225"
-            height="225"
-          />
-        </picture>
+            src="images/small-logo.webp"
+            alt="Bountiful Foods Logo">
+      </picture>    
       </div>
    
       <hr class="footer-logo-line">
     
-      <img class="footer-drinks" src="images/fruit-drinks.webp" alt="Three fruit drinks and fruit"></imb>
+      <img class="footer-drinks" src="images/fruit-drinks.webp" alt="Three fruit drinks and fruit">
     
     <div class="footer-info1">
     <h2>Bountiful Foods</h2>
@@ -187,5 +188,6 @@
     <script defer src="scripts/menu.js"></script>
     <script defer src="scripts/copyright-year.js"></script>
     <script defer src="scripts/last-modified.js"></script>
+    <script defer src="scripts/weather.js"></script>
   </body>
 </html>

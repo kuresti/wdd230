@@ -2,8 +2,8 @@
   --heading-font: "Monserrat", sans-serif;
   --paragraph-font: "Cormorant", serif;
   --brand-font: "Bad Script";
-  --primary-color: #57744b;
-  --accent1: #abb9a2;
+  --primary-color: rgb(87, 116, 75);
+  --accent1: rgb(171, 185, 162);
   --accent2: #9b4e36;
   --accent3: rgb(242, 173, 117);
   --accent4: #ffffff;
@@ -155,72 +155,65 @@ footer {
   display: flex;
   justify-content:space-around;
 }
-/*-----Juice Card-----*/
-.juice-card {
-  width: 650px;
-  height: 400px;
-  box-shadow: 10px 10px 13px -6px rgba(0, 0, 0, 0.4);
+/*-----Juice Cards-----*/
+/*-----Order Card-----*/
+.juice-cards {
+  background-color: rgba(171,185, 162,0.4 );
   border-radius: 15px;
-  overflow: hidden;
-  margin-bottom: 15px;
-}
-#juice-top {
-  width: 100%;
-  height: 45%;
-  padding: 0px;
-}
-#juice-top h2 {
-  font-family: var(--heading-font);
-  margin-bottom: 0px;
-}
-#juice-top p {
-  font-family: var(--paragraph-font);
-  padding: 5px 3px 0px 3px;
-}
-#juice-bottom {
+  box-shadow: 5px 5px 0px 2px rgba(0, 0, 0, 0.2);
+  text-align: center;
   display: flex;
-  height: 55%;
   flex-direction: column;
-  background-color: rgba(242, 173, 117, 0.4);
+  margin-top: 10px;
+}
+.juice-cta {
+  border: 2px solid var(--main-font-color);
   border-radius: 15px;
+  box-shadow: 5px 5px 0px 2px rgba(0, 0, 0, 0.2);
 }
-.juice-img {
-  object-fit: cover;
+.juice-cta h2 {
+  padding: .5em;
 }
-.juice-img img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+.juice-cta img {
   border-radius: 15px;
+  box-shadow: 5px 5px 0px 2px rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin-bottom: 10px;
 }
-#juice-bottom-left {
-  flex-basis: 50%;
+ul.order {
+  margin-top: 10px;
 }
-#juice-bottom-right {
-  flex-basis: 50%;
+.order {
+  list-style: none;
+  margin-right: 5%;
+  padding: 1em;
 }
 .btn-cta {
-  position: relative;
-  font-family: var(--heading-font);
-  font-weight: 600;
-  color: var(--main-font-color);
-  background-color: var(--accent1);
+  background-color: var(--primary-color);
+  color: var(--font-color-on-color);
+  padding: 1.5rem;
   text-decoration: none;
+  font-weight: 600;
   border-radius: 15px;
-  width: 271px;
-  padding: .8rem;
-  bottom: 175px;
-  left: 10px;
+  margin-top: 1em;
 }
-.juice-card, 
-#juice-bottom-left,
-#juice-bottom-right {
-  width: 100%;
-  height: auto;
+/*-----#Ordered Card-----*/
+.juice-orders {
+  
+  border-radius: 15px;
+  border: 2px solid var(--paragraph-font);
+  box-shadow: 5px 5px 0px 2px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.juice-orders img {
+  
 }
 /*-----Summary Card---*/
 .summary {
   background-color: var(--accent1);
+  border: 2px solid var(--main-font-color);
   border-radius: 15px;
   box-shadow: 10px 10px 13px -6px rgba(0, 0, 0, 0.4);
   margin-bottom: 10px;
@@ -248,3 +241,59 @@ footer {
   padding: 10px;
   font-family: var(--paragraph-font);
 }
+/*---Weather Card---*/
+.weather-wrapper {
+  background-color: rgba(171,185, 162,0.4 );
+  border-radius: 15px;
+  box-shadow: 10px 10px 13px -6px rgba(0, 0, 0, 0.4);
+}
+.weather-today {
+  text-align: center;
+  font-size: 1.5rem;
+  border:2px solid var(--main-font-color);
+  border-radius: 15px;
+  box-shadow: 10px 10px 13px -6px rgba(0, 0, 0, 0.4);
+  margin-bottom: 10px;
+}
+.weather-today img{
+  width: 6rem;
+}
+.weather-today h2 {
+  font-family: var(--heading-font);
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);
+  padding: .5em;
+}
+.weather-today p figcaption {
+  font-family: var(--paragraph-font);
+}
+.weather-today hr {
+  height: 5px;
+  background-color: var(--primary-color);
+}
+.three-day-forecast h2 {
+  font-family: var(--heading-font);
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+  padding: .5em;
+}
+.three-day-forecast {
+  text-align: center;
+  padding: 5px;
+  border-radius: 15px;  
+  
+}
+.three-day-forecast section {
+  border: 2px solid var(--main-font-color);
+  border-radius: 15px;
+  box-shadow: 10px 10px 13px -6px rgba(0, 0, 0, 0.4);
+  margin-bottom: 10px;
+}
+
+.three-day-forecast p {
+  font-family: var(--paragraph-font);
+  font-size: 1.5rem;
+}
+.three-day-forecast img{
+  width: 6rem;
+}
+/*--Fresh Page at base view--*/
+

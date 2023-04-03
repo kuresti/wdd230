@@ -9,7 +9,7 @@ async function apiFetch() {
     const response = await fetch(url);
     if (response.ok) {
       const data = await response.json();
-      //console.log(data); //for testing
+      console.log(data); //for testing
       displayResults(data);
     } else {
       throw Error(await response.text());
@@ -66,7 +66,7 @@ function displayResults(weatherData) {
       )
       .trim();
     figcaption.textContent = `${newDesc1}`;
-    //Build image figure and fig caption by sett all attributes
+    //Build image figure and fig caption by set all attributes
     const iconsrc1 = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     
     img.setAttribute("src", iconsrc1);
