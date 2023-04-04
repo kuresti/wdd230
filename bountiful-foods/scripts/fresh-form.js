@@ -26,26 +26,33 @@ function displayFruit(data) {
   const selectFruit3 = document.querySelector("#selectFruit3");
 
   //---Loops through the data to create datasets for the select inputs
-  for (i = 0; i < data.length; i++) {
-    let option = data[i];
+  for (let i = 0; i < data.length; i++) {
+    const option = data[i];
     fruits.push(option);
+    const optionElement = document.createElement("option");
+    optionElement.textContent = option.name;
+    optionElement.value = option.name;
+
+    selectFruit1.appendChild(optionElement);
+    selectFruit2.appendChild(optionElement.cloneNode(true));
+    selectFruit3.appendChild(optionElement.cloneNode(true));
     //--Creates option elements for the datasets
-    let optionElement1 = document.createElement("option");
-    let optionElement2 = document.createElement("option");
-    let optionElement3 = document.createElement("option");
+    //let optionElement1 = document.createElement("option");
+   //let optionElement2 = document.createElement("option");
+    //let optionElement3 = document.createElement("option");
     //--Creates fruitlists from the json data for the datasets
-    optionElement1.textContent = option.name;
-    optionElement2.textContent = option.name;
-    optionElement3.textContent = option.name;
+    //optionElement1.textContent = option.name;
+    //optionElement2.textContent = option.name;
+    //optionElement3.textContent = option.name;
     //--Holds the key value pair of the select input
-    optionElement1.value = option.name;
-    optionElement2.value = option.name;
-    optionElement3.value = option.name;
+    //optionElement1.value = option.name;
+    //optionElement2.value = option.name;
+    //optionElement3.value = option.name;
     //console.log(optionElement1);
     //--Adds the fruit list to the option element
-    selectFruit1.appendChild(optionElement1);
-    selectFruit2.appendChild(optionElement2);
-    selectFruit3.appendChild(optionElement3);
+    //selectFruit1.appendChild(optionElement1);
+    //selectFruit2.appendChild(optionElement2);
+    //selectFruit3.appendChild(optionElement3);
   }
 }
 
