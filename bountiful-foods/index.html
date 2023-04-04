@@ -59,6 +59,20 @@
     </div>
     </header>
     <main class="home">
+      <picture class="produce-banner">
+        <source
+            srcset="images/large-produce.webp"
+            media="(min-width: 1028px)">   
+            <source
+              srcset="images/medium-produce.webp"
+              media="(min-width: 560px)">       
+            <source
+            srcset="images/small-produce.webp"
+            media="(min-width: 390px)">
+          <img
+            src="images/small-logo.webp"
+            alt="Produce Banner">
+      </picture>
       <!--juice cards-->      
       <div class="juice-cards">
         <!--Juice Call to Action-->
@@ -67,23 +81,24 @@
         <ul>
           <li class="order"><a href="fresh.html"class="btn-cta juice-cta">Order Now</a> </li>
         </ul>
+        <picture class="orange-img">
         <img
                 src="images/small-orange-drink.webp"
                 alt="Orange Juice in glass with fruit around."
                 loading="lazy" width="250" height="250">
+              </picture>
       </div>
-
-        <!--Juice Pic Drinks ordered output-->
+        <!--Juice Pic Drinks ordered output-->        
           <div class="juice-orders">
+            <div class="ordered-drinks"></div>
+            <picture class="juice-bottles">
               <img
                 src="images/small-juice-bottles.webp"
                 alt="Three bottles of juice"
-                loading="lazy" width="250" height="250">                     
-          <div class="ordered-drinks"></div>
+                loading="lazy" width="250" height="250">
+              </picture>        
           </div>
       </div>
-      
-
 <!--Coastal Area summary-->
 <div class="summary">
   <div class="summary-market">

@@ -69,13 +69,6 @@ submitBtn.addEventListener("click", (event) => {
   //--Store drinks ordered in local storage
   localStorage.setItem("drinks-lc", totalDrinks);
 
-  
-  
-  
-  
-
-
-
   //Date function
   const date = orderDate();
 

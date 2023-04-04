@@ -1,5 +1,10 @@
 /*64em is also 1028px when basefont is 16px */
 @media only screen and (min-width: 64em) {
+  /*--Header Large view*/
+  header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
   /*Title large view*/
   .headingbox h1 {
     font-size: 3rem;
@@ -25,13 +30,28 @@
   }
   nav {
     background-color: var(--accent3);
+    grid-column: 1/4;
+    justify-content: flex-end;
+    display: flex;
   }
   main.home {
     grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
   }
+  /*---Produce Banner---*/
+  .produce-banner {
+    display: block;
+    grid-column: 1/3;
+    grid-row: 1;
+    overflow: hidden;
+  }
+  .produce-banner img {
+    width: 100%;
+  }
+  /*--Summary at Large View--*/
   .summary {
     grid-column: 1/3;
-    grid-row: 2;
+    grid-row: 3;
   }
   .market-img,
   .farmer-img,
@@ -61,6 +81,7 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
       rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
       rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      margin-bottom: 20px;
   }
   .summary-bottom {
     font-size: 1.5rem;
@@ -69,4 +90,32 @@
     text-align: center;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
   }
+  /*--Juice cards at large view--*/
+  .juice-cards {
+    flex-direction: column;
+    width: 500px;
+    justify-self: center;
+    box-shadow: none;
+  }
+  .juice-cta {
+    margin-top: 15px;
+  }
+  .juice-orders {
+    margin-top: 2rem;
+  }
+  .weather-today {
+    height: 480px;
+    margin-top: 25px;
+  }
+  .three-day-forecast {
+    padding: 0px;
+    margin-top: 5rem;
+  }  
+  .weather-wrapper {
+    width: 500px;
+    justify-self: center;
+    box-shadow: none;
+  }
+  
+  
 }

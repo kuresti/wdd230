@@ -56,9 +56,22 @@ footer {
 .juice-cards {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
-.juice-orders img {
- 
+.order {
+    padding: 0.5em;
+}
+.order-img img {
+    margin-top: 16px;
+}
+.juice-bottles img {
+    margin-top: 2rem;
+}
+.ordered-drinks section h2 p {
+    padding: 0.5em;
+}
+.juice-orders {
+    margin-top: 0px;
 }
 /*---Summary at medium view---*/
 main.home {
