@@ -77,11 +77,11 @@
     margin-top: 1.5em;
   }
   .summary {
-    margin-top: 20px;    
-      margin-bottom: 20px;
-      background-color: #ffffff;
-      border: none;
-      box-shadow: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: none;
   }
   .summary-bottom {
     font-size: 1.5rem;
@@ -110,7 +110,7 @@
   .three-day-forecast {
     padding: 0px;
     margin-top: 5rem;
-  }  
+  }
   .weather-wrapper {
     width: 500px;
     justify-self: center;
@@ -125,7 +125,7 @@
     width: 400px;
     grid-column: 3/4;
   }
-  form.drink-order  {
+  form.drink-order {
     max-width: 350px;
     grid-column: 2/3;
   }
@@ -157,7 +157,7 @@
     border-radius: 15px;
     box-shadow: 10px 10px 13px -6px rgba(0, 0, 0, 0.4);
   }
-  .food-truck-img img{
+  .food-truck-img img {
     width: 500px;
     height: 500px;
     margin-top: 0;
@@ -206,7 +206,4 @@
   .map-line {
     display: none;
   }
-  
-  
-  
 }
