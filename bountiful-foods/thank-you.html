@@ -20,15 +20,13 @@
   </head>
   <body>
     <header>
-      <div class="logo">
-        <picture>
-          <img
-            src="images/Fresh, Organic (1).webp"
-            alt="Bountiful Foods Logo"
-            width="225"
-            height="225">
+      <div class="logo-box">
+        <picture class="header-logo">
+          <source srcset="images/large-logo.webp" media="(min-width: 1028px)">
+          <source srcset="images/medium-logo.webp" media="(min-width: 560px)">
+          <source srcset="images/small-logo.webp" media="(min-width: 390px)">
+          <img src="images/small-logo.webp" alt="Bountiful Foods Logo">
         </picture>
-      </div>
       <div class="headingbox">
         <h1>BOUNTIFUL FOODS</h1>
       </div>
@@ -47,7 +45,6 @@
           <li class="active hover-color"><a href="about-us.html">About Us</a></li>
         </ul>
       </nav>
-    </div>
     </header>
     <main class="thank-you">
         <div class="thankYou">
