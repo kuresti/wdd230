@@ -20,13 +20,12 @@
   </head>
   <body>
     <header>
-      <div class="logo">
-        <picture>
-          <img
-            src="images/Fresh, Organic (1).webp"
-            alt="Bountiful Foods Logo"
-            width="225"
-            height="225">
+      <div class="logo-box">
+        <picture class="header-logo">
+          <source srcset="images/large-logo.webp" media="(min-width: 1028px)">
+          <source srcset="images/medium-logo.webp" media="(min-width: 560px)">
+          <source srcset="images/small-logo.webp" media="(min-width: 390px)">
+          <img src="images/small-logo.webp" alt="Bountiful Foods Logo">
         </picture>
       </div>
       <div class="headingbox">
@@ -47,7 +46,6 @@
           <li class="active hover-color"><a href="about-us.html">About Us</a></li>
         </ul>
       </nav>
-    </div>
     </header>
     <main class="about-us">
       <picture class="produce-banner">
@@ -118,6 +116,7 @@
       <hr class="store">
       </div>
       <form class="contact" method="get" action="thank-you.html">
+        <fieldset>
         <legend>Please share your feedback below.</legend>
         <label class="above">
           First Name*
@@ -163,9 +162,10 @@
           <input 
             type="submit" 
             name="submit" 
-            class="submit" v
-            alue="Comment">
+            class="submit" 
+            value="Comment">
           </label>
+        </fieldset>
       </form>
         <div class="hours">
           <h3>Store Hours</h3>
@@ -193,9 +193,7 @@
             allowfullscreen="" 
             loading="lazy" referrerpolicy="no-referrer-when-downgrade">
           </iframe>
-        </div>
-    </div>
-      
+        </div>      
     </main>
     <footer>     
       <div class="footer-logo">
