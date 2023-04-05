@@ -9,9 +9,10 @@
     <title>Bountiful Foods</title>
     <!--link to google font pg-->
     <link
-       href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Cormorant&family=Montserrat&display=swap" rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Cormorant&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
 
-    
     <!--link to favicon-->
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <!--links to stylesheets-->
@@ -24,19 +25,11 @@
     <header>
       <div class="logo-box">
         <picture class="header-logo">
-          <source
-            srcset="images/large-logo.webp"
-            media="(min-width: 1028px)">   
-            <source
-              srcset="images/medium-logo.webp"
-              media="(min-width: 560px)">       
-            <source
-            srcset="images/small-logo.webp"
-            media="(min-width: 390px)">
-          <img
-            src="images/small-logo.webp"
-            alt="Bountiful Foods Logo">
-      </picture>    
+          <source srcset="images/large-logo.webp" media="(min-width: 1028px)" />
+          <source srcset="images/medium-logo.webp" media="(min-width: 560px)" />
+          <source srcset="images/small-logo.webp" media="(min-width: 390px)" />
+          <img src="images/small-logo.webp" alt="Bountiful Foods Logo" />
+        </picture>
       </div>
       <div class="headingbox">
         <h1>BOUNTIFUL FOODS</h1>
@@ -56,149 +49,181 @@
           <li class="hover-color"><a href="about-us.html">About Us</a></li>
         </ul>
       </nav>
-    </div>
     </header>
     <main class="home">
       <picture class="produce-banner">
         <source
-            srcset="images/large-produce.webp"
-            media="(min-width: 1028px)">   
-            <source
-              srcset="images/medium-produce.webp"
-              media="(min-width: 560px)">       
-            <source
-            srcset="images/small-produce.webp"
-            media="(min-width: 390px)">
-          <img
-            src="images/small-logo.webp"
-            alt="Produce Banner">
+          srcset="images/large-produce.webp"
+          media="(min-width: 1028px)"
+        />
+        <source
+          srcset="images/medium-produce.webp"
+          media="(min-width: 560px)"
+        />
+        <source srcset="images/small-produce.webp" media="(min-width: 390px)" />
+        <img src="images/small-logo.webp" alt="Produce Banner" />
       </picture>
-      <!--juice cards-->      
+      <!--juice cards-->
       <div class="juice-cards">
         <!--Juice Call to Action-->
-      <div class="juice-cta">
-        <h2>Good Health In Every Sip!</h2>
-        <ul>
-          <li class="order"><a href="fresh.html"class="btn-cta juice-cta">Order Now</a> </li>
-        </ul>
-        <picture class="orange-img">
-        <img
-                src="images/small-orange-drink.webp"
-                alt="Orange Juice in glass with fruit around."
-                loading="lazy" width="250" height="250">
-              </picture>
+        <div class="juice-cta">
+          <h2>Good Health In Every Sip!</h2>
+          <ul>
+            <li class="order">
+              <a href="fresh.html" class="btn-cta juice-cta">Order Now</a>
+            </li>
+          </ul>
+          <picture class="orange-img">
+            <img
+              src="images/small-orange-drink.webp"
+              alt="Orange Juice in glass with fruit around."
+              loading="lazy"
+              width="250"
+              height="250"
+            />
+          </picture>
+        </div>
+        <!--Juice Pic Drinks ordered output-->
+        <div class="juice-orders">
+          <div class="ordered-drinks"></div>
+          <picture class="juice-bottles">
+            <img
+              src="images/small-juice-bottles.webp"
+              alt="Three bottles of juice"
+              loading="lazy"
+              width="250"
+              height="250"
+            />
+          </picture>
+        </div>
       </div>
-        <!--Juice Pic Drinks ordered output-->        
-          <div class="juice-orders">
-            <div class="ordered-drinks"></div>
-            <picture class="juice-bottles">
+      <!--Coastal Area summary-->
+      <div class="summary">
+        <div class="summary-market">
+          <picture class="market-img">
+            <img
+              src="images/encinitas-farmer-market.webp"
+              alt="Farmer's market"
+              loading="lazy"
+              width="300"
+              height="300"
+            />
+          </picture>
+
+          <div class="farmer">
+            <picture class="farmer-img">
               <img
-                src="images/small-juice-bottles.webp"
-                alt="Three bottles of juice"
-                loading="lazy" width="250" height="250">
-              </picture>        
+                src="images/farmer.webp"
+                alt="Farmer with a basket of produce"
+                loading="lazy"
+                width="300"
+                height="300"
+              />
+            </picture>
           </div>
+          <div class="fresh-produce">
+            <picture class="fresh-fruit-img">
+              <img
+                src="images/fresh-fruit.webp"
+                alt="Fresh Fruit"
+                loading="lazy"
+                width="300"
+                height="300"
+              />
+            </picture>
+          </div>
+          <div class="tractor">
+            <picture class="tractor-img">
+              <img
+                src="images/tractor.webp"
+                alt="Red tractor with flag"
+                loading="lazy"
+                width="300"
+                height="300"
+              />
+            </picture>
+          </div>
+        </div>
+        <div class="summary-bottom">
+          <h2>Encinitas Farming</h2>
+          <p>
+            Encinitas farmers are mostly small-scale farmers that focus on
+            sustainable, organic, and local food production. Here in the mild
+            climate of California the soil is fertile and well-suited for
+            growing a variety of crops that include fruits, vegetables, and
+            herbs. This area is known for its specialization in rare organic
+            heirloom varieties rarely found in large supermarkets. The main
+            vehicle of sale for these farmers is local farmer's markets and
+            Bountiful Foods. Both provide popular destinations for residents and
+            visitors alike, offering fresh produce and fruit. Some area farmers
+            offer tours and farm-to-table dining experiences that teach visitors
+            about sustainable farming while supporting local farmers.
+          </p>
+        </div>
       </div>
-<!--Coastal Area summary-->
-<div class="summary">
-  <div class="summary-market">
-    <picture class="market-img">
-      <img src="images/encinitas-farmer-market.webp" alt="Farmer's market" loading="lazy" width="300" height="300">
-    </picture>
-  
-  <div class="farmer">
-    <picture class="farmer-img">
-      <img src="images/farmer.webp" alt="Farmer with a basket of produce" loading="lazy" width="300" height="300">
-    </picture>
-  </div>
-  <div class="fresh-produce">
-    <picture class="fresh-fruit-img">
-      <img src="images/fresh-fruit.webp" alt="Fresh Fruit" loading="lazy" width="300" height="300">
-    </picture>
-  </div>
-  <div class="tractor">
-    <picture class="tractor-img">
-      <img src="images/tractor.webp" alt="Red tractor with flag" loading="lazy" width="300" height="300">
-    </picture>
-  </div>
-</div>
-  <div class="summary-bottom">
-    <h2>Encinitas Farming</h2>
-    <p>Encinitas farmers are mostly small-scale farmers that focus on sustainable, organic, and local food production. Here in the mild climate of California the soil is fertile and well-suited for growing a variety of crops that include fruits, vegetables, and herbs. This area is known for its specialization in rare organic heirloom varieties rarely found in large supermarkets. The main vehicle of sale for these farmers is local farmer's markets and Bountiful Foods. Both provide popular destinations for residents and visitors alike, offering fresh produce and fruit. Some area farmers offer tours and farm-to-table dining experiences that teach visitors about sustainable farming while supporting local farmers. </p>
-  </div>
-</div>
-<div class="weather-wrapper">
-  <div class="weather-today"></div>
-  <div class="three-day-forecast"></div>
-</div>
+      <div class="weather-wrapper">
+        <div class="weather-today"></div>
+        <div class="three-day-forecast"></div>
+      </div>
     </main>
-    <footer>     
+    <footer>
       <div class="footer-logo">
         <picture class="header-logo">
-          <source
-            srcset="images/large-logo.webp"
-            media="(min-width: 1028px)">   
-            <source
-              srcset="images/medium-logo.webp"
-              media="(min-width: 560px)">       
-            <source
-            srcset="images/small-logo.webp"
-            media="(min-width: 390px)">
-          <img
-            src="images/small-logo.webp"
-            alt="Bountiful Foods Logo">
-      </picture>    
+          <source srcset="images/large-logo.webp" media="(min-width: 1028px)" />
+          <source srcset="images/medium-logo.webp" media="(min-width: 560px)" />
+          <source srcset="images/small-logo.webp" media="(min-width: 390px)" />
+          <img src="images/small-logo.webp" alt="Bountiful Foods Logo" />
+        </picture>
       </div>
-   
-      <hr class="footer-logo-line">
-    
-      <img class="footer-drinks" src="images/fruit-drinks.webp" alt="Three fruit drinks and fruit">
-    
-    <div class="footer-info1">
-    <h2>Bountiful Foods</h2>
-    <p>7140 Avenida Encinas, Carlsbad, CA 92011<br>
-    (760)432-9098<br>
-    bountifufoods@gmail.com</p>
-  </div>
-  <div class="social-media">
-    <div class="fb">
-      <a
+
+      <hr class="footer-logo-line" />
+
+      <img
+        class="footer-drinks"
+        src="images/fruit-drinks.webp"
+        alt="Three fruit drinks and fruit"
+      />
+
+      <div class="footer-info1">
+        <h2>Bountiful Foods</h2>
+        <p>
+          7140 Avenida Encinas, Carlsbad, CA 92011<br />
+          (760)432-9098<br />
+          bountifufoods@gmail.com
+        </p>
+      </div>
+      <div class="social-media">
+        <div class="fb">
+          <a
             href="https://facebook.com"
             title="Join us on 
                    Facebook"
-            target="blank">
-            <img src="images/facebook.webp" alt="facebook link">
+            target="blank"
+          >
+            <img src="images/facebook.webp" alt="facebook link" />
           </a>
-    </div>
-    <div class="ig">
-      <a
-            href="https://instagram.com"
-            title="instagram"
-            target="blank">
-            <img src="images/instagram.webp" alt="instagram link">
+        </div>
+        <div class="ig">
+          <a href="https://instagram.com" title="instagram" target="blank">
+            <img src="images/instagram.webp" alt="instagram link" />
           </a>
-    </div>
-    <div class="twitter">
-      <a
-            href="https://twitter.com"
-            title="Twitter"
-            target="blank">
-            <img src="images/twitter.webp" alt="Twitter link">
+        </div>
+        <div class="twitter">
+          <a href="https://twitter.com" title="Twitter" target="blank">
+            <img src="images/twitter.webp" alt="Twitter link" />
           </a>
-    </div>
-  </div>
-  <hr class="footer-logo-line2">
-  <div class="footer-info2">
-    <p>
-      &copy;<span class="copyright-year"></span>&nbsp;Bountiful Foods
-      <br>
-      Kimberly Uresti <br>WDD 230 Project <br>
-      <a href="attribution.html">Attributions</a><br>
-      Last Modified: <span class="last-modified"></span>
-    </p>
-  </div>
-
-
+        </div>
+      </div>
+      <hr class="footer-logo-line2" />
+      <div class="footer-info2">
+        <p>
+          &copy;<span class="copyright-year"></span>&nbsp;Bountiful Foods
+          <br />
+          Kimberly Uresti <br />WDD 230 Project <br />
+          <a href="attribution.html">Attributions</a><br />
+          Last Modified: <span class="last-modified"></span>
+        </p>
+      </div>
     </footer>
     <script defer src="scripts/menu.js"></script>
     <script defer src="scripts/copyright-year.js"></script>
