@@ -418,5 +418,88 @@ select:focus:invalid {
 .history p {
   font-family: var(--paragraph-font);
 }
+/*---About Us at the base view---*/
+.history {
+  background-color: rgba(171,185, 162,0.4 );
+  padding: 1rem;
+  margin-top: 15px;
+  border-radius: 15px;
+  border: 2px solid var(--main-font-color);
+  box-shadow: var(--box-shadow);
+}
+.food-truck {
+  margin-top: 15px;
+  width: 350;
+  height: 350;
+}
+.food-truck-img img,
+.store-front-img img {
+  border: 2px solid var(--main-font-color);
+  border-radius: 15px;
+  box-shadow: var(--box-shadow);
+}
+.area-info {
+  background-color: rgb(155, 78, 54, 0.2);
+  padding: 1rem;
+  margin-top: 15px;
+  border-radius: 15px;
+  border: 2px solid var(--main-font-color);
+  box-shadow: var(--box-shadow);
+  margin-bottom: 15px;
+}
+.contact-us h2 {
+  font-family: var(--heading-font);
+  text-shadow: var(--text-shadow);
+}
+.store {
+  height: 3px;
+  background-color: var(--primary-color);
+}
+/*--Contact Us form--*/
+.contact {
+  background-color: rgba(171,185, 162,0.4 ) ;
+  max-width: 350px;
+  padding: 1rem;
+  border-radius: 15px;
+  border: 2px solid var(--main-font-color);
+}
+.contact legend {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  text-align: center;
+
+}
+.contact label.above {
+  padding: 1.30rem;
+}
+.contact label.above input,
+textarea {
+  display: block;
+  padding: 1rem;
+  margin-left: 40px;
+}
+.contact .submit {
+text-align: center;
+margin-left:  16px;
+margin-top: 5px;
+}
+.submit input {
+  background-color: var(--primary-color);
+  color: var(--font-color-on-color);
+} 
+.store-info h3 {
+  font-family: var(--heading-font);
+  text-shadow: var(--text-shadow);
+}
+.store-info p {
+  font-family: var(--paragraph-font);
+}
+.map {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+
 
 
