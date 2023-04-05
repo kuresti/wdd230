@@ -146,6 +146,8 @@
     width: 500px;
     height: 500px;
     margin: 0 auto;
+    box-shadow: none;
+    margin-top: 50px;
   }
   .food-truck {
     grid-column: 2/3;
@@ -169,6 +171,8 @@
     width: 500px;
     height: 500px;
     margin: 0 auto;
+    box-shadow: none;
+    margin-top: 50px;
   }
   .store-front {
     grid-column: 1/2;
@@ -194,10 +198,16 @@
     grid-row: 5;
     margin: 0 auto;
     margin-bottom: 15px;
+    box-shadow: var(--box-shadow);
   }
   .map {
     grid-column: 1/2;
     grid-row: 5;
+  }
+  .map iframe {
+    margin-left: 100px;
+    box-shadow: var(--box-shadow);
+    border-radius: 15px;
   }
   div.hours {
     grid-column: 1/3;
