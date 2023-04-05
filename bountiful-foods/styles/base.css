@@ -429,8 +429,6 @@ select:focus:invalid {
 }
 .food-truck {
   margin-top: 15px;
-  width: 350;
-  height: 350;
 }
 .food-truck-img img,
 .store-front-img img {
@@ -447,6 +445,22 @@ select:focus:invalid {
   box-shadow: var(--box-shadow);
   margin-bottom: 15px;
 }
+.area-info h2 {
+  font-family: var(--heading-font);
+  text-shadow: var(--text-shadow);
+}
+.area-info p {
+  font-family: var(--paragraph-font);
+}
+.hours h3 {
+  font-family: var(--heading-font);
+}
+.hours p {
+  font-family: var(--paragraph-font);
+}
+.map h3 {
+  font-family: var(--heading-font);
+}
 .contact-us h2 {
   font-family: var(--heading-font);
   text-shadow: var(--text-shadow);
@@ -455,33 +469,41 @@ select:focus:invalid {
   height: 3px;
   background-color: var(--primary-color);
 }
+.map-line {
+  height: 3px;
+  background-color: var(--primary-color);
+}
 /*--Contact Us form--*/
-.contact {
+form.contact {
   background-color: rgba(171,185, 162,0.4 ) ;
   max-width: 350px;
   padding: 1rem;
   border-radius: 15px;
   border: 2px solid var(--main-font-color);
 }
-.contact legend {
+form.contact legend {
   font-family: var(--heading-font);
   font-weight: 600;
   text-align: center;
 
 }
-.contact label.above {
+form.contact label.above {
   padding: 1.30rem;
+  font-family: var(--paragraph-font);
 }
-.contact label.above input,
-textarea {
+form.contact  input {
   display: block;
   padding: 1rem;
   margin-left: 40px;
 }
+form.contact textarea {
+  margin-left: 42px;
+}
 .contact .submit {
 text-align: center;
-margin-left:  16px;
+margin-left: 57px;
 margin-top: 5px;
+padding: 0;
 }
 .submit input {
   background-color: var(--primary-color);
@@ -499,7 +521,14 @@ margin-top: 5px;
   overflow: hidden;
   margin-bottom: 15px;
 }
-
+/*---Thank You---*/
+.thank-you h2{
+  font-family: var(--heading-font);
+  text-shadow: var(--text-shadow);
+}
+.thank-you p {
+  font-family: var(--paragraph-font);
+}
 
 
 

@@ -101,6 +101,71 @@ main.fresh {
 .order-submission section {
     margin-top: 25px;
 }
+/*---About Us at medium view---*/
+.history, .area-info {
+    width: 325px;
+    height: 325px;
+}
+main.about-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+.history {
+    grid-column: 1/2;
+    grid-row: 1;
+    border: 0;
+    border-radius: 0;
+    background-color: white;
+}
+.food-truck {
+    grid-column: 2/3;
+    grid-row: 1;
+}
+.food-truck-img img {
+    border: 0;
+    border-radius: 0;
+    width: 100%;
+    margin-top: 15px;
+}
+.area-info {
+    grid-column: 2/3;
+    grid-row: 2;
+    border: 0;
+    border-radius: 0;
+    background-color: white;
+    width: 100%;
+}
+.store-front {
+    grid-column: 1/2;
+    grid-row: 2;
+}
+.store-front-img img {
+    border: 0;
+    border-radius: 0;
+    width: 100%;
+    margin-top: 15px;
+}
+.contact-us {
+    grid-column: 1/3;
+    grid-row: 3;
+    
+}
+.contact {
+    grid-column: 1/2;
+    grid-row: 4;
+    margin-bottom: 15px;
+}
+.map {
+    grid-column: 1/3;
+    grid-row: 5;
+}
+.hours {
+    grid-column: 2/3;
+    grid-row: 4;
+}
+
+
 }
 
 
