@@ -4,7 +4,7 @@
   --brand-font: "Bad Script";
   --primary-color: rgb(87, 116, 75);
   --accent1: rgb(171, 185, 162);
-  --accent2: #9b4e36;
+  --accent2: rgb(155, 78, 54);
   --accent3: rgb(242, 173, 117);
   --accent4: #ffffff;
   --main-font-color: #0d0d0d;
@@ -321,4 +321,102 @@ ul.order {
   width: 6rem;
 }
 /*--Fresh Page at base view--*/
+form.drink-order {
+  max-width: 350px;
+}
+fieldset.personal-info,
+fieldset.fruit-selection {
+    border: 3px solid var(--primary-color);
+  background-color: rgba(171,185, 162,0.4 );
+  border-radius: 15px;
+  margin-top: 1rem;
+}
+form.drink-order label.above {
+  display: block;
+  padding: .75rem;
+  font-family: var(--paragraph-font);
+  margin-left: 50px;
+  font-weight: 600;
+}
+#select-fruit1,
+#select-fruit2,
+#select-fruit3 {
+  width: 200px;
+  height: 44px;
+  border: 3px solid var(--main-font-color);
+}
+.fruits {
+  width: 175;
+  height: 44px;
+}
+legend.contact {
+  font-family: var(--heading-font);
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-shadow: var(--text-shadow);
+}
+label.order input {
+  background-color: var(--primary-color);
+  color: var(--font-color-on-color);
+  border-radius: 15px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-left: 60px;
+  margin-bottom: 15px;
+  font-size: 1rem; 
+}
+input {
+  width: 175px;
+  height: 25px;
+  border: 3px solid var(--main-font-color);
+}
+label.above textarea {
+  border: 3px solid var(--main-font-color)
+}
+input:required:valid
+{
+  border-color: var(--primary-color);
+}
+input:required:invalid
+ {
+  border-color: var(--accent2);
+}
+input:focus:invalid
+{
+  background-color: rgb(209, 4, 4, 0.1);
+}
+select:focus:invalid {
+  background-color: rgb(209, 4, 4, 0.1);
+}
+/*--Order Submission Form--*/
+.order-submission section {
+  background-color: rgb(155, 78, 54, 0.2);
+  border: 2px solid var(--accent3);
+  border-radius: 15px;
+  margin-bottom: 15px;
+  box-shadow: var(--box-shadow);
+}
+.order-submission h2 {
+  font-family: var(--heading-font);
+  text-shadow: var(--text-shadow);
+  padding: 1rem;
+  text-align: center;
+}
+.order-submission p {
+  padding: 0.5rem;
+  font-family: var(--paragraph-font);
+}
+.multi-pictures {
+  display: none;
+}
+/*--About us page at base view--*/
+.history h2 {
+  font-family: var(--heading-font);  
+  text-shadow: var(--text-shadow);
+}
+.history p {
+  font-family: var(--paragraph-font);
+}
+
 

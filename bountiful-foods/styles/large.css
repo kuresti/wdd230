@@ -116,6 +116,26 @@
     justify-self: center;
     box-shadow: none;
   }
+  /*---Fresh page at large view---*/
+  main.fresh {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .order-submission section {
+    width: 400px;
+    grid-column: 3/4;
+  }
+  form.drink-order  {
+    max-width: 350px;
+    grid-column: 2/3;
+  }
+  .multi-pictures {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    grid-column: 1/2;
+    grid-row: 1;
+  }
   
   
 }

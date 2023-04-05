@@ -20,7 +20,7 @@
   </head>
   <body>
     <header>
-      <div class="logo">
+      <div class="logo-box">
         <picture class="header-logo">
           <source
             srcset="images/large-logo.webp"
@@ -34,7 +34,7 @@
           <img
             src="images/small-logo.webp"
             alt="Bountiful Foods Logo">
-            </picture>
+      </picture>    
       </div>
       <div class="headingbox">
         <h1>BOUNTIFUL FOODS</h1>
@@ -58,23 +58,34 @@
     <main class="fresh">
       <!--Order Form for fruit drinks-->
       <form class="drink-order" method="post" action="#">
-        <fieldset class="personalInfo">
+        <fieldset class="personal-info">
           <legend class="contact">Personal Information</legend>
           <label class="above">First Name*<input id="firstName" type="text" name="fname" title="First Name" required></label>
           <label class="above">Email Address*<input id="email" type="email" name="email" title="Email Address" placeholder="myemail@gmail.com" required></label>
           <label class="above">Phone Number*<input id="phNumber" type="tel" name="phone" title="Mobile Phone" required></label>
         </fieldset>
-        <fieldset class="Fruit Selection">
-            <label class="above" for="selectFruit1">Select a Fruit:*<select id="selectFruit1" name="options" title="Fruit Options" required></select></label>
-            <label class="above" for="selectFruit2">Select a Fruit:*<select id="selectFruit2" name="options" title="Fruit Options" required></select></label>
-            <label class="above" for="selectFruit3">Select a Fruit:*<select id="selectFruit3" name="options" title="Fruit Options" required></select></label>
+        <fieldset class="fruit-selection">
+            <legend class="contact">Fruit Selection and Special Instructions</legend>
+            <label class="above" for="select-fruit1">Select a Fruit:*<select id="select-fruit1" name="options" title="Fruit Options" required>
+              <option disabled selected value>-Select a Fruit-</option>
+            </select></label>
+            <label class="above" for="select-fruit2">Select a Fruit:*<select id="select-fruit2" name="options" title="Fruit Options" required>
+               <option disabled selected value>-Select a Fruit-</option>
+            </select></label>
+            <label class="above" for="select-fruit3">Select a Fruit:*<select id="select-fruit3" name="options" title="Fruit Options" required>
+               <option disabled selected value>-Select a Fruit-</option>
+            </select></label>
             <label ><input type="hidden" name="timeNow" class="hidden-date"></label>
-            <label class="above">Special Instructions<textarea id="instructions" name="spcinstructions" rows="5" cols="25"></textarea></label>
+            <label class="above">Special Instructions<textarea id="instructions" name="spcinstructions" rows="5" cols="26"></textarea></label>
             </fieldset>
-        <label class="order"><input id="order" type="submit" name="submit" value="Order Now"></label>
+        <label class="order"><input class="order-submit" type="submit" name="submit" value="Order Now"></label>
       </form>
-      <div class="order-submission">
-        
+      
+      <div class="order-submission"></div>
+      <div class="multi-pictures">
+        <img src="images/fruit-smoothies.webp" alt="Fruit Smoothies" width="300" height="300" loading="lazy">
+        <img src="images/multi-fruit-drink.webp" alt="Green, Orange, and Red Fruit Drinks" width="300" height="300" loading="lazy">
+        <img src="images/kiwi-drink.webp" width="300" height="300" loading="lazy">
       </div>
     </main>
     <footer>     

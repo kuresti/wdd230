@@ -21,9 +21,9 @@ const fruits = [];
 //---Function to display dataset in selector buttons of fruit order form
 function displayFruit(data) {
   //---Selects the three selector inputs of the form
-  const selectFruit1 = document.querySelector("#selectFruit1");
-  const selectFruit2 = document.querySelector("#selectFruit2");
-  const selectFruit3 = document.querySelector("#selectFruit3");
+  const selectFruit1 = document.querySelector("#select-fruit1");
+  const selectFruit2 = document.querySelector("#select-fruit2");
+  const selectFruit3 = document.querySelector("#select-fruit3");
 
   //---Loops through the data to create datasets for the select inputs
   for (let i = 0; i < data.length; i++) {
@@ -33,43 +33,25 @@ function displayFruit(data) {
     optionElement.textContent = option.name;
     optionElement.value = option.name;
 
+    //option.classList.add("fruits");
+
     selectFruit1.appendChild(optionElement);
     selectFruit2.appendChild(optionElement.cloneNode(true));
     selectFruit3.appendChild(optionElement.cloneNode(true));
-    //--Creates option elements for the datasets
-    //let optionElement1 = document.createElement("option");
-   //let optionElement2 = document.createElement("option");
-    //let optionElement3 = document.createElement("option");
-    //--Creates fruitlists from the json data for the datasets
-    //optionElement1.textContent = option.name;
-    //optionElement2.textContent = option.name;
-    //optionElement3.textContent = option.name;
-    //--Holds the key value pair of the select input
-    //optionElement1.value = option.name;
-    //optionElement2.value = option.name;
-    //optionElement3.value = option.name;
-    //console.log(optionElement1);
-    //--Adds the fruit list to the option element
-    //selectFruit1.appendChild(optionElement1);
-    //selectFruit2.appendChild(optionElement2);
-    //selectFruit3.appendChild(optionElement3);
+    
   }
 }
 
 //console.log(fruits); //For testing
-const submitBtn = document.querySelector("#order");
+const submitBtn = document.querySelector(".order");
 
 //--Event listener to handle form submission
 submitBtn.addEventListener("click", (event) => {
-    //Check if all required fields are filled
-    if (!checkRequiredFields()) {
-        //Prevent the form from submitting
-        event.preventDefault();
-    }
   
-
+    event.preventDefault();
+  
   let totalDrinks = Number(window.localStorage.getItem("drinks-lc"));
-  
+
   //--Total Drinks ordered
   totalDrinks++;
 
@@ -80,9 +62,9 @@ submitBtn.addEventListener("click", (event) => {
   const date = orderDate();
 
   //--Get id's from the DOM to hold the form information
-  const selectFruit1 = document.querySelector("#selectFruit1").value;
-  const selectFruit2 = document.querySelector("#selectFruit2").value;
-  const selectFruit3 = document.querySelector("#selectFruit3").value;
+  const selectFruit1 = document.querySelector("#select-fruit1").value;
+  const selectFruit2 = document.querySelector("#select-fruit2").value;
+  const selectFruit3 = document.querySelector("#select-fruit3").value;
   const firstName = document.querySelector("#firstName").value;  
   const email = document.querySelector("#email").value;
   const phone = document.querySelector("#phNumber").value;
@@ -183,26 +165,12 @@ submitBtn.addEventListener("click", (event) => {
       `Total carbohydrates: ${totalCarbs}g ${totalProtein} ${totalSugar} ${totalFat}`);*/
       
     }
-  
-  createCard();
 
-  
-  
-  
-  
-  
-  
+  createCard();
   //--Creates text for order info
-  
- 
- 
   orderEmail.textContent = `Email: ${email}`;
   orderPhone.textContent = `Phone #: ${phone}`;
   orderTextArea.textContent = `Special Instructions: ${textArea}`;
-  //--Assign info to card
-  
-
- 
 });
 getFruitData();
 

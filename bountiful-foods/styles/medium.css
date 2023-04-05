@@ -60,6 +60,7 @@ footer {
 }
 .order {
     padding: 0.5em;
+    margin-bottom: 25px;
 }
 .order-img img {
     margin-top: 16px;
@@ -90,6 +91,15 @@ main.home {
 }
 .three-day-forecast section {
     padding: .75em;
+}
+/*---Fresh page at medium view---*/
+main.fresh {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+.order-submission section {
+    margin-top: 25px;
 }
 }
 
