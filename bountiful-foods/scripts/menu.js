@@ -5,5 +5,5 @@ function toggleMenu(){
 }
 
 
-const x = document.querySelector(".hambtn")
+let x = document.querySelector(".hambtn")
 x.addEventListener("click", toggleMenu);
