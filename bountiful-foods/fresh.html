@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Kimberly Uresti" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kimberly Uresti">
     <!--description of page-->
-    <meta name="description" content="Home page for Bountiful Foods" />
+    <meta name="description" content="Home page for Bountiful Foods">
     <title>Bountiful Foods</title>
     <!--link to google font pg-->
     <link
       href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Cormorant&family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet">
     <!--link to favicon-->
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <!--links to stylesheets-->
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/medium.css" />
-    <link rel="stylesheet" href="styles/large.css" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
   </head>
   <body>
-    <header>
+    <header>     
       <div class="logo-box">
         <picture class="header-logo">
-          <source srcset="images/large-logo.webp" media="(min-width: 1028px)" />
-          <source srcset="images/medium-logo.webp" media="(min-width: 560px)" />
-          <source srcset="images/small-logo.webp" media="(min-width: 390px)" />
-          <img src="images/small-logo.webp" alt="Bountiful Foods Logo" />
+          <source srcset="images/large-logo.webp" media="(min-width: 1028px)">
+          <source srcset="images/medium-logo.webp" media="(min-width: 560px)">
+          <source srcset="images/small-logo.webp" media="(min-width: 390px)">
+          <img src="images/small-logo.webp" alt="Bountiful Foods Logo">
         </picture>
       </div>
       <div class="headingbox">
@@ -54,85 +53,89 @@
       <form class="drink-order" method="post" action="#">
         <fieldset class="personal-info">
           <legend class="contact">Personal Information</legend>
-          <label class="above"
-            >First Name*<input
+          <label class="above">
+            First Name*
+            <input
               id="firstName"
               type="text"
               name="fname"
               title="First Name"
-              required
-          /></label>
-          <label class="above"
-            >Email Address*<input
+              required>
+          </label>
+          <label class="above">
+            Email Address*
+            <input
               id="email"
               type="email"
               name="email"
               title="Email Address"
               placeholder="myemail@gmail.com"
-              required
-          /></label>
-          <label class="above"
-            >Phone Number*<input
+              required>
+            </label>
+          <label class="above">
+            Phone Number*
+            <input
               id="phNumber"
               type="tel"
               name="phone"
               title="Mobile Phone"
-              required
-          /></label>
+              required>
+            </label>
         </fieldset>
         <fieldset class="fruit-selection">
           <legend class="contact">
             Fruit Selection and Special Instructions
           </legend>
-          <label class="above" for="select-fruit1"
-            >Select a Fruit:*<select
+          <label class="above" for="select-fruit1">
+            Select a Fruit:*
+            <select
               id="select-fruit1"
               name="options"
               title="Fruit Options"
-              required
-            >
+              required>
               <option disabled selected value>-Select a Fruit-</option>
-            </select></label
-          >
-          <label class="above" for="select-fruit2"
-            >Select a Fruit:*<select
+            </select>
+            </label>
+          <label class="above" for="select-fruit2">
+            Select a Fruit:*
+            <select
               id="select-fruit2"
               name="options"
               title="Fruit Options"
-              required
-            >
+              required>
               <option disabled selected value>-Select a Fruit-</option>
-            </select></label
-          >
-          <label class="above" for="select-fruit3"
-            >Select a Fruit:*<select
+            </select>
+            </label>
+          <label class="above" for="select-fruit3">
+            Select a Fruit:*
+            <select
               id="select-fruit3"
               name="options"
               title="Fruit Options"
-              required
-            >
+              required>
               <option disabled selected value>-Select a Fruit-</option>
-            </select></label
-          >
-          <label
-            ><input type="hidden" name="timeNow" class="hidden-date"
-          /></label>
-          <label class="above"
-            >Special Instructions<textarea
+            </select>
+            </label>
+          <label>
+            <input type="hidden" name="timeNow" class="hidden-date">
+          </label>
+          <label class="above">
+            Special Instructions
+            <textarea
               id="instructions"
               name="spcinstructions"
               rows="5"
-              cols="26"
-            ></textarea>
+              cols="26">
+            </textarea>
           </label>
         </fieldset>
-        <label class="order"
-          ><input
+        <label class="order">
+          <input
             class="order-submit"
             type="submit"
             name="submit"
-            value="Order Now"
-        /></label>
+            value="Order Now">
+          </label>
       </form>
 
       <div class="order-submission"></div>
@@ -142,46 +145,50 @@
           alt="Fruit Smoothies"
           width="300"
           height="300"
-          loading="lazy"
-        />
+          loading="lazy">
         <img
           src="images/multi-fruit-drink.webp"
           alt="Green, Orange, and Red Fruit Drinks"
           width="300"
           height="300"
-          loading="lazy"
-        />
+          loading="lazy">
         <img
           src="images/kiwi-drink.webp"
           width="300"
           height="300"
-          loading="lazy"
-        />
+          loading="lazy">
       </div>
     </main>
     <footer>
       <div class="footer-logo">
         <picture class="header-logo">
-          <source srcset="images/large-logo.webp" media="(min-width: 1028px)" />
-          <source srcset="images/medium-logo.webp" media="(min-width: 560px)" />
-          <source srcset="images/small-logo.webp" media="(min-width: 390px)" />
-          <img src="images/small-logo.webp" alt="Bountiful Foods Logo" />
+          <source 
+            srcset="images/large-logo.webp" 
+            media="(min-width: 1028px)">
+          <source 
+            srcset="images/medium-logo.webp" 
+            media="(min-width: 560px)">
+          <source 
+            srcset="images/small-logo.webp" 
+            media="(min-width: 390px)">
+          <img 
+            src="images/small-logo.webp" 
+            alt="Bountiful Foods Logo">
         </picture>
       </div>
 
-      <hr class="footer-logo-line" />
+      <hr class="footer-logo-line">
 
       <img
         class="footer-drinks"
         src="images/fruit-drinks.webp"
-        alt="Three fruit drinks and fruit"
-      />
+        alt="Three fruit drinks and fruit">
 
       <div class="footer-info1">
         <h2>Bountiful Foods</h2>
         <p>
-          7140 Avenida Encinas, Carlsbad, CA 92011<br />
-          (760)432-9098<br />
+          7140 Avenida Encinas, Carlsbad, CA 92011<br>
+          (760)432-9098<br>
           bountifufoods@gmail.com
         </p>
       </div>
@@ -191,29 +198,34 @@
             href="https://facebook.com"
             title="Join us on 
                    Facebook"
-            target="blank"
-          >
-            <img src="images/facebook.webp" alt="facebook link" />
+            target="blank">
+            <img 
+              src="images/facebook.webp" 
+              alt="facebook link">
           </a>
         </div>
         <div class="ig">
           <a href="https://instagram.com" title="instagram" target="blank">
-            <img src="images/instagram.webp" alt="instagram link" />
+            <img 
+              src="images/instagram.webp" 
+              alt="instagram link">
           </a>
         </div>
         <div class="twitter">
           <a href="https://twitter.com" title="Twitter" target="blank">
-            <img src="images/twitter.webp" alt="Twitter link" />
+            <img 
+              src="images/twitter.webp" 
+              alt="Twitter link">
           </a>
         </div>
       </div>
-      <hr class="footer-logo-line2" />
+      <hr class="footer-logo-line2">
       <div class="footer-info2">
         <p>
           &copy;<span class="copyright-year"></span>&nbsp;Bountiful Foods
-          <br />
-          Kimberly Uresti <br />WDD 230 Project <br />
-          <a href="attribution.html">Attributions</a><br />
+          <br>
+          Kimberly Uresti <br />WDD 230 Project <br>
+          <a href="attribution.html">Attributions</a><br>
           Last Modified: <span class="last-modified"></span>
         </p>
       </div>
