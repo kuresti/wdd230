@@ -517,7 +517,9 @@ form.contact textarea {
 .thank-you h2 {
   font-family: var(--heading-font);
   text-shadow: var(--text-shadow);
+  text-align: center;
 }
 .thank-you p {
   font-family: var(--paragraph-font);
+  text-align: center;
 }

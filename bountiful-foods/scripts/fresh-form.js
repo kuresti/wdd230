@@ -73,26 +73,38 @@ submitBtn.addEventListener("click", (event) => {
 
   //Create Elements 
   const orderTitle = document.createElement("h2");
-  const oDate = document.createElement("p");
-  const fName = document.createElement("p");
-  const orderEmail = document.createElement("p");
-  const orderPhone = document.createElement("p");
-  const orderTextArea = document.createElement("p");
+  const oDate = document.createElement("h3");
+  const oDateP =document.createElement("p")
+  const fName = document.createElement("h3");
+  const fNameP = document.createElement("p");
+  const oEmail = document.createElement("h3");
+  const orderEmailP = document.createElement("p");
+  const orderPhone = document.createElement("h3");
+  const orderPhoneP = document.createElement("p");
+  const orderTextArea = document.createElement("h3");
+  const orderTextAreaP = document.createElement("p");
+  const orderFruitName = document.createElement("h3");
   //--Add classes to elements
   oDate.classList.add("orderDate");
   orderTitle.classList.add("orderTitle");
   fName.classList.add("fName");
-  orderEmail.classList.add("orderEmail");
+  oEmail.classList.add("orderEmail");
   orderPhone.classList.add("orderPhone");
   orderTextArea.classList.add("spclInstruct");
 
   //Create Text for card
   orderTitle.textContent = `Your Juice Order`;
-  oDate.textContent = `Today: ${date}`;
-  fName.textContent = `First Name: ${firstName}`;
-  orderEmail.textContent = `Email: ${email}`;
-  orderPhone.textContent = `Phone: ${phone}`;
-  orderTextArea.textContent = `Special Intructions: ${textArea}`;
+  oDate.textContent = `Today: `;
+  oDateP.textContent = `${date}`;
+  fName.textContent = `First Name: `;
+  fNameP.textContent = `${firstName}`
+  oEmail.textContent = `Email Address: `;
+  orderEmailP.textContent = `${email}`;
+  orderPhone.textContent = `Phone: `;
+  orderPhoneP.textContent = `${phone}`;
+  orderTextArea.textContent = `Special Intructions: `;
+  orderTextAreaP.textContent = `${textArea}`;
+  orderFruitName.textContent = `Fruit in Drink: `
   
 
   //object to track selected fruit
@@ -106,10 +118,16 @@ submitBtn.addEventListener("click", (event) => {
      //--builds the card that displays the order information
      card.appendChild(orderTitle);
      card.appendChild(oDate);
-    card.appendChild(fName);
-    card.appendChild(orderEmail);
-    card.appendChild(orderPhone);
-    card.appendChild(orderTextArea);
+     card.appendChild(oDateP);
+     card.appendChild(fName);
+     card.appendChild(fNameP);
+     card.appendChild(oEmail);
+     card.appendChild(orderEmailP);
+     card.appendChild(orderPhone);
+     card.appendChild(orderPhoneP);
+     card.appendChild(orderTextArea);
+     card.appendChild(orderTextAreaP);
+     card.appendChild(orderFruitName);
     
     //console.log(selectedFruits);
     let totalCarbs = 0;
@@ -140,25 +158,40 @@ submitBtn.addEventListener("click", (event) => {
  
    
     //--Creates elements on the DOM to display order information    
-    const carbName = document.createElement("p");
-    const calName = document.createElement("p");
-    const proName = document.createElement("p");
-    const sugName = document.createElement("p");
-    const fatName = document.createElement("p");
+    const carbName = document.createElement("h3");
+    const carbNameP = document.createElement("p")
+    const calName = document.createElement("h3");
+    const calNameP = document.createElement("p");
+    const proName = document.createElement("h3");
+    const proNameP = document.createElement("p");
+    const sugName = document.createElement("h3");
+    const sugNameP = document.createElement("p");
+    const fatName = document.createElement("h3");
+    const fatNameP = document.createElement("p");
     //--Creates text for the elements created above
     
-    carbName.textContent = `Total Carbohydrates: ${totalCarbs.toFixed()}g`;
-    calName.textContent = `Total Calories: ${totalCalories.toFixed()}`;
-    proName.textContent = `Total Protein: ${totalProtein.toFixed()}g`;
-    sugName.textContent = `Total Sugar: ${totalSugar.toFixed()}g`;
-    fatName.textContent = `Total Fat: ${totalFat.toFixed()}g`;
+    carbName.textContent = `Total Carbohydrates: `;
+    carbNameP.textContent = `${totalCarbs.toFixed()}g`;
+    calName.textContent = `Total Calories: `;
+    calNameP.textContent = `${totalCalories.toFixed()}`;
+    proName.textContent = `Total Protein: `;
+    proNameP.textContent = `${totalProtein.toFixed()}g`;
+    sugName.textContent = `Total Sugar: `;
+    sugNameP.textContent = `${totalSugar.toFixed()}g`;
+    fatName.textContent = `Total Fat: `;
+    fatNameP.textContent = `${totalFat.toFixed()}g`;
     
     //--Continues to builds the card that displays the order information   
     card.appendChild(carbName);
+    card.appendChild(carbNameP);
     card.appendChild(calName);
+    card.appendChild(calNameP);
     card.appendChild(proName);
+    card.appendChild(proNameP);
     card.appendChild(sugName);
+    card.appendChild(sugNameP);
     card.appendChild(fatName);
+    card.appendChild(fatNameP);
     orderSubmission.appendChild(card);
 
       /*console.log(
@@ -167,10 +200,7 @@ submitBtn.addEventListener("click", (event) => {
     }
 
   createCard();
-  //--Creates text for order info
-  orderEmail.textContent = `Email: ${email}`;
-  orderPhone.textContent = `Phone #: ${phone}`;
-  orderTextArea.textContent = `Special Instructions: ${textArea}`;
+  
 });
 getFruitData();
 
