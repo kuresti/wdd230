@@ -48,9 +48,9 @@ async function fetchWeather() {
      let img = document.createElement("img");
      let figure = document.createElement("figure");
      let figcaption = document.createElement("figcaption");
-     let temp = document.createElement("p");
-     let tempSpan = document.createElement("span");
-     let humidity = document.createElement("p");
+     let temp = document.createElement("h3");
+     let tempSpan = document.createElement("span");     
+     let humidity = document.createElement("h3");
      let humiditySpan = document.createElement("span");
 
      //Build content of the card
@@ -84,10 +84,11 @@ async function fetchWeather() {
       figure.appendChild(img);
       figure.appendChild(figcaption);
       card.appendChild(figure);
-      temp.appendChild(tempSpan);
       card.appendChild(temp);
+      temp.appendChild(tempSpan);  
+      card.appendChild(humidity);    
       humidity.appendChild(humiditySpan);
-      card.appendChild(humidity);
+      
   };
 
   function displayForecast(forecastData) {
@@ -102,7 +103,7 @@ async function fetchWeather() {
         const card = document.createElement("section");
         const day = document.createElement("h2");
         const img = document.createElement("img");
-        const temp = document.createElement("p");
+        const temp = document.createElement("h3");
         const tempSpan = document.createElement("span");
         
         //create content for card
